@@ -22,6 +22,7 @@ aside{width:250px;flex-shrink:0;background:#fff;border-right:1px solid var(--bor
 .nav-sec:hover{background:#f0f9f3}
 .nav-sec.active{background:#e8f5ec;border-left-color:var(--green);color:var(--green)}
 .nav-sec .n{font-size:15px}
+.nav-hot{font-size:10px;background:#ef4444;color:#fff;border-radius:8px;padding:1px 6px;margin-left:5px;vertical-align:2px;white-space:nowrap}
 main{flex:1;padding:22px;min-width:0}
 .badge{display:inline-block;padding:2px 10px;border-radius:20px;font-size:12px;color:#fff;font-weight:600;margin-right:6px}
 .card{background:var(--card);border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
@@ -78,20 +79,20 @@ const DATA = {"functions": [{"name": "SUM", "cat": "math", "cat_name": "数学�
 const LV = {"入门":"#22c55e","进阶":"#3b82f6","高级":"#f59e0b","专家":"#ef4444"};
 const CATS = {"math":["数学函数","∑"],"text":["文本函数","T"],"date":["日期函数","📅"],"logic":["逻辑函数","⚡"],"lookup":["查找引用","🔍"],"stat":["统计函数","📊"],"fin":["财务函数","💰"]};
 const SECTIONS = [
- ["basic","🌱","Excel入门"],["func","∑","Excel函数"],["tips","💡","Excel技巧"],
+ ["basic","🌱","Excel入门"],["func","∑","Excel函数"],["tips","💡","Excel技巧","重点"],
  ["chartlib","📈","Excel图表"],["pivot","📊","数据透视表"],["cfmt","🎨","条件格式"],
  ["dval","✅","数据验证"],["pq","🔄","Power Query"],["ppivot","🧊","Power Pivot"],
- ["vba","⚙️","VBA编程"],["case","💼","实战案例"],["errors","❌","错误代码"],
- ["keys","⌨️","快捷键"],["roadmap","🗺️","学习路线"],["tools","🛠️","在线工具"],
- ["tpl","📥","模板下载"],["res","📦","资源中心"],["faq","❓","常见问题"],
- ["ver","🔢","版本专区"],["repair","🔧","文件修复"],["ai","🤖","AI+Excel"],["office","🏢","Office专区"],["exam","🎓","考试认证"],
+ ["vba","⚙️","VBA编程"],["case","💼","实战案例"],["tpl","📥","模板下载"],
+ ["errors","❌","错误代码"],["solve","🆘","问题解决中心"],["keys","⌨️","快捷键大全"],
+ ["roadmap","🗺️","学习路线图"],["tools","🛠️","在线工具"],["ver","🔢","Excel版本专区"],
+ ["res","📦","Excel资源中心"],["dailytip","📅","今日Excel技巧","每日更新"],
 ];
 let cur = "basic";
 function badge(t,c){return `<span class="badge" style="background:${c||LV[t]||'#6b7280'}">${t}</span>`}
 function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;")}
 function buildNav(){
   let h = "";
-  SECTIONS.forEach(s=>{ h += `<div class="nav-sec${s[0]===cur?' active':''}" onclick="go('${s[0]}',this)"><span class="n">${s[1]}</span>${s[2]}</div>`; });
+  SECTIONS.forEach(s=>{ h += `<div class="nav-sec${s[0]===cur?' active':''}" onclick="go('${s[0]}',this)"><span class="n">${s[1]}</span>${s[2]}${s[3]?`<span class="nav-hot"${s[0]==="dailytip"?' style="background:#16a34a"':""}>${s[3]}</span>`:""}</div>`; });
   document.getElementById("nav").innerHTML = h;
 }
 function go(k, el){
@@ -191,20 +192,6 @@ function render(k){
     h += `<div class="card"><h3>📚 进阶：分组/多维/切片器/时间轴/数据模型</h3><p><a href="javascript:go('pivot')" style="color:var(--green)">本页已覆盖基础，</a>更多见下方：</p></div>`;
     DATA.pivot_adv.forEach(p=>{ h += `<div class="card"><h3 style="font-size:15px">${p.t}</h3><p style="font-size:14px">${esc(p.body)}</p></div>`; });
   }
-  else if(k==="ai"){
-    h = `<div class="card"><h3>🤖 AI+Excel 专区</h3><p style="color:var(--muted)">让 AI 成为你的 Excel 副驾驶</p></div>`;
-    DATA.ai_excel.forEach(a=>{
-      h += `<div class="card">${badge(a.level)}<h3 style="margin-top:8px">${a.title}</h3><p style="white-space:pre-line">${esc(a.body)}</p>`;
-      if(a.tips) a.tips.forEach(t=>{ h += `<div class="tip">${esc(t)}</div>`; });
-      h += `</div>`;
-    });
-    h += `<div class="card"><h3>✨ AI 公式生成器</h3><p style="color:var(--muted);font-size:13px">选择场景，自动生成公式（规则引擎本地运行，无需联网）</p>
-      <select id="aigen_type" onchange="aiGen()">
-      <option value="sumif">条件求和</option><option value="countif">条件计数</option>
-      <option value="vlookup">查找匹配</option><option value="rank">排名</option>
-      <option value="date">日期差</option><option value="text">文本提取</option>
-      </select><div id="aigen_out" class="tool-out">选择场景查看公式模板</div></div>`;
-  }
   else if(k==="case"){
     h = `<div class="card"><h3>💼 Excel 实战案例</h3><p style="color:var(--muted)">真实场景的公式组合拳</p></div>`;
     DATA.case_center.forEach(cc=>{
@@ -287,11 +274,15 @@ function render(k){
     });
     h += `<div class="card"><h3>📥 模板直达</h3><p><a href="javascript:go('tpl')" style="color:var(--green)">→ 去模板下载区（13 个 xlsx）</a></p></div>`;
   }
-  else if(k==="faq"){
-    h = `<div class="card"><h3>❓ Excel 问答社区（${DATA.faq.length} 高频问题）</h3><p style="color:var(--muted)">静态精选问答，持续补充</p></div>`;
+  else if(k==="solve"){
+    h = `<div class="card"><h3>🆘 问题解决中心</h3><p style="color:var(--muted)">报错看不懂、文件打不开，先来这里对号入座</p></div>`;
+    h += `<div class="card"><h3>🔧 文件修复（${DATA.repair.length} 类常见故障）</h3><p style="color:var(--muted);font-size:13px">文件坏了别慌，按顺序试</p></div>`;
+    DATA.repair.forEach(r=>{ h += `<div class="card"><h3 style="font-size:15px">${r.t}</h3><p style="font-size:14px;white-space:pre-line">${esc(r.body)}</p></div>`; });
+    h += `<div class="card"><h3>❓ 高频问答（${DATA.faq.length} 问）</h3><p style="color:var(--muted);font-size:13px">静态精选问答，持续补充</p></div>`;
     DATA.faq.forEach((f,i)=>{
       h += `<div class="card"><h3 style="font-size:15px">Q${i+1}. ${esc(f.q)}</h3><div class="tip"><b>A：</b>${esc(f.a)}</div></div>`;
     });
+    h += `<div class="card"><h3>❌ 错误代码速查</h3><p style="font-size:14px">8 种常见错误代码的完整解读，点左侧导航 <a href="javascript:go('errors')" style="color:var(--green)">「错误代码」</a> 查看。</p></div>`;
   }
   else if(k==="ver"){
     h = `<div class="card"><h3>🔢 Excel 版本专区</h3><p style="color:var(--muted)">很多问题其实是版本差异</p></div>`;
@@ -302,26 +293,14 @@ function render(k){
     Object.keys(DATA.versions.func_ver).forEach(f=>{ h += `<tr><td><code>${f}</code></td><td>${DATA.versions.func_ver[f]}</td></tr>`; });
     h += `</table><div class="tip">XLOOKUP / FILTER / SORT / UNIQUE 需要 2021 或 365；打不开别人文件的公式先查版本。</div></div>`;
   }
-  else if(k==="repair"){
-    h = `<div class="card"><h3>🔧 Excel 文件修复专区</h3><p style="color:var(--muted)">文件坏了别慌，按顺序试</p></div>`;
-    DATA.repair.forEach(r=>{ h += `<div class="card"><h3 style="font-size:15px">${r.t}</h3><p style="font-size:14px;white-space:pre-line">${esc(r.body)}</p></div>`; });
-  }
-  else if(k==="exam"){
-    h = `<div class="card"><h3>🎓 Excel 考试认证专区</h3></div>`;
-    DATA.exam.forEach(e=>{
-      h += `<div class="card"><h3>${e.t}</h3><p style="font-size:14px">${esc(e.d)}</p>`;
-      if(e.tips) e.tips.forEach(x=>{ h += `<div class="tip">${esc(x)}</div>`; });
-      h += `</div>`;
-    });
-  }
-  else if(k==="pivot"){
-
-    h = `<div class="card"><h3>🏢 Office 办公专区</h3><p style="color:var(--muted)">Word / PPT / Outlook / 协作，一个都不能少</p></div>`;
-    DATA.office.forEach(o=>{
-      h += `<div class="card">${badge(o.level)}<h3 style="margin-top:8px">${o.title}</h3><p>${esc(o.body)}</p>`;
-      if(o.tips) o.tips.forEach(t=>{ h += `<div class="tip">${esc(t)}</div>`; });
-      h += `</div>`;
-    });
+  else if(k==="dailytip"){
+    const now = new Date();
+    const dayIdx = Math.floor((now - new Date(now.getFullYear(),0,0)) / 864e5);
+    const tip = DATA.tips[dayIdx % DATA.tips.length];
+    const dateStr = now.getFullYear() + "年" + (now.getMonth()+1) + "月" + now.getDate() + "日";
+    h = `<div class="card"><h3>📅 今日Excel技巧</h3><p style="color:var(--muted)">${dateStr} · 每天自动换一条（共 ${DATA.tips.length} 条轮换）</p></div>`;
+    h += `<div class="card" style="border-left:4px solid var(--green)"><h3 style="font-size:17px">💡 ${esc(tip.t)}</h3><p style="font-size:15px;white-space:pre-line">${esc(tip.how)}</p></div>`;
+    h += `<div class="card"><h3>📚 技巧库</h3><p style="font-size:14px">20 个短技巧完整版，点左侧导航 <a href="javascript:go('tips')" style="color:var(--green)">「Excel技巧」</a> 查看。</p></div>`;
   }
   else if(k==="tools"){
     h = `<div class="card"><h3>🛠️ 特色工具</h3><p style="color:var(--muted)">全部本地运行，文件不上传服务器</p></div>`;
