@@ -72,7 +72,7 @@
 
 - 上一篇：字体与对齐（docs/formatting/02-font-alignment.md）
 - 下一篇：样式与主题（docs/formatting/04-styles-themes.md）
-- 跨栏目：超级表（docs/formatting/05-tables.md）、条件格式（docs/advanced/conditional-formatting.md）
+- 跨栏目：超级表（docs/formatting/05-tables.md）、条件格式（docs/conditional-formatting/01-conditional-formatting.md）
 
 ## 9. 练习题
 
