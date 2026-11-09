@@ -76,7 +76,7 @@
 ## 8. 相关教程
 
 - 上一篇：数据验证（docs/data-management/04-data-validation.md）
-- 跨栏目：数据清洗（docs/data-management/02-clean-data.md）、Power Query（docs/advanced/powerquery.md）
+- 跨栏目：数据清洗（docs/data-management/02-clean-data.md）、Power Query（docs/powerquery/01-power-query.md）
 - 跨栏目：超级表（docs/formatting/05-tables.md）
 
 ## 9. 练习题
