@@ -2,6 +2,13 @@
 
 统计函数用于计数、求最值、排位、离散程度分析，是做报表和数据分析的核心工具。本章共收录 16 个函数。注意：RANK/MODE/STDEV/VAR 在新版中有 RANK.EQ、MODE.SNGL、STDEV.S、VAR.S 等精确命名，旧名仍可用。
 
+
+## 学习目标
+
+学完本篇，你将能够：
+- 用 COUNT、COUNTA、COUNTBLANK 区分计数口径
+- 用 COUNTIF、COUNTIFS 做条件计数
+- 用 MAX、MIN、LARGE、RANK 做最值与排名
 ---
 
 ## COUNT
@@ -261,3 +268,24 @@
 ```
 
 **常见错误：** 同 STDEV，注意样本/总体的选择（VAR.S vs VAR.P）
+
+---
+
+## 练习题
+
+1. B2:B6 是 3、9、5、9、1，=MAX(B2:B6) 与 =MIN(B2:B6) 各是多少？
+2. =MEDIAN(1,2,9) 的结果是多少？
+3. =RANK(90,{90,80,70},0) 的结果是多少？
+
+## 参考答案
+
+<details>
+<summary>点击查看答案</summary>
+
+1. MAX → 9，MIN → 1。
+
+2. 结果 2。中位数是排序后中间的值。
+
+3. 结果 1。90 是三个数里最大的，降序排名第 1。
+
+</details>
