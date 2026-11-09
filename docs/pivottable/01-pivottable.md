@@ -314,7 +314,7 @@
 - 前置：数据清洗（docs/data-management/02-clean-data.md，日期混文本、空行空列先洗干净）
 - 前置：超级表（docs/formatting/05-tables.md，源数据做成超级表后新增行自动纳入透视表）
 - 同栏目：条件格式（docs/conditional-formatting/01-conditional-formatting.md，透视表结果再用条件格式做可视化）
-- 跨栏目：Power Query（docs/advanced/powerquery.md，多表合并后再建透视表）
+- 跨栏目：Power Query（docs/powerquery/01-power-query.md，多表合并后再建透视表）
 
 ## 9. 练习题
 
