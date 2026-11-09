@@ -1,0 +1,1147 @@
+{
+ "generated": "2026-11-09",
+ "count": 26,
+ "tools": [
+  {
+   "id": "tool-fxcheck",
+   "name": "公式体检",
+   "name_en": "Formula Check",
+   "category": "公式",
+   "column": "C03",
+   "desc": "检查括号配对与全角符号",
+   "inputs": [
+    {
+     "key": "formula",
+     "label": "公式",
+     "type": "textarea",
+     "required": true,
+     "placeholder": "=VLOOKUP(A2,表1!A:B,2,0)"
+    }
+   ],
+   "outputs": [
+    {
+     "key": "issues",
+     "label": "发现的问题",
+     "render": "list"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-dedup",
+   "name": "重复值检测",
+   "name_en": "Duplicate Finder",
+   "category": "数据处理",
+   "column": "C05",
+   "desc": "输入一列值，找出重复项与出现次数",
+   "inputs": [
+    {
+     "key": "values",
+     "label": "输入值（每行一个）",
+     "type": "textarea",
+     "required": true,
+     "placeholder": "张三\n李四\n张三"
+    }
+   ],
+   "outputs": [
+    {
+     "key": "unique",
+     "label": "去重后",
+     "render": "list"
+    },
+    {
+     "key": "counts",
+     "label": "出现次数",
+     "render": "table"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-split",
+   "name": "文本拆分",
+   "name_en": "Text Split",
+   "category": "数据处理",
+   "column": "C05",
+   "desc": "按分隔符把文本拆成多列",
+   "inputs": [
+    {
+     "key": "text",
+     "label": "待拆分文本",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "sep",
+     "label": "分隔符",
+     "type": "text",
+     "required": true,
+     "placeholder": ","
+    }
+   ],
+   "outputs": [
+    {
+     "key": "table",
+     "label": "拆分结果",
+     "render": "table"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-addr",
+   "name": "地址解析",
+   "name_en": "Address Parser",
+   "category": "数据处理",
+   "column": "C05",
+   "desc": "拆出省/市/区与详细地址",
+   "inputs": [
+    {
+     "key": "address",
+     "label": "地址",
+     "type": "textarea",
+     "required": true,
+     "placeholder": "广东省深圳市南山区科技园1号"
+    }
+   ],
+   "outputs": [
+    {
+     "key": "parts",
+     "label": "解析结果",
+     "render": "table"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-phone",
+   "name": "手机号提取",
+   "name_en": "Phone Extractor",
+   "category": "数据处理",
+   "column": "C05",
+   "desc": "从文本中批量提取手机号",
+   "inputs": [
+    {
+     "key": "text",
+     "label": "含手机号的文本",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "phones",
+     "label": "手机号",
+     "render": "list"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-idcheck",
+   "name": "身份证校验",
+   "name_en": "ID Checker",
+   "category": "数据处理",
+   "column": "C05",
+   "desc": "校验 18 位身份证并解析出生日期与性别",
+   "inputs": [
+    {
+     "key": "id",
+     "label": "身份证号",
+     "type": "text",
+     "required": true,
+     "placeholder": "11010519491231002X"
+    }
+   ],
+   "outputs": [
+    {
+     "key": "result",
+     "label": "校验结果",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-colletter",
+   "name": "列字母互转",
+   "name_en": "Column Letter",
+   "category": "数据处理",
+   "column": "C05",
+   "desc": "数字⟷Excel 列字母双向转换",
+   "inputs": [
+    {
+     "key": "value",
+     "label": "列号或列字母",
+     "type": "text",
+     "required": true,
+     "placeholder": "28 或 AB"
+    }
+   ],
+   "outputs": [
+    {
+     "key": "result",
+     "label": "转换结果",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-tax",
+   "name": "个税计算器",
+   "name_en": "Tax Calculator",
+   "category": "计算",
+   "column": "C13",
+   "desc": "按月度税率表估算个税（起征点 5000）",
+   "inputs": [
+    {
+     "key": "salary",
+     "label": "税前月薪",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "insurance",
+     "label": "社保公积金",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "deduction",
+     "label": "专项附加扣除",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "tax",
+     "label": "预估个税",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-pct",
+   "name": "百分比计算器",
+   "name_en": "Percent Calculator",
+   "category": "计算",
+   "column": "C03",
+   "desc": "数值占总数的百分比",
+   "inputs": [
+    {
+     "key": "a",
+     "label": "数值",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "b",
+     "label": "总数",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "pct",
+     "label": "百分比",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-loan",
+   "name": "房贷计算器",
+   "name_en": "Mortgage Calculator",
+   "category": "计算",
+   "column": "C13",
+   "desc": "等额本息月供与总利息",
+   "inputs": [
+    {
+     "key": "principal",
+     "label": "贷款额",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "rate",
+     "label": "年利率 %",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "years",
+     "label": "年限",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "monthly",
+     "label": "月供",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-datecalc",
+   "name": "日期计算器",
+   "name_en": "Date Calculator",
+   "category": "日期",
+   "column": "C04",
+   "desc": "两个日期相差天数",
+   "inputs": [
+    {
+     "key": "start",
+     "label": "开始日期",
+     "type": "date",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "end",
+     "label": "结束日期",
+     "type": "date",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "days",
+     "label": "相差天数",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-workdays",
+   "name": "工作日计算器",
+   "name_en": "Workday Calculator",
+   "category": "日期",
+   "column": "C04",
+   "desc": "两个日期间的工作日天数（不含周末）",
+   "inputs": [
+    {
+     "key": "start",
+     "label": "开始日期",
+     "type": "date",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "end",
+     "label": "结束日期",
+     "type": "date",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "days",
+     "label": "工作日天数",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-workdate",
+   "name": "工作日推算",
+   "name_en": "Workday Advance",
+   "category": "日期",
+   "column": "C04",
+   "desc": "从某日期起推 N 个工作日后的日期",
+   "inputs": [
+    {
+     "key": "start",
+     "label": "开始日期",
+     "type": "date",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "days",
+     "label": "工作日天数",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "date",
+     "label": "推算日期",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-senior",
+   "name": "工龄计算器",
+   "name_en": "Seniority Calculator",
+   "category": "日期",
+   "column": "C13",
+   "desc": "入职至今的工龄（年/月）",
+   "inputs": [
+    {
+     "key": "start",
+     "label": "入职日期",
+     "type": "date",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "seniority",
+     "label": "工龄",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-age",
+   "name": "年龄计算器",
+   "name_en": "Age Calculator",
+   "category": "日期",
+   "column": "C04",
+   "desc": "出生至今的年龄",
+   "inputs": [
+    {
+     "key": "birth",
+     "label": "出生日期",
+     "type": "date",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "age",
+     "label": "年龄",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-lottery",
+   "name": "随机点名",
+   "name_en": "Random Picker",
+   "category": "其他",
+   "column": "C01",
+   "desc": "名单不放回随机抽取",
+   "inputs": [
+    {
+     "key": "names",
+     "label": "名单（每行一个）",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "name",
+     "label": "抽中",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": ""
+  },
+  {
+   "id": "tool-formula-lib",
+   "name": "公式模板库",
+   "name_en": "Formula Template Library",
+   "category": "公式",
+   "column": "C03",
+   "desc": "按场景查 6 个常用公式模板（原名 AI 公式生成器，无 AI 逻辑，已改名）",
+   "inputs": [
+    {
+     "key": "scene",
+     "label": "场景",
+     "type": "select",
+     "required": true,
+     "placeholder": "条件求和/条件计数/查找匹配/排名/日期差/文本提取"
+    }
+   ],
+   "outputs": [
+    {
+     "key": "formula",
+     "label": "公式模板",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "原名“AI 公式生成器”名不副实：仅 6 条固定模板查表，2026-11-09 改名"
+  },
+  {
+   "id": "tool-x2json",
+   "name": "Excel 转 JSON",
+   "name_en": "Excel to JSON",
+   "category": "文件转换",
+   "column": "C05",
+   "desc": "上传 Excel/CSV，一键转 JSON",
+   "inputs": [
+    {
+     "key": "file",
+     "label": "Excel/CSV 文件",
+     "type": "file",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "json",
+     "label": "JSON",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "pending",
+   "note": "待浏览器实测（依赖 SheetJS CDN）"
+  },
+  {
+   "id": "tool-x2sql",
+   "name": "Excel 转 SQL",
+   "name_en": "Excel to SQL",
+   "category": "文件转换",
+   "column": "C05",
+   "desc": "生成建表与 INSERT 语句",
+   "inputs": [
+    {
+     "key": "file",
+     "label": "Excel/CSV 文件",
+     "type": "file",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "sql",
+     "label": "SQL",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "pending",
+   "note": "待浏览器实测"
+  },
+  {
+   "id": "tool-x2csv",
+   "name": "Excel 转 CSV",
+   "name_en": "Excel to CSV",
+   "category": "文件转换",
+   "column": "C05",
+   "desc": "上传表格，下载 CSV",
+   "inputs": [
+    {
+     "key": "file",
+     "label": "Excel/CSV 文件",
+     "type": "file",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "file",
+     "label": "CSV 文件",
+     "render": "download"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "pending",
+   "note": "待浏览器实测"
+  },
+  {
+   "id": "tool-csv2x",
+   "name": "CSV 转 Excel",
+   "name_en": "CSV to Excel",
+   "category": "文件转换",
+   "column": "C05",
+   "desc": "上传 CSV，下载 xlsx",
+   "inputs": [
+    {
+     "key": "file",
+     "label": "CSV 文件",
+     "type": "file",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "file",
+     "label": "xlsx 文件",
+     "render": "download"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "pending",
+   "note": "待浏览器实测"
+  },
+  {
+   "id": "tool-x2xml",
+   "name": "Excel 转 XML",
+   "name_en": "Excel to XML",
+   "category": "文件转换",
+   "column": "C05",
+   "desc": "上传表格，生成 XML 下载",
+   "inputs": [
+    {
+     "key": "file",
+     "label": "Excel/CSV 文件",
+     "type": "file",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "file",
+     "label": "XML 文件",
+     "render": "download"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "pending",
+   "note": "待浏览器实测"
+  },
+  {
+   "id": "tool-json2x",
+   "name": "JSON 转 Excel",
+   "name_en": "JSON to Excel",
+   "category": "文件转换",
+   "column": "C05",
+   "desc": "粘贴 JSON 数组，下载 xlsx",
+   "inputs": [
+    {
+     "key": "json",
+     "label": "JSON 数组",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "file",
+     "label": "xlsx 文件",
+     "render": "download"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "pending",
+   "note": "待浏览器实测"
+  },
+  {
+   "id": "tool-md2x",
+   "name": "Markdown 转 Excel",
+   "name_en": "Markdown to Excel",
+   "category": "文件转换",
+   "column": "C05",
+   "desc": "粘贴 MD 表格，下载 xlsx",
+   "inputs": [
+    {
+     "key": "md",
+     "label": "Markdown 表格",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "file",
+     "label": "xlsx 文件",
+     "render": "download"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "pending",
+   "note": "待浏览器实测"
+  },
+  {
+   "id": "tool-diff",
+   "name": "Excel 自动比对",
+   "name_en": "Excel Diff",
+   "category": "文件转换",
+   "column": "C05",
+   "desc": "两个表格找差异",
+   "inputs": [
+    {
+     "key": "fileA",
+     "label": "文件 A",
+     "type": "file",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "fileB",
+     "label": "文件 B",
+     "type": "file",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "diff",
+     "label": "差异行",
+     "render": "table"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "pending",
+   "note": "待浏览器实测"
+  },
+  {
+   "id": "tool-ocr",
+   "name": "OCR 识别表格",
+   "name_en": "OCR Table",
+   "category": "文件转换",
+   "column": "C05",
+   "desc": "图片转表格（Tesseract.js）",
+   "inputs": [
+    {
+     "key": "image",
+     "label": "图片文件",
+     "type": "file",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "text",
+     "label": "识别文本",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "pending",
+   "note": "首次需联网下载语言包，待浏览器实测"
+  }
+ ]
+}
