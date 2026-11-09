@@ -77,7 +77,7 @@
 ## 8. 相关教程
 
 - 下一篇：数据清洗（docs/data-management/02-clean-data.md）
-- 跨栏目：超级表（docs/formatting/05-tables.md）、数据透视表（docs/advanced/pivottable.md）
+- 跨栏目：超级表（docs/formatting/05-tables.md）、数据透视表（docs/pivottable/01-pivottable.md）
 - 跨栏目：SUBTOTAL 函数（docs/functions/01-math.md）
 
 ## 9. 练习题
