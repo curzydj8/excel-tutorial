@@ -71,7 +71,7 @@
 
 - 上一篇：边框与填充（docs/formatting/03-border-fill.md）
 - 下一篇：超级表（docs/formatting/05-tables.md）
-- 跨栏目：条件格式（docs/advanced/conditional-formatting.md）
+- 跨栏目：条件格式（docs/conditional-formatting/01-conditional-formatting.md）
 
 ## 9. 练习题
 
