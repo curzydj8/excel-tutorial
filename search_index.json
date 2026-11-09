@@ -1,0 +1,3761 @@
+{
+ "generated": "2026-11-09",
+ "count": 416,
+ "types": [
+  "case",
+  "chart",
+  "faq",
+  "function",
+  "solve",
+  "template",
+  "tip",
+  "tutorial",
+  "vba"
+ ],
+ "items": [
+  {
+   "id": "func-SUM",
+   "type": "function",
+   "column": "C04",
+   "title": "SUM",
+   "text": "SUM 求和：把一堆数字加起来，最常用的函数 SUM(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "SUM"
+  },
+  {
+   "id": "func-SUMIF",
+   "type": "function",
+   "column": "C04",
+   "title": "SUMIF",
+   "text": "SUMIF 条件求和：只加满足条件的那部分 SUMIF(条件区域, 条件, [求和区域])",
+   "section": "func",
+   "ref": "SUMIF"
+  },
+  {
+   "id": "func-SUMIFS",
+   "type": "function",
+   "column": "C04",
+   "title": "SUMIFS",
+   "text": "SUMIFS 多条件求和：同时满足多个条件才加 SUMIFS(求和区域, 条件区域1, 条件1, [条件区域2, 条件2], ...)",
+   "section": "func",
+   "ref": "SUMIFS"
+  },
+  {
+   "id": "func-AVERAGE",
+   "type": "function",
+   "column": "C04",
+   "title": "AVERAGE",
+   "text": "AVERAGE 求平均值 AVERAGE(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "AVERAGE"
+  },
+  {
+   "id": "func-AVERAGEIF",
+   "type": "function",
+   "column": "C04",
+   "title": "AVERAGEIF",
+   "text": "AVERAGEIF 条件平均：只对满足条件的求平均 AVERAGEIF(条件区域, 条件, [平均区域])",
+   "section": "func",
+   "ref": "AVERAGEIF"
+  },
+  {
+   "id": "func-COUNT",
+   "type": "function",
+   "column": "C04",
+   "title": "COUNT",
+   "text": "COUNT 计数：数一数有多少个数字 COUNT(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "COUNT"
+  },
+  {
+   "id": "func-ROUND",
+   "type": "function",
+   "column": "C04",
+   "title": "ROUND",
+   "text": "ROUND 四舍五入到指定位数 ROUND(数值, 小数位数)",
+   "section": "func",
+   "ref": "ROUND"
+  },
+  {
+   "id": "func-ROUNDUP",
+   "type": "function",
+   "column": "C04",
+   "title": "ROUNDUP",
+   "text": "ROUNDUP 向上舍入（只入不舍） ROUNDUP(数值, 小数位数)",
+   "section": "func",
+   "ref": "ROUNDUP"
+  },
+  {
+   "id": "func-ROUNDDOWN",
+   "type": "function",
+   "column": "C04",
+   "title": "ROUNDDOWN",
+   "text": "ROUNDDOWN 向下舍入（只舍不入） ROUNDDOWN(数值, 小数位数)",
+   "section": "func",
+   "ref": "ROUNDDOWN"
+  },
+  {
+   "id": "func-INT",
+   "type": "function",
+   "column": "C04",
+   "title": "INT",
+   "text": "INT 取整：直接砍掉小数部分 INT(数值)",
+   "section": "func",
+   "ref": "INT"
+  },
+  {
+   "id": "func-MOD",
+   "type": "function",
+   "column": "C04",
+   "title": "MOD",
+   "text": "MOD 取余数：如判断奇偶行 MOD(被除数, 除数)",
+   "section": "func",
+   "ref": "MOD"
+  },
+  {
+   "id": "func-ABS",
+   "type": "function",
+   "column": "C04",
+   "title": "ABS",
+   "text": "ABS 取绝对值 ABS(数值)",
+   "section": "func",
+   "ref": "ABS"
+  },
+  {
+   "id": "func-SQRT",
+   "type": "function",
+   "column": "C04",
+   "title": "SQRT",
+   "text": "SQRT 开平方 SQRT(数值)",
+   "section": "func",
+   "ref": "SQRT"
+  },
+  {
+   "id": "func-POWER",
+   "type": "function",
+   "column": "C04",
+   "title": "POWER",
+   "text": "POWER 乘方 POWER(底数, 指数)",
+   "section": "func",
+   "ref": "POWER"
+  },
+  {
+   "id": "func-RAND",
+   "type": "function",
+   "column": "C04",
+   "title": "RAND",
+   "text": "RAND 生成 0~1 随机小数 RAND()",
+   "section": "func",
+   "ref": "RAND"
+  },
+  {
+   "id": "func-RANDBETWEEN",
+   "type": "function",
+   "column": "C04",
+   "title": "RANDBETWEEN",
+   "text": "RANDBETWEEN 生成指定范围的随机整数 RANDBETWEEN(下限, 上限)",
+   "section": "func",
+   "ref": "RANDBETWEEN"
+  },
+  {
+   "id": "func-SUMPRODUCT",
+   "type": "function",
+   "column": "C04",
+   "title": "SUMPRODUCT",
+   "text": "SUMPRODUCT 乘积求和：先对应相乘再加总，万能函数 SUMPRODUCT(数组1, [数组2], ...)",
+   "section": "func",
+   "ref": "SUMPRODUCT"
+  },
+  {
+   "id": "func-SUBTOTAL",
+   "type": "function",
+   "column": "C04",
+   "title": "SUBTOTAL",
+   "text": "SUBTOTAL 分类汇总：只对可见单元格求和，筛选后求和不翻车 SUBTOTAL(功能代码, 区域1, [区域2], ...)",
+   "section": "func",
+   "ref": "SUBTOTAL"
+  },
+  {
+   "id": "func-AGGREGATE",
+   "type": "function",
+   "column": "C04",
+   "title": "AGGREGATE",
+   "text": "AGGREGATE 聚合计算：SUBTOTAL 的升级版，可忽略错误值 AGGREGATE(功能代码, 选项, 数组, [参数k])",
+   "section": "func",
+   "ref": "AGGREGATE"
+  },
+  {
+   "id": "func-LEFT",
+   "type": "function",
+   "column": "C04",
+   "title": "LEFT",
+   "text": "LEFT 从左边取指定个数的字符 LEFT(文本, [字符数])",
+   "section": "func",
+   "ref": "LEFT"
+  },
+  {
+   "id": "func-RIGHT",
+   "type": "function",
+   "column": "C04",
+   "title": "RIGHT",
+   "text": "RIGHT 从右边取指定个数的字符 RIGHT(文本, [字符数])",
+   "section": "func",
+   "ref": "RIGHT"
+  },
+  {
+   "id": "func-MID",
+   "type": "function",
+   "column": "C04",
+   "title": "MID",
+   "text": "MID 从中间指定位置取字符 MID(文本, 起始位置, 字符数)",
+   "section": "func",
+   "ref": "MID"
+  },
+  {
+   "id": "func-LEN",
+   "type": "function",
+   "column": "C04",
+   "title": "LEN",
+   "text": "LEN 计算文本长度（几个字） LEN(文本)",
+   "section": "func",
+   "ref": "LEN"
+  },
+  {
+   "id": "func-CONCAT",
+   "type": "function",
+   "column": "C04",
+   "title": "CONCAT",
+   "text": "CONCAT 拼接多个文本（CONCATENATE 的升级版） CONCAT(文本1, [文本2], ...)",
+   "section": "func",
+   "ref": "CONCAT"
+  },
+  {
+   "id": "func-TEXTJOIN",
+   "type": "function",
+   "column": "C04",
+   "title": "TEXTJOIN",
+   "text": "TEXTJOIN 用分隔符拼接，自动跳过空值 TEXTJOIN(分隔符, 忽略空值, 文本1, [文本2], ...)",
+   "section": "func",
+   "ref": "TEXTJOIN"
+  },
+  {
+   "id": "func-TEXT",
+   "type": "function",
+   "column": "C04",
+   "title": "TEXT",
+   "text": "TEXT 把数字按指定格式转成文本 TEXT(数值, 格式代码)",
+   "section": "func",
+   "ref": "TEXT"
+  },
+  {
+   "id": "func-VALUE",
+   "type": "function",
+   "column": "C04",
+   "title": "VALUE",
+   "text": "VALUE 把文本转成数字 VALUE(文本)",
+   "section": "func",
+   "ref": "VALUE"
+  },
+  {
+   "id": "func-UPPER",
+   "type": "function",
+   "column": "C04",
+   "title": "UPPER",
+   "text": "UPPER 转大写 UPPER(文本)",
+   "section": "func",
+   "ref": "UPPER"
+  },
+  {
+   "id": "func-LOWER",
+   "type": "function",
+   "column": "C04",
+   "title": "LOWER",
+   "text": "LOWER 转小写 LOWER(文本)",
+   "section": "func",
+   "ref": "LOWER"
+  },
+  {
+   "id": "func-TRIM",
+   "type": "function",
+   "column": "C04",
+   "title": "TRIM",
+   "text": "TRIM 去掉首尾和多余空格 TRIM(文本)",
+   "section": "func",
+   "ref": "TRIM"
+  },
+  {
+   "id": "func-SUBSTITUTE",
+   "type": "function",
+   "column": "C04",
+   "title": "SUBSTITUTE",
+   "text": "SUBSTITUTE 替换指定的文本 SUBSTITUTE(文本, 旧文本, 新文本, [替换第几个])",
+   "section": "func",
+   "ref": "SUBSTITUTE"
+  },
+  {
+   "id": "func-REPLACE",
+   "type": "function",
+   "column": "C04",
+   "title": "REPLACE",
+   "text": "REPLACE 按位置替换文本 REPLACE(旧文本, 起始位置, 字符数, 新文本)",
+   "section": "func",
+   "ref": "REPLACE"
+  },
+  {
+   "id": "func-FIND",
+   "type": "function",
+   "column": "C04",
+   "title": "FIND",
+   "text": "FIND 查找字符位置（区分大小写） FIND(查找文本, 源文本, [起始位置])",
+   "section": "func",
+   "ref": "FIND"
+  },
+  {
+   "id": "func-SEARCH",
+   "type": "function",
+   "column": "C04",
+   "title": "SEARCH",
+   "text": "SEARCH 查找字符位置（不区分大小写，支持通配符） SEARCH(查找文本, 源文本, [起始位置])",
+   "section": "func",
+   "ref": "SEARCH"
+  },
+  {
+   "id": "func-TEXTBEFORE",
+   "type": "function",
+   "column": "C04",
+   "title": "TEXTBEFORE",
+   "text": "TEXTBEFORE 取分隔符之前的文本（新函数） TEXTBEFORE(文本, 分隔符, [第几个], [区分大小写], ...)",
+   "section": "func",
+   "ref": "TEXTBEFORE"
+  },
+  {
+   "id": "func-TEXTAFTER",
+   "type": "function",
+   "column": "C04",
+   "title": "TEXTAFTER",
+   "text": "TEXTAFTER 取分隔符之后的文本（新函数） TEXTAFTER(文本, 分隔符, [第几个], ...)",
+   "section": "func",
+   "ref": "TEXTAFTER"
+  },
+  {
+   "id": "func-TEXTSPLIT",
+   "type": "function",
+   "column": "C04",
+   "title": "TEXTSPLIT",
+   "text": "TEXTSPLIT 按分隔符拆分文本到多列（新函数） TEXTSPLIT(文本, 列分隔符, [行分隔符], ...)",
+   "section": "func",
+   "ref": "TEXTSPLIT"
+  },
+  {
+   "id": "func-TODAY",
+   "type": "function",
+   "column": "C04",
+   "title": "TODAY",
+   "text": "TODAY 返回今天的日期 TODAY()",
+   "section": "func",
+   "ref": "TODAY"
+  },
+  {
+   "id": "func-NOW",
+   "type": "function",
+   "column": "C04",
+   "title": "NOW",
+   "text": "NOW 返回当前日期和时间 NOW()",
+   "section": "func",
+   "ref": "NOW"
+  },
+  {
+   "id": "func-DATE",
+   "type": "function",
+   "column": "C04",
+   "title": "DATE",
+   "text": "DATE 用年月日组成日期 DATE(年, 月, 日)",
+   "section": "func",
+   "ref": "DATE"
+  },
+  {
+   "id": "func-TIME",
+   "type": "function",
+   "column": "C04",
+   "title": "TIME",
+   "text": "TIME 用时分秒组成时间 TIME(时, 分, 秒)",
+   "section": "func",
+   "ref": "TIME"
+  },
+  {
+   "id": "func-YEAR",
+   "type": "function",
+   "column": "C04",
+   "title": "YEAR",
+   "text": "YEAR 提取年份 YEAR(日期)",
+   "section": "func",
+   "ref": "YEAR"
+  },
+  {
+   "id": "func-MONTH",
+   "type": "function",
+   "column": "C04",
+   "title": "MONTH",
+   "text": "MONTH 提取月份 MONTH(日期)",
+   "section": "func",
+   "ref": "MONTH"
+  },
+  {
+   "id": "func-DAY",
+   "type": "function",
+   "column": "C04",
+   "title": "DAY",
+   "text": "DAY 提取日 DAY(日期)",
+   "section": "func",
+   "ref": "DAY"
+  },
+  {
+   "id": "func-HOUR",
+   "type": "function",
+   "column": "C04",
+   "title": "HOUR",
+   "text": "HOUR 提取小时 HOUR(时间)",
+   "section": "func",
+   "ref": "HOUR"
+  },
+  {
+   "id": "func-MINUTE",
+   "type": "function",
+   "column": "C04",
+   "title": "MINUTE",
+   "text": "MINUTE 提取分钟 MINUTE(时间)",
+   "section": "func",
+   "ref": "MINUTE"
+  },
+  {
+   "id": "func-DATEDIF",
+   "type": "function",
+   "column": "C04",
+   "title": "DATEDIF",
+   "text": "DATEDIF 计算两个日期的差（年/月/日） DATEDIF(开始日期, 结束日期, 单位)",
+   "section": "func",
+   "ref": "DATEDIF"
+  },
+  {
+   "id": "func-EDATE",
+   "type": "function",
+   "column": "C04",
+   "title": "EDATE",
+   "text": "EDATE 返回 N 个月之前/之后的日期 EDATE(开始日期, 月数)",
+   "section": "func",
+   "ref": "EDATE"
+  },
+  {
+   "id": "func-EOMONTH",
+   "type": "function",
+   "column": "C04",
+   "title": "EOMONTH",
+   "text": "EOMONTH 返回 N 个月之前/之后的月末日期 EOMONTH(开始日期, 月数)",
+   "section": "func",
+   "ref": "EOMONTH"
+  },
+  {
+   "id": "func-WEEKDAY",
+   "type": "function",
+   "column": "C04",
+   "title": "WEEKDAY",
+   "text": "WEEKDAY 返回星期几 WEEKDAY(日期, [类型])",
+   "section": "func",
+   "ref": "WEEKDAY"
+  },
+  {
+   "id": "func-NETWORKDAYS",
+   "type": "function",
+   "column": "C04",
+   "title": "NETWORKDAYS",
+   "text": "NETWORKDAYS 计算两个日期间的工作日天数 NETWORKDAYS(开始日期, 结束日期, [节假日区域])",
+   "section": "func",
+   "ref": "NETWORKDAYS"
+  },
+  {
+   "id": "func-WORKDAY",
+   "type": "function",
+   "column": "C04",
+   "title": "WORKDAY",
+   "text": "WORKDAY 返回 N 个工作日之后/之前的日期 WORKDAY(开始日期, 天数, [节假日区域])",
+   "section": "func",
+   "ref": "WORKDAY"
+  },
+  {
+   "id": "func-DATEVALUE",
+   "type": "function",
+   "column": "C04",
+   "title": "DATEVALUE",
+   "text": "DATEVALUE 把文本转成日期 DATEVALUE(日期文本)",
+   "section": "func",
+   "ref": "DATEVALUE"
+  },
+  {
+   "id": "func-IF",
+   "type": "function",
+   "column": "C04",
+   "title": "IF",
+   "text": "IF 如果…就…否则…，最常用的逻辑判断 IF(条件, 条件成立的值, 条件不成立的值)",
+   "section": "func",
+   "ref": "IF"
+  },
+  {
+   "id": "func-IFS",
+   "type": "function",
+   "column": "C04",
+   "title": "IFS",
+   "text": "IFS 多条件判断（IF 的嵌套升级版） IFS(条件1, 值1, [条件2, 值2], ...)",
+   "section": "func",
+   "ref": "IFS"
+  },
+  {
+   "id": "func-AND",
+   "type": "function",
+   "column": "C04",
+   "title": "AND",
+   "text": "AND 并且：所有条件都成立才为真 AND(条件1, [条件2], ...)",
+   "section": "func",
+   "ref": "AND"
+  },
+  {
+   "id": "func-OR",
+   "type": "function",
+   "column": "C04",
+   "title": "OR",
+   "text": "OR 或者：任一条件成立即为真 OR(条件1, [条件2], ...)",
+   "section": "func",
+   "ref": "OR"
+  },
+  {
+   "id": "func-NOT",
+   "type": "function",
+   "column": "C04",
+   "title": "NOT",
+   "text": "NOT 取反 NOT(逻辑值)",
+   "section": "func",
+   "ref": "NOT"
+  },
+  {
+   "id": "func-XOR",
+   "type": "function",
+   "column": "C04",
+   "title": "XOR",
+   "text": "XOR 异或：奇数个真才为真 XOR(条件1, [条件2], ...)",
+   "section": "func",
+   "ref": "XOR"
+  },
+  {
+   "id": "func-IFERROR",
+   "type": "function",
+   "column": "C04",
+   "title": "IFERROR",
+   "text": "IFERROR 出错时显示指定内容，告别 #N/A 满屏 IFERROR(公式, 出错时返回的值)",
+   "section": "func",
+   "ref": "IFERROR"
+  },
+  {
+   "id": "func-IFNA",
+   "type": "function",
+   "column": "C04",
+   "title": "IFNA",
+   "text": "IFNA 只处理 #N/A 错误 IFNA(公式, 为#N/A时返回的值)",
+   "section": "func",
+   "ref": "IFNA"
+  },
+  {
+   "id": "func-LET",
+   "type": "function",
+   "column": "C04",
+   "title": "LET",
+   "text": "LET 给公式中的重复计算起个名字，提高可读性 LET(名称1, 值1, [名称2, 值2], ..., 计算式)",
+   "section": "func",
+   "ref": "LET"
+  },
+  {
+   "id": "func-SWITCH",
+   "type": "function",
+   "column": "C04",
+   "title": "SWITCH",
+   "text": "SWITCH 多值匹配，比嵌套 IF 清晰 SWITCH(表达式, 值1, 结果1, [值2, 结果2], ..., [默认值])",
+   "section": "func",
+   "ref": "SWITCH"
+  },
+  {
+   "id": "func-VLOOKUP",
+   "type": "function",
+   "column": "C04",
+   "title": "VLOOKUP",
+   "text": "VLOOKUP 纵向查找：按关键字在表格中找对应值 VLOOKUP(查找值, 表格区域, 返回第几列, [精确/模糊匹配])",
+   "section": "func",
+   "ref": "VLOOKUP"
+  },
+  {
+   "id": "func-HLOOKUP",
+   "type": "function",
+   "column": "C04",
+   "title": "HLOOKUP",
+   "text": "HLOOKUP 横向查找（VLOOKUP 的横版） HLOOKUP(查找值, 表格区域, 返回第几行, [精确/模糊匹配])",
+   "section": "func",
+   "ref": "HLOOKUP"
+  },
+  {
+   "id": "func-XLOOKUP",
+   "type": "function",
+   "column": "C04",
+   "title": "XLOOKUP",
+   "text": "XLOOKUP 新一代查找：VLOOKUP 的完美替代品 XLOOKUP(查找值, 查找区域, 返回区域, [未找到时], [匹配模式], [搜索模式])",
+   "section": "func",
+   "ref": "XLOOKUP"
+  },
+  {
+   "id": "func-INDEX",
+   "type": "function",
+   "column": "C04",
+   "title": "INDEX",
+   "text": "INDEX 按行列号取区域中的值 INDEX(区域, 行号, [列号])",
+   "section": "func",
+   "ref": "INDEX"
+  },
+  {
+   "id": "func-MATCH",
+   "type": "function",
+   "column": "C04",
+   "title": "MATCH",
+   "text": "MATCH 找某个值在区域中的位置 MATCH(查找值, 查找区域, [匹配类型])",
+   "section": "func",
+   "ref": "MATCH"
+  },
+  {
+   "id": "func-OFFSET",
+   "type": "function",
+   "column": "C04",
+   "title": "OFFSET",
+   "text": "OFFSET 以某个单元格为基准偏移取区域 OFFSET(基准单元格, 下移行数, 右移列数, [高度], [宽度])",
+   "section": "func",
+   "ref": "OFFSET"
+  },
+  {
+   "id": "func-INDIRECT",
+   "type": "function",
+   "column": "C04",
+   "title": "INDIRECT",
+   "text": "INDIRECT 把文本转成引用，实现动态引用 INDIRECT(文本地址, [A1样式])",
+   "section": "func",
+   "ref": "INDIRECT"
+  },
+  {
+   "id": "func-CHOOSE",
+   "type": "function",
+   "column": "C04",
+   "title": "CHOOSE",
+   "text": "CHOOSE 按序号从列表中取值 CHOOSE(序号, 值1, 值2, ...)",
+   "section": "func",
+   "ref": "CHOOSE"
+  },
+  {
+   "id": "func-ROW",
+   "type": "function",
+   "column": "C04",
+   "title": "ROW",
+   "text": "ROW 返回行号 ROW([单元格])",
+   "section": "func",
+   "ref": "ROW"
+  },
+  {
+   "id": "func-COLUMN",
+   "type": "function",
+   "column": "C04",
+   "title": "COLUMN",
+   "text": "COLUMN 返回列号 COLUMN([单元格])",
+   "section": "func",
+   "ref": "COLUMN"
+  },
+  {
+   "id": "func-TRANSPOSE",
+   "type": "function",
+   "column": "C04",
+   "title": "TRANSPOSE",
+   "text": "TRANSPOSE 行列转置 TRANSPOSE(数组)",
+   "section": "func",
+   "ref": "TRANSPOSE"
+  },
+  {
+   "id": "func-SORT",
+   "type": "function",
+   "column": "C04",
+   "title": "SORT",
+   "text": "SORT 动态数组：自动排序（新函数） SORT(数组, [排序列], [升/降序], [按行/列])",
+   "section": "func",
+   "ref": "SORT"
+  },
+  {
+   "id": "func-FILTER",
+   "type": "function",
+   "column": "C04",
+   "title": "FILTER",
+   "text": "FILTER 动态数组：按条件筛选（新函数） FILTER(数组, 筛选条件, [无结果时显示])",
+   "section": "func",
+   "ref": "FILTER"
+  },
+  {
+   "id": "func-UNIQUE",
+   "type": "function",
+   "column": "C04",
+   "title": "UNIQUE",
+   "text": "UNIQUE 动态数组：去重取唯一值（新函数） UNIQUE(数组, [按列], [只取唯一值])",
+   "section": "func",
+   "ref": "UNIQUE"
+  },
+  {
+   "id": "func-COUNT",
+   "type": "function",
+   "column": "C04",
+   "title": "COUNT",
+   "text": "COUNT 计数：数一数有多少个数字 COUNT(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "COUNT"
+  },
+  {
+   "id": "func-COUNTA",
+   "type": "function",
+   "column": "C04",
+   "title": "COUNTA",
+   "text": "COUNTA 计数：数一数有多少个非空单元格 COUNTA(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "COUNTA"
+  },
+  {
+   "id": "func-COUNTBLANK",
+   "type": "function",
+   "column": "C04",
+   "title": "COUNTBLANK",
+   "text": "COUNTBLANK 数一数有多少个空单元格 COUNTBLANK(区域)",
+   "section": "func",
+   "ref": "COUNTBLANK"
+  },
+  {
+   "id": "func-COUNTIF",
+   "type": "function",
+   "column": "C04",
+   "title": "COUNTIF",
+   "text": "COUNTIF 条件计数：满足条件的有几个 COUNTIF(条件区域, 条件)",
+   "section": "func",
+   "ref": "COUNTIF"
+  },
+  {
+   "id": "func-COUNTIFS",
+   "type": "function",
+   "column": "C04",
+   "title": "COUNTIFS",
+   "text": "COUNTIFS 多条件计数 COUNTIFS(条件区域1, 条件1, [条件区域2, 条件2], ...)",
+   "section": "func",
+   "ref": "COUNTIFS"
+  },
+  {
+   "id": "func-AVERAGEIF",
+   "type": "function",
+   "column": "C04",
+   "title": "AVERAGEIF",
+   "text": "AVERAGEIF 条件平均：只对满足条件的求平均 AVERAGEIF(条件区域, 条件, [平均区域])",
+   "section": "func",
+   "ref": "AVERAGEIF"
+  },
+  {
+   "id": "func-AVERAGEIFS",
+   "type": "function",
+   "column": "C04",
+   "title": "AVERAGEIFS",
+   "text": "AVERAGEIFS 多条件平均 AVERAGEIFS(平均区域, 条件区域1, 条件1, ...)",
+   "section": "func",
+   "ref": "AVERAGEIFS"
+  },
+  {
+   "id": "func-MAX",
+   "type": "function",
+   "column": "C04",
+   "title": "MAX",
+   "text": "MAX 取最大值 MAX(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "MAX"
+  },
+  {
+   "id": "func-MIN",
+   "type": "function",
+   "column": "C04",
+   "title": "MIN",
+   "text": "MIN 取最小值 MIN(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "MIN"
+  },
+  {
+   "id": "func-LARGE",
+   "type": "function",
+   "column": "C04",
+   "title": "LARGE",
+   "text": "LARGE 取第 N 大的值 LARGE(数组, k)",
+   "section": "func",
+   "ref": "LARGE"
+  },
+  {
+   "id": "func-SMALL",
+   "type": "function",
+   "column": "C04",
+   "title": "SMALL",
+   "text": "SMALL 取第 N 小的值 SMALL(数组, k)",
+   "section": "func",
+   "ref": "SMALL"
+  },
+  {
+   "id": "func-RANK",
+   "type": "function",
+   "column": "C04",
+   "title": "RANK",
+   "text": "RANK 排名 RANK(数值, 引用区域, [排序方式])",
+   "section": "func",
+   "ref": "RANK"
+  },
+  {
+   "id": "func-MEDIAN",
+   "type": "function",
+   "column": "C04",
+   "title": "MEDIAN",
+   "text": "MEDIAN 取中位数 MEDIAN(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "MEDIAN"
+  },
+  {
+   "id": "func-MODE",
+   "type": "function",
+   "column": "C04",
+   "title": "MODE",
+   "text": "MODE 取众数 MODE(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "MODE"
+  },
+  {
+   "id": "func-STDEV",
+   "type": "function",
+   "column": "C04",
+   "title": "STDEV",
+   "text": "STDEV 标准差（样本） STDEV(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "STDEV"
+  },
+  {
+   "id": "func-VAR",
+   "type": "function",
+   "column": "C04",
+   "title": "VAR",
+   "text": "VAR 方差（样本） VAR(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "VAR"
+  },
+  {
+   "id": "func-PMT",
+   "type": "function",
+   "column": "C04",
+   "title": "PMT",
+   "text": "PMT 计算每期还款额（房贷月供） PMT(利率, 期数, 现值, [终值], [类型])",
+   "section": "func",
+   "ref": "PMT"
+  },
+  {
+   "id": "func-FV",
+   "type": "function",
+   "column": "C04",
+   "title": "FV",
+   "text": "FV 终值：现在存钱未来值多少 FV(利率, 期数, 每期付款, [现值], [类型])",
+   "section": "func",
+   "ref": "FV"
+  },
+  {
+   "id": "func-PV",
+   "type": "function",
+   "column": "C04",
+   "title": "PV",
+   "text": "PV 现值：未来的钱现在值多少 PV(利率, 期数, 每期付款, [终值], [类型])",
+   "section": "func",
+   "ref": "PV"
+  },
+  {
+   "id": "func-NPV",
+   "type": "function",
+   "column": "C04",
+   "title": "NPV",
+   "text": "NPV 净现值：评估投资值不值 NPV(利率, 现金流1, [现金流2], ...)",
+   "section": "func",
+   "ref": "NPV"
+  },
+  {
+   "id": "func-IRR",
+   "type": "function",
+   "column": "C04",
+   "title": "IRR",
+   "text": "IRR 内部收益率 IRR(现金流数组, [预估值])",
+   "section": "func",
+   "ref": "IRR"
+  },
+  {
+   "id": "func-RATE",
+   "type": "function",
+   "column": "C04",
+   "title": "RATE",
+   "text": "RATE 利率 RATE(期数, 每期付款, 现值, [终值], [类型], [预估值])",
+   "section": "func",
+   "ref": "RATE"
+  },
+  {
+   "id": "func-NPER",
+   "type": "function",
+   "column": "C04",
+   "title": "NPER",
+   "text": "NPER 期数 NPER(利率, 每期付款, 现值, [终值], [类型])",
+   "section": "func",
+   "ref": "NPER"
+  },
+  {
+   "id": "func-SLN",
+   "type": "function",
+   "column": "C04",
+   "title": "SLN",
+   "text": "SLN 直线折旧法 SLN(原值, 残值, 使用年限)",
+   "section": "func",
+   "ref": "SLN"
+  },
+  {
+   "id": "func-DB",
+   "type": "function",
+   "column": "C04",
+   "title": "DB",
+   "text": "DB 余额递减折旧法 DB(原值, 残值, 使用年限, 第几年, [首年月份数])",
+   "section": "func",
+   "ref": "DB"
+  },
+  {
+   "id": "tut-interface",
+   "type": "tutorial",
+   "column": "C01",
+   "title": "认识 Excel 界面",
+   "text": "认识 Excel 界面 标题栏→功能区（选项卡+命令组）→编辑栏（显示/输入公式）→工作表区（行列交叉为单元格，如 B3）→工作表标签（底部切换/新增）→状态栏（快速看求和/平均）。记住：名称框可直接输入 B100 跳转，编辑栏是公式的家。 ",
+   "section": "tut",
+   "ref": "interface"
+  },
+  {
+   "id": "tut-enter",
+   "type": "tutorial",
+   "column": "C01",
+   "title": "数据录入技巧",
+   "text": "数据录入技巧 Enter 下移、Tab 右移、Shift+Enter 上移。选中区域后按 Enter 在区域内循环。Ctrl+Enter 批量填充选中区域。Alt+↓ 调出下拉历史。Ctrl+; 输入今天日期，Ctrl+Shift+; 输入当前时间。 ",
+   "section": "tut",
+   "ref": "enter"
+  },
+  {
+   "id": "tut-format",
+   "type": "tutorial",
+   "column": "C01",
+   "title": "单元格格式",
+   "text": "单元格格式 数字格式决定显示方式：常规/数值/货币/百分比/日期。Ctrl+1 打开设置单元格格式对话框。对齐、字体、边框、填充都在「开始」选项卡。格式刷（双击可多次使用）是排版神器。 ",
+   "section": "tut",
+   "ref": "format"
+  },
+  {
+   "id": "tut-sortfilter",
+   "type": "tutorial",
+   "column": "C01",
+   "title": "排序与筛选",
+   "text": "排序与筛选 筛选（Ctrl+Shift+L）：按条件只显示想要的行，箭头图标点开设条件。排序：按某列升序/降序，多关键字排序用「自定义排序」。注意：排序前先选中整个数据区域，否则会错乱！ ",
+   "section": "tut",
+   "ref": "sortfilter"
+  },
+  {
+   "id": "tut-print",
+   "type": "tutorial",
+   "column": "C01",
+   "title": "打印设置",
+   "text": "打印设置 页面布局→打印标题（顶端标题行每页重复）→设置打印区域→分页预览拖蓝线。页眉页脚加页码。打印前一定用「打印预览」检查。 ",
+   "section": "tut",
+   "ref": "print"
+  },
+  {
+   "id": "tut-pivottable",
+   "type": "tutorial",
+   "column": "C08",
+   "title": "数据透视表",
+   "text": "数据透视表 1. 为什么用数据透视表 想象你有一张 5000 行的销售明细：日期、销售员、产品、金额。老板问：\"每个销售员每个月的销售额是多少？\" - 不用透视表：写一堆 SUMIFS，还要手动列出所有销售员和月份，容易漏。 - 用透视表：**拖三下鼠标，3 秒出结果**。源数据增删行后点一下\"刷新\"即可更新。 核心思想：**把\"分组+聚合\"这个动作交给 Excel**，你只负责告诉它\"按什么分组、对什么求和\"。 2. 创建步骤 1. 点击源数据区域任意单元格（确保数据是规范的二维表：第一行是标题行，无合并单元格、无空行空列）。 2. 「插入」→「数据透视表」。 3. 选择放置位置：建议选\"新工作表\"，报表和源数据分开更清爽。 4. 右侧出现「数据透视表字段」窗格，开始拖字段。 > 数据规范是透视表好用的前提：一列只放一种含义的数据，日期列全是日期，不要出现\"合计\"行混在明细里。 3. 四个区域详解 操作要点： - 同一字段可以拖到多个区域（如\"日期\"同时拖到行和筛选器）。 - 拖错了直接把字段拖出窗格即可移除。 - 字段顺序决定层级：行区域里\"年份\"在上、\"月份\"在下，就是先按年再按月展开。 4. 值汇总方式 默认对数字字段\"求和\"，对文本字段\"计数\"。右键值字段 →「值字段设置」可切换： **显示方式**（同一对话框的「值显示方式」选项卡，更实用）： - **占总和的百分比**",
+   "section": "tut",
+   "ref": "pivottable"
+  },
+  {
+   "id": "tut-array-formulas",
+   "type": "tutorial",
+   "column": "C03",
+   "title": "数组公式",
+   "text": "数组公式 1. 先理解\"数组\"是什么 数组就是\"一串值\"。`{1,2,3}` 是横向数组，`{1;2;3}` 是纵向数组（分号换行）。Excel 公式本来就是按数组思维设计的： [代码示例] 这行公式的含义是\"把 A1、A2、A3 每个都乘以 2\"，得到 `{A1*2, A2*2, A3*2}`。普通公式只显示第一个结果，数组公式则能把全部结果\"摊开\"显示。 2. 传统数组公式（Ctrl+Shift+Enter） 在旧版本 Excel 里，想让公式返回多个结果： 1. 先选中**多个**单元格（结果要占几格就选几格）。 2. 输入公式，如 `=A1:A3*2`。 3. 按 **Ctrl+Shift+Enter**（不是只按 Enter）。 公式两端会自动加上花括号 `{=A1:A3*2}`，表示这是数组公式。**花括号是 Excel 自己加的，手工输入无效。** 经典用途——多条件计数（COUNTIFS 出现之前的写法，现在仍有人用）： [代码示例] 原理：`(A2:A100=\"销售部\")` 得到一串 TRUE/FALSE，`(B2:B100>5000)` 得到另一串，两串相乘（TRUE=1、FALSE=0），只有两个条件都成立的位置是 1，SUM 加总即为同时满足的人数。 3. 动态数组：新时代的写法 Microsoft 365 引入动态数组后，**只按 Enter**，结果自动",
+   "section": "tut",
+   "ref": "array-formulas"
+  },
+  {
+   "id": "tut-powerquery",
+   "type": "tutorial",
+   "column": "C09",
+   "title": "Power Query",
+   "text": "Power Query 1. Power Query 是什么 它是 Excel 里的一个**数据加工流水线**：你把\"获取→清洗→整理\"的每一步操作点一遍，Power Query 会把步骤记下来。下个月拿到新的源文件，点一下\"刷新\"，所有步骤自动重跑一遍。 和公式的区别： - 公式是\"算出一个结果\"，Power Query 是\"产出一张干净的表\"。 - 公式适合行内计算；Power Query 适合**结构性整理**：拆分列、转置、合并文件、逆透视——这些用公式写会很痛苦。 核心观念：**你点的每一步都会变成一行 M 代码**，记录在右侧「应用的步骤」里。可以回头修改、删除、调整顺序。 2. 获取数据 「数据」→「获取数据」，来源非常多： 选中来源后点「转换数据」进入 Power Query 编辑器，开始清洗。 3. 常用清洗步骤 ### 拆分列 一列里混着\"省-市-区\"？选中列 →「拆分列」→「按分隔符」→ 输入 `-`。一列变三列。也可以按固定宽度、按大小写转换处拆分。 ### 替换值 选中列 → 右键 →「替换值」：把\"男/女\"换成\"M/F\"，把\"N/A\"换成空。支持整列批量。 ### 填充 导出的报表经常只有第一行有\"部门\"名，下面是空的（合并单元格拆开后的样子）。选中列 →「转换」→「填充」→「向下」。空单元格自动填上上方的值，透视表分组的前提。 ### 更改类型 每列顶",
+   "section": "tut",
+   "ref": "powerquery"
+  },
+  {
+   "id": "tut-conditional-formatting",
+   "type": "tutorial",
+   "column": "C06",
+   "title": "条件格式",
+   "text": "条件格式 1. 核心原理 条件格式 = **\"规则\" + \"格式\"**。规则判断每个单元格\"达不达标\"，达标就套用你设的格式（红底、加粗等）。 关键理解：**格式是\"活\"的**。单元格的值变了，格式自动跟着变——和你手工涂色有本质区别。删掉规则（「开始」→「条件格式」→「清除规则」）就恢复原样，不破坏数据。 操作入口：「开始」→「条件格式」。先**选中要应用的区域**再设规则，这点最重要。 2. 内置规则：突出显示单元格规则 最常用的一类：「条件格式」→「突出显示单元格规则」： 每个规则点开后选格式（浅红填充深红文本等），也可以点「自定义格式」自己配。 3. 数据条：在单元格里画\"进度条\" 「条件格式」→「数据条」→ 选一种颜色。数值越大，条越长。 - 适合：完成率、销售额对比——一眼看出谁高谁低，不用看数字。 - 技巧：勾选「仅显示数据条」（管理规则→编辑规则），隐藏数字，只留条形，更像仪表盘。 - 注意：数据条的长度是按**选中区域内的最大/最小值**自动缩放的，区域不同不能直接比长短。 4. 色阶：热力图 「条件格式」→「色阶」→ 如\"绿-黄-红\"。数值映射到颜色渐变，**适合看分布**： - 12 个月的销售热力图，旺季月份自动变红。 - 学生成绩表，一眼看出哪科普遍偏低。 双色刻度和三色刻度：三色多一个中间色，适合\"中间值也想区分\"的场景。 5. 图标集：红绿灯 「条件格",
+   "section": "tut",
+   "ref": "conditional-formatting"
+  },
+  {
+   "id": "tut-data-validation",
+   "type": "tutorial",
+   "column": "C05",
+   "title": "数据验证",
+   "text": "数据验证 1. 数据验证是什么 「数据」→「数据验证」。它在**输入的那一刻**拦截不合法的值，而不是事后检查。 三个可配置项： 1. **设置**：允许输入什么（整数/小数/日期/序列/文本长度…）。 2. **输入信息**：选中单元格时弹出的提示（\"请输入 1-100 的整数\"）——主动引导。 3. **出错警告**：输错时的弹窗，样式可选\"停止\"（硬拦截）/\"警告\"（可继续）/\"信息\"（仅提醒）。 2. 下拉列表（最常用） ### 固定选项 选中单元格 → 数据验证 → 允许「序列」→ 来源填 `男,女`（中文逗号不行，必须用**英文逗号**分隔）。单元格右侧出现下拉箭头。 ### 引用区域 来源填 `=$F$2:$F$10`（部门清单）。清单变了下拉自动变。建议把清单放在单独的\"基础数据\"表，隐藏起来。 ### 动态二级联动：选\"省\"后\"市\"跟着变 这是数据验证的经典难题，标准解法是 **INDIRECT + 命名区域**： 1. 准备对照表：A 列是省名（广东、江苏…），B 列开始每列是一个省的城市，第一行是省名。 2. 给每个省的城市区域**定义名称**：选中广东的城市 → 名称框输入 `广东` → 回车。注意名称不能含空格，省名有空格先替换。 3. 输入限制 自定义公式的心法和条件格式一样：**相对左上角写**。选中 B2:B100 后公式写 `=LEN(B2)=11",
+   "section": "tut",
+   "ref": "data-validation"
+  },
+  {
+   "id": "tut-pivot_adv-0",
+   "type": "tutorial",
+   "column": "C08",
+   "title": "基础操作",
+   "text": "基础操作 选中数据→插入→数据透视表。四个区：行、列、值、筛选。值字段默认求和，右键可改计数/平均/最大值。 ",
+   "section": "tut",
+   "ref": "pivot_adv-0"
+  },
+  {
+   "id": "tut-pivot_adv-1",
+   "type": "tutorial",
+   "column": "C08",
+   "title": "分组统计",
+   "text": "分组统计 日期右键→组合：按年/季度/月分组。数字右键→组合：按区间分组（如成绩段 60-70/70-80）。 ",
+   "section": "tut",
+   "ref": "pivot_adv-1"
+  },
+  {
+   "id": "tut-pivot_adv-2",
+   "type": "tutorial",
+   "column": "C08",
+   "title": "多维分析",
+   "text": "多维分析 行放「区域」、列放「季度」、值放「销售额」，一眼看交叉汇总。值显示方式→差异/百分比，做同比环比。 ",
+   "section": "tut",
+   "ref": "pivot_adv-2"
+  },
+  {
+   "id": "tut-pivot_adv-3",
+   "type": "tutorial",
+   "column": "C08",
+   "title": "切片器",
+   "text": "切片器 插入切片器→选字段，点按钮即筛选，多表联动（报表连接）。比筛选直观 10 倍，汇报必备。 ",
+   "section": "tut",
+   "ref": "pivot_adv-3"
+  },
+  {
+   "id": "tut-pivot_adv-4",
+   "type": "tutorial",
+   "column": "C08",
+   "title": "时间轴",
+   "text": "时间轴 日期字段专用筛选器，按年/季度/月/日切换，比切片器更适合时间。 ",
+   "section": "tut",
+   "ref": "pivot_adv-4"
+  },
+  {
+   "id": "tut-pivot_adv-5",
+   "type": "tutorial",
+   "column": "C08",
+   "title": "数据模型",
+   "text": "数据模型 多表关联：把订单表+产品表都添加到数据模型，用字段关联，一张透视表跨表分析。Power Pivot 的地基。 ",
+   "section": "tut",
+   "ref": "pivot_adv-5"
+  },
+  {
+   "id": "tut-pq_adv-0",
+   "type": "tutorial",
+   "column": "C09",
+   "title": "导入 CSV",
+   "text": "导入 CSV 数据→获取数据→从文本/CSV。乱码？改编码为 65001（UTF-8）或 936（GBK）。 ",
+   "section": "tut",
+   "ref": "pq_adv-0"
+  },
+  {
+   "id": "tut-pq_adv-1",
+   "type": "tutorial",
+   "column": "C09",
+   "title": "导入网页",
+   "text": "导入网页 数据→自网站→粘贴 URL。网页表格结构变化时需重新检查步骤。 ",
+   "section": "tut",
+   "ref": "pq_adv-1"
+  },
+  {
+   "id": "tut-pq_adv-2",
+   "type": "tutorial",
+   "column": "C09",
+   "title": "数据清洗",
+   "text": "数据清洗 删空行、替换值、填充、修剪、分列、更改类型。每一步都记录在右侧「应用的步骤」，可回退。 ",
+   "section": "tut",
+   "ref": "pq_adv-2"
+  },
+  {
+   "id": "tut-pq_adv-3",
+   "type": "tutorial",
+   "column": "C09",
+   "title": "合并表",
+   "text": "合并表 追加查询=上下堆叠（多月数据合并）；合并查询=左右连接（VLOOKUP 的批量版）。 ",
+   "section": "tut",
+   "ref": "pq_adv-3"
+  },
+  {
+   "id": "tut-pq_adv-4",
+   "type": "tutorial",
+   "column": "C09",
+   "title": "拆分列",
+   "text": "拆分列 按分隔符/字符数拆分。\"2026-10-01\" 按 \"-\" 拆成年/月/日三列。 ",
+   "section": "tut",
+   "ref": "pq_adv-4"
+  },
+  {
+   "id": "tut-pq_adv-5",
+   "type": "tutorial",
+   "column": "C09",
+   "title": "自动刷新",
+   "text": "自动刷新 关闭并上载后，源文件更新→右键刷新。还可设置打开文件自动刷新：数据→查询属性。 ",
+   "section": "tut",
+   "ref": "pq_adv-5"
+  },
+  {
+   "id": "tut-ppivot-0",
+   "type": "tutorial",
+   "column": "C10",
+   "title": "数据模型",
+   "text": "数据模型 Power Pivot→添加到数据模型。多表不用 VLOOKUP，用关系关联，百万行不卡。 ",
+   "section": "tut",
+   "ref": "ppivot-0"
+  },
+  {
+   "id": "tut-ppivot-1",
+   "type": "tutorial",
+   "column": "C10",
+   "title": "多表关联",
+   "text": "多表关联 关系视图拖线连主外键。一对多：产品表（1）→订单表（多）。 ",
+   "section": "tut",
+   "ref": "ppivot-1"
+  },
+  {
+   "id": "tut-ppivot-2",
+   "type": "tutorial",
+   "column": "C10",
+   "title": "DAX 公式入门",
+   "text": "DAX 公式入门 DAX 长得像 Excel 函数但思维是列式。SUM(表[列])、CALCULATE(表达式, 筛选)、RELATED(取关联表字段)。 ",
+   "section": "tut",
+   "ref": "ppivot-2"
+  },
+  {
+   "id": "tut-ppivot-3",
+   "type": "tutorial",
+   "column": "C10",
+   "title": "常用 DAX",
+   "text": "常用 DAX 总销售额 =SUM(订单[金额]) 当年累计 =CALCULATE([总销售额], DATESYTD(日期表[日期])) 同比 =DIVIDE([总销售额]-[去年同期], [去年同期]) ",
+   "section": "tut",
+   "ref": "ppivot-3"
+  },
+  {
+   "id": "tut-ppivot-4",
+   "type": "tutorial",
+   "column": "C10",
+   "title": "KPI 指标",
+   "text": "KPI 指标 在数据模型中建度量值：销售额、利润率、完成率。度量值随切片器自动重算，一处定义处处用。 ",
+   "section": "tut",
+   "ref": "ppivot-4"
+  },
+  {
+   "id": "tut-cfmt-0",
+   "type": "tutorial",
+   "column": "C06",
+   "title": "颜色标记",
+   "text": "颜色标记 开始→条件格式→突出显示单元格规则：大于/小于/介于/等于，自动上色。 ",
+   "section": "tut",
+   "ref": "cfmt-0"
+  },
+  {
+   "id": "tut-cfmt-1",
+   "type": "tutorial",
+   "column": "C06",
+   "title": "数据条",
+   "text": "数据条 在单元格内画横向条形图，数值大小一目了然。适合业绩对比。 ",
+   "section": "tut",
+   "ref": "cfmt-1"
+  },
+  {
+   "id": "tut-cfmt-2",
+   "type": "tutorial",
+   "column": "C06",
+   "title": "图标集",
+   "text": "图标集 红绿灯/箭头/旗帜，按阈值自动打标。管理驾驶舱常用。 ",
+   "section": "tut",
+   "ref": "cfmt-2"
+  },
+  {
+   "id": "tut-cfmt-3",
+   "type": "tutorial",
+   "column": "C06",
+   "title": "自定义公式",
+   "text": "自定义公式 新建规则→使用公式。注意 $ 锁定：=$B2>100 整行变色（选中整行时列锁定行不锁定）。 ",
+   "section": "tut",
+   "ref": "cfmt-3"
+  },
+  {
+   "id": "tut-cfmt-4",
+   "type": "tutorial",
+   "column": "C06",
+   "title": "案例：自动标红逾期",
+   "text": "案例：自动标红逾期 =AND($E2<TODAY(),$G2<>\"已完成\") → 逾期未完成的整行变红。 ",
+   "section": "tut",
+   "ref": "cfmt-4"
+  },
+  {
+   "id": "tut-cfmt-5",
+   "type": "tutorial",
+   "column": "C06",
+   "title": "案例：高亮重复",
+   "text": "案例：高亮重复 选中区域→条件格式→突出显示→重复值。或公式 =COUNTIF($A:$A,$A2)>1 自定义颜色。 ",
+   "section": "tut",
+   "ref": "cfmt-5"
+  },
+  {
+   "id": "tut-dval-0",
+   "type": "tutorial",
+   "column": "C05",
+   "title": "下拉菜单",
+   "text": "下拉菜单 数据→数据验证→序列，来源输入：男,女（英文逗号）。或引用一列区域。 ",
+   "section": "tut",
+   "ref": "dval-0"
+  },
+  {
+   "id": "tut-dval-1",
+   "type": "tutorial",
+   "column": "C05",
+   "title": "联动下拉框",
+   "text": "联动下拉框 一级菜单选「省份」→二级自动出该省城市。做法：定义名称+INDIRECT($A2)。先做各省名单，再建一级下拉，二级来源 =INDIRECT(A2)。 ",
+   "section": "tut",
+   "ref": "dval-1"
+  },
+  {
+   "id": "tut-dval-2",
+   "type": "tutorial",
+   "column": "C05",
+   "title": "日期限制",
+   "text": "日期限制 数据验证→日期→介于 2026-1-1 到 2026-12-31，只能输今年日期。 ",
+   "section": "tut",
+   "ref": "dval-2"
+  },
+  {
+   "id": "tut-dval-3",
+   "type": "tutorial",
+   "column": "C05",
+   "title": "输入规则",
+   "text": "输入规则 整数/小数/文本长度：手机号设文本长度=11；年龄设整数介于 18-65。出错警告可自定义提示语。 ",
+   "section": "tut",
+   "ref": "dval-3"
+  },
+  {
+   "id": "tut-dval-4",
+   "type": "tutorial",
+   "column": "C05",
+   "title": "圈释无效数据",
+   "text": "圈释无效数据 数据→数据验证→圈释无效数据，已有违规的一眼现形。 ",
+   "section": "tut",
+   "ref": "dval-4"
+  },
+  {
+   "id": "tut-choose",
+   "type": "tutorial",
+   "column": "C07",
+   "title": "图表类型选择指南",
+   "text": "图表类型选择指南 比较大小用柱状图/条形图，看趋势用折线图，看占比用饼图/环形图（类别≤6），看关系用散点图/气泡图，看分布用直方图/箱线图。双坐标用组合图。记住：一图只讲一件事。 ",
+   "section": "tut",
+   "ref": "choose"
+  },
+  {
+   "id": "tut-make",
+   "type": "tutorial",
+   "column": "C07",
+   "title": "图表制作步骤",
+   "text": "图表制作步骤 选中数据→插入→选图表类型→切换行列（数据反了就点它）→添加数据标签→调坐标轴。数据源：右键→选择数据，可增删系列。 ",
+   "section": "tut",
+   "ref": "make"
+  },
+  {
+   "id": "tut-beauty",
+   "type": "tutorial",
+   "column": "C07",
+   "title": "图表美化技巧",
+   "text": "图表美化技巧 删网格线、删图例（直接标数据）、统一配色（莫兰迪/商务蓝）、加粗标题讲结论、坐标轴从 0 开始（柱状图）。少即是多：每删一个元素，图表清晰一度。 ",
+   "section": "tut",
+   "ref": "beauty"
+  },
+  {
+   "id": "tut-dynamic",
+   "type": "tutorial",
+   "column": "C07",
+   "title": "动态图表",
+   "text": "动态图表 下拉菜单联动图表：数据验证做下拉→INDEX+MATCH 取数→图表数据源引用。用复选框控制系列显示。用 OFFSET 做动态区域，新增数据自动进图。 ",
+   "section": "tut",
+   "ref": "dynamic"
+  },
+  {
+   "id": "tut-scenario-0",
+   "type": "tutorial",
+   "column": "C13",
+   "title": "财务报销统计",
+   "text": "财务报销统计 每月上百条报销记录，自动汇总到部门/类别 ",
+   "section": "tut",
+   "ref": "scenario-0"
+  },
+  {
+   "id": "tut-scenario-1",
+   "type": "tutorial",
+   "column": "C13",
+   "title": "销售业绩分析",
+   "text": "销售业绩分析 销售明细表 → 自动排名、环比、Top10 ",
+   "section": "tut",
+   "ref": "scenario-1"
+  },
+  {
+   "id": "tut-scenario-2",
+   "type": "tutorial",
+   "column": "C13",
+   "title": "人事考勤统计",
+   "text": "人事考勤统计 打卡记录 → 迟到/早退/缺勤自动统计 ",
+   "section": "tut",
+   "ref": "scenario-2"
+  },
+  {
+   "id": "tut-scenario-3",
+   "type": "tutorial",
+   "column": "C13",
+   "title": "库存预警管理",
+   "text": "库存预警管理 出入库流水 → 实时库存 + 低库存预警 ",
+   "section": "tut",
+   "ref": "scenario-3"
+  },
+  {
+   "id": "tut-scenario-4",
+   "type": "tutorial",
+   "column": "C13",
+   "title": "经营仪表盘",
+   "text": "经营仪表盘 一页看懂公司经营：KPI 卡片 + 趋势图 + 明细 ",
+   "section": "tut",
+   "ref": "scenario-4"
+  },
+  {
+   "id": "tip-数据录入技巧-0",
+   "type": "tip",
+   "column": "C01",
+   "title": "自动填充序号",
+   "text": "数据录入技巧 自动填充序号 首格输入 1、第二格输入 2，选中两格拖填充柄；或用 =ROW()-1 下拉，删行不中断",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据录入技巧-1",
+   "type": "tip",
+   "column": "C01",
+   "title": "自动生成流水号",
+   "text": "数据录入技巧 自动生成流水号 用 =\"NO.\"&TEXT(ROW()-1,\"0000\") 下拉，序号自动补零对齐",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据录入技巧-2",
+   "type": "tip",
+   "column": "C01",
+   "title": "快速录入当前日期",
+   "text": "数据录入技巧 快速录入当前日期 按 Ctrl+; 直接输入今天日期（静态值，不会每天变）",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据录入技巧-3",
+   "type": "tip",
+   "column": "C01",
+   "title": "快速录入当前时间",
+   "text": "数据录入技巧 快速录入当前时间 按 Ctrl+Shift+; 输入当前时间；日期时间一起按 Ctrl+; 空格 Ctrl+Shift+;",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据录入技巧-4",
+   "type": "tip",
+   "column": "C01",
+   "title": "快速输入重复内容",
+   "text": "数据录入技巧 快速输入重复内容 输入前几个字后按 Alt+↓，从本列已录入的值里直接选",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据录入技巧-5",
+   "type": "tip",
+   "column": "C01",
+   "title": "下拉选择录入",
+   "text": "数据录入技巧 下拉选择录入 数据→数据验证→序列，来源输入 男,女，只能点选不能乱填",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据录入技巧-6",
+   "type": "tip",
+   "column": "C01",
+   "title": "联动下拉菜单",
+   "text": "数据录入技巧 联动下拉菜单 一级菜单做命名区域，二级数据验证→序列用 =INDIRECT($A2) 引用",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据录入技巧-7",
+   "type": "tip",
+   "column": "C01",
+   "title": "防止重复输入",
+   "text": "数据录入技巧 防止重复输入 数据验证→自定义，公式 =COUNTIF(A:A,A1)=1，重复就报错",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据录入技巧-8",
+   "type": "tip",
+   "column": "C01",
+   "title": "批量导入数据",
+   "text": "数据录入技巧 批量导入数据 数据→获取数据→从文本/CSV，一次把外部数据整份导进来",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据清洗技巧-0",
+   "type": "tip",
+   "column": "C05",
+   "title": "一秒删除空行",
+   "text": "数据清洗技巧 一秒删除空行 选中区域→Ctrl+G 定位→空值→右键删除整行",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据清洗技巧-1",
+   "type": "tip",
+   "column": "C05",
+   "title": "删除空列",
+   "text": "数据清洗技巧 删除空列 选中区域→Ctrl+G 空值→右键删除整列（先备份原表）",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据清洗技巧-2",
+   "type": "tip",
+   "column": "C05",
+   "title": "删除重复值",
+   "text": "数据清洗技巧 删除重复值 数据→删除重复项，勾选关键列，一键去重",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据清洗技巧-3",
+   "type": "tip",
+   "column": "C05",
+   "title": "合并重复记录",
+   "text": "数据清洗技巧 合并重复记录 数据透视表按关键字段分组，对金额求和、对订单计数",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据清洗技巧-4",
+   "type": "tip",
+   "column": "C05",
+   "title": "去除隐藏空格",
+   "text": "数据清洗技巧 去除隐藏空格 =TRIM(A1) 去首尾空格；=CLEAN(A1) 去换行等不可见字符",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据清洗技巧-5",
+   "type": "tip",
+   "column": "C05",
+   "title": "去除换行符",
+   "text": "数据清洗技巧 去除换行符 查找替换：查找内容处按 Ctrl+J，替换为留空，全部替换",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据清洗技巧-6",
+   "type": "tip",
+   "column": "C05",
+   "title": "统一日期格式",
+   "text": "数据清洗技巧 统一日期格式 选中列→数据→分列→下一步→日期 YMD，一次把文本日期转正",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据清洗技巧-7",
+   "type": "tip",
+   "column": "C05",
+   "title": "统一手机号格式",
+   "text": "数据清洗技巧 统一手机号格式 先设为文本格式再录入；已变形用 =TEXT(A1,\"0\") 恢复显示",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据清洗技巧-8",
+   "type": "tip",
+   "column": "C05",
+   "title": "数字文本互转",
+   "text": "数据清洗技巧 数字文本互转 数字转文本用 =TEXT(A1,\"0\")；文本转数字用 =A1*1 或分列→常规",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-0",
+   "type": "tip",
+   "column": "C04",
+   "title": "VLOOKUP精确匹配",
+   "text": "函数应用技巧 VLOOKUP精确匹配 =VLOOKUP(值,区域,列号,0)，第四参数写 0 才是精确查找",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-1",
+   "type": "tip",
+   "column": "C04",
+   "title": "VLOOKUP反向查询",
+   "text": "函数应用技巧 VLOOKUP反向查询 右查左改用 =INDEX(B:B,MATCH(值,A:A,0))",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-2",
+   "type": "tip",
+   "column": "C04",
+   "title": "XLOOKUP一步到位",
+   "text": "函数应用技巧 XLOOKUP一步到位 =XLOOKUP(值,查找列,返回列,\"未找到\")，不用数第几列",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-3",
+   "type": "tip",
+   "column": "C04",
+   "title": "INDEX+MATCH多条件",
+   "text": "函数应用技巧 INDEX+MATCH多条件 =INDEX(返回列,MATCH(1,(条件列1=条件1)*(条件列2=条件2),0))",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-4",
+   "type": "tip",
+   "column": "C04",
+   "title": "模糊匹配查询",
+   "text": "函数应用技巧 模糊匹配查询 =VLOOKUP(\"*\"&关键词&\"*\",区域,2,0)，通配符前后包夹",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-5",
+   "type": "tip",
+   "column": "C04",
+   "title": "双向查询",
+   "text": "函数应用技巧 双向查询 =INDEX(区域,MATCH(行值,首列,0),MATCH(列值,首行,0)) 行列交叉定位",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-6",
+   "type": "tip",
+   "column": "C04",
+   "title": "跨表查询",
+   "text": "函数应用技巧 跨表查询 =VLOOKUP(A2,INDIRECT(\"'\"&B2&\"'!A:B\"),2,0)，按表名动态切换",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-7",
+   "type": "tip",
+   "column": "C04",
+   "title": "动态查询面板",
+   "text": "函数应用技巧 动态查询面板 数据验证做下拉选关键词，XLOOKUP 引用该单元格，选谁查谁",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-8",
+   "type": "tip",
+   "column": "C04",
+   "title": "多条件统计",
+   "text": "函数应用技巧 多条件统计 =SUMIFS(求和列,条件列1,条件1,条件列2,条件2)，条件可继续加",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-函数应用技巧-9",
+   "type": "tip",
+   "column": "C04",
+   "title": "动态汇总区域",
+   "text": "函数应用技巧 动态汇总区域 =SUM(OFFSET(首格,0,0,COUNTA(列),1))，新增行自动纳入",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-文本处理技巧-0",
+   "type": "tip",
+   "column": "C04",
+   "title": "提取姓名中的姓",
+   "text": "文本处理技巧 提取姓名中的姓 =LEFT(A2,1)，复姓手动处理或用快速填充",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-文本处理技巧-1",
+   "type": "tip",
+   "column": "C04",
+   "title": "提取手机号",
+   "text": "文本处理技巧 提取手机号 固定位置用 =MID(A2,12,11)；不固定用 Ctrl+E 快速填充",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-文本处理技巧-2",
+   "type": "tip",
+   "column": "C04",
+   "title": "提取邮箱",
+   "text": "文本处理技巧 提取邮箱 用 Ctrl+E 按示例提取；或 =MID(A2,FIND(\"@\",A2)-6,20) 再 TRIM",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-文本处理技巧-3",
+   "type": "tip",
+   "column": "C04",
+   "title": "分离姓和名",
+   "text": "文本处理技巧 分离姓和名 姓 =LEFT(A2,1)，名 =RIGHT(A2,LEN(A2)-1)",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-文本处理技巧-4",
+   "type": "tip",
+   "column": "C04",
+   "title": "中英文拆分",
+   "text": "文本处理技巧 中英文拆分 旁边列手写一行英文示例，选中→Ctrl+E，自动按规律拆分",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-文本处理技巧-5",
+   "type": "tip",
+   "column": "C04",
+   "title": "字符串替换",
+   "text": "文本处理技巧 字符串替换 =SUBSTITUTE(A2,\"旧\",\"新\")，嵌套可做多重替换",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-文本处理技巧-6",
+   "type": "tip",
+   "column": "C04",
+   "title": "批量修改内容",
+   "text": "文本处理技巧 批量修改内容 Ctrl+H 查找替换，支持通配符 * ?，可限定范围",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-文本处理技巧-7",
+   "type": "tip",
+   "column": "C04",
+   "title": "批量添加前缀",
+   "text": "文本处理技巧 批量添加前缀 =\"前缀\"&A2；纯显示用自定义格式 \"前缀\"@",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-文本处理技巧-8",
+   "type": "tip",
+   "column": "C04",
+   "title": "批量添加后缀",
+   "text": "文本处理技巧 批量添加后缀 =A2&\"元\"；数字加单位也可用自定义格式 0\"元\"",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-日期时间技巧-0",
+   "type": "tip",
+   "column": "C04",
+   "title": "计算年龄",
+   "text": "日期时间技巧 计算年龄 =DATEDIF(出生日期,TODAY(),\"Y\")，周岁一键得出",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-日期时间技巧-1",
+   "type": "tip",
+   "column": "C04",
+   "title": "计算工龄",
+   "text": "日期时间技巧 计算工龄 =DATEDIF(入职日,TODAY(),\"Y\")&\"年\"&DATEDIF(入职日,TODAY(),\"YM\")&\"月\"",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-日期时间技巧-2",
+   "type": "tip",
+   "column": "C04",
+   "title": "工作日计算",
+   "text": "日期时间技巧 工作日计算 =NETWORKDAYS(开始,结束)，自动排除周六日",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-日期时间技巧-3",
+   "type": "tip",
+   "column": "C04",
+   "title": "节假日排除",
+   "text": "日期时间技巧 节假日排除 =NETWORKDAYS(开始,结束,节假日区域)，第三参数放假日清单",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-日期时间技巧-4",
+   "type": "tip",
+   "column": "C04",
+   "title": "倒计时计算",
+   "text": "日期时间技巧 倒计时计算 =目标日期-TODAY()&\"天\"，过期变负数可标红",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-日期时间技巧-5",
+   "type": "tip",
+   "column": "C04",
+   "title": "取月初日期",
+   "text": "日期时间技巧 取月初日期 =EOMONTH(日期,-1)+1，上月月末加一天即本月初",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-日期时间技巧-6",
+   "type": "tip",
+   "column": "C04",
+   "title": "取月末日期",
+   "text": "日期时间技巧 取月末日期 =EOMONTH(日期,0)，自动处理大小月和闰年",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-日期时间技巧-7",
+   "type": "tip",
+   "column": "C04",
+   "title": "季度统计",
+   "text": "日期时间技巧 季度统计 辅助列 =\"Q\"&INT((MONTH(日期)+2)/3)，再透视表汇总",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-日期时间技巧-8",
+   "type": "tip",
+   "column": "C04",
+   "title": "周数计算",
+   "text": "日期时间技巧 周数计算 =WEEKNUM(日期,2)，第二参数 2 表示周一起始",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-格式美化技巧-0",
+   "type": "tip",
+   "column": "C02",
+   "title": "隔行变色",
+   "text": "格式美化技巧 隔行变色 条件格式→新建规则→公式 =MOD(ROW(),2)=0，设填充色",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-格式美化技巧-1",
+   "type": "tip",
+   "column": "C02",
+   "title": "自动高亮整行",
+   "text": "格式美化技巧 自动高亮整行 选中区域→条件格式公式 =$A1=\"重点\"，整行自动上色",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-格式美化技巧-2",
+   "type": "tip",
+   "column": "C02",
+   "title": "数据条",
+   "text": "格式美化技巧 数据条 开始→条件格式→数据条，数值大小一目了然",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-格式美化技巧-3",
+   "type": "tip",
+   "column": "C02",
+   "title": "图标集",
+   "text": "格式美化技巧 图标集 条件格式→图标集，达标/预警/异常自动打对勾感叹号",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-格式美化技巧-4",
+   "type": "tip",
+   "column": "C02",
+   "title": "自动标红逾期",
+   "text": "格式美化技巧 自动标红逾期 条件格式公式 =A2<TODAY()，过期日期自动变红",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-格式美化技巧-5",
+   "type": "tip",
+   "column": "C02",
+   "title": "自动标绿达标",
+   "text": "格式美化技巧 自动标绿达标 =B2>=目标值 标绿，低于目标再加一条标红",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-格式美化技巧-6",
+   "type": "tip",
+   "column": "C02",
+   "title": "动态颜色变化",
+   "text": "格式美化技巧 动态颜色变化 条件格式+公式绑定数值，数据变颜色自动跟",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-格式美化技巧-7",
+   "type": "tip",
+   "column": "C02",
+   "title": "重复值高亮",
+   "text": "格式美化技巧 重复值高亮 条件格式→突出显示单元格规则→重复值",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-格式美化技巧-8",
+   "type": "tip",
+   "column": "C02",
+   "title": "仪表盘美化",
+   "text": "格式美化技巧 仪表盘美化 大字号 KPI + 条件格式图标 + 迷你图，注意留白对齐",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-图表技巧-0",
+   "type": "tip",
+   "column": "C07",
+   "title": "一键生成图表",
+   "text": "图表技巧 一键生成图表 选中数据按 Alt+F1 生成嵌入图表；F11 生成独立图表工作表",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-图表技巧-1",
+   "type": "tip",
+   "column": "C07",
+   "title": "动态图表",
+   "text": "图表技巧 动态图表 定义名称 =OFFSET(首格,0,0,COUNTA(列),1) 做数据源，新增自动扩展",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-图表技巧-2",
+   "type": "tip",
+   "column": "C07",
+   "title": "手绘甘特图",
+   "text": "图表技巧 手绘甘特图 条形图：开始日期为起点、工期为长度，逆序类别+调透明度",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-图表技巧-3",
+   "type": "tip",
+   "column": "C07",
+   "title": "漏斗图",
+   "text": "图表技巧 漏斗图 插入→漏斗图（2016 及以上），看各环节转化流失",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-图表技巧-4",
+   "type": "tip",
+   "column": "C07",
+   "title": "KPI达成图",
+   "text": "图表技巧 KPI达成图 环形图 + 大数字文本框，目标完成率一目了然",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-图表技巧-5",
+   "type": "tip",
+   "column": "C07",
+   "title": "销售驾驶舱",
+   "text": "图表技巧 销售驾驶舱 切片器 + 数据透视表 + 组合图，点选维度图表联动",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-图表技巧-6",
+   "type": "tip",
+   "column": "C07",
+   "title": "地图图表",
+   "text": "图表技巧 地图图表 插入→地图（365），按省份/国家数值自动着色",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-图表技巧-7",
+   "type": "tip",
+   "column": "C07",
+   "title": "单元格热力图",
+   "text": "图表技巧 单元格热力图 不用图表，条件格式→色阶直接在区域上画热力分布",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-打印技巧-0",
+   "type": "tip",
+   "column": "C01",
+   "title": "一页打印",
+   "text": "打印技巧 一页打印 页面布局→宽度/高度设为 1 页，超宽表格自动缩放",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-打印技巧-1",
+   "type": "tip",
+   "column": "C01",
+   "title": "打印标题行",
+   "text": "打印技巧 打印标题行 页面布局→打印标题→顶端标题行设为 $1:$1，每页重复表头",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-打印技巧-2",
+   "type": "tip",
+   "column": "C01",
+   "title": "自动分页调整",
+   "text": "打印技巧 自动分页调整 视图→分页预览，拖动蓝色分页线控制每页内容",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-打印技巧-3",
+   "type": "tip",
+   "column": "C01",
+   "title": "打印网格线",
+   "text": "打印技巧 打印网格线 页面设置→工作表→勾选网格线，表格线才能印出来",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-打印技巧-4",
+   "type": "tip",
+   "column": "C01",
+   "title": "打印批注",
+   "text": "打印技巧 打印批注 页面设置→工作表→批注选“工作表末尾”，批注集中打印",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-打印技巧-5",
+   "type": "tip",
+   "column": "C01",
+   "title": "横向打印",
+   "text": "打印技巧 横向打印 页面布局→纸张方向→横向，列多的表横过来打",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-打印技巧-6",
+   "type": "tip",
+   "column": "C01",
+   "title": "批量打印多表",
+   "text": "打印技巧 批量打印多表 按住 Ctrl 点多个工作表标签→文件→打印，一次全打",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-打印技巧-7",
+   "type": "tip",
+   "column": "C01",
+   "title": "只打印选中区域",
+   "text": "打印技巧 只打印选中区域 选中区域→页面布局→打印区域→设置打印区域",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-快捷键技巧-0",
+   "type": "tip",
+   "column": "C01",
+   "title": "Ctrl+D 向下填充",
+   "text": "快捷键技巧 Ctrl+D 向下填充 选中区域按 Ctrl+D，把最上一格内容/公式填满下方",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-快捷键技巧-1",
+   "type": "tip",
+   "column": "C01",
+   "title": "Ctrl+R 向右填充",
+   "text": "快捷键技巧 Ctrl+R 向右填充 选中区域按 Ctrl+R，把最左一格内容填满右侧",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-快捷键技巧-2",
+   "type": "tip",
+   "column": "C01",
+   "title": "Ctrl+E 快速填充",
+   "text": "快捷键技巧 Ctrl+E 快速填充 手写一个示例后按 Ctrl+E，自动识别规律拆分合并，提取手机号神器",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-快捷键技巧-3",
+   "type": "tip",
+   "column": "C01",
+   "title": "Alt+= 一键求和",
+   "text": "快捷键技巧 Alt+= 一键求和 自动对上方或左侧连续数字求和，月末汇总最快",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-快捷键技巧-4",
+   "type": "tip",
+   "column": "C01",
+   "title": "F4 重复与锁定",
+   "text": "快捷键技巧 F4 重复与锁定 重复上一步操作；在公式中按 F4 切换 $ 绝对引用",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-快捷键技巧-5",
+   "type": "tip",
+   "column": "C01",
+   "title": "Ctrl+Shift+L 筛选",
+   "text": "快捷键技巧 Ctrl+Shift+L 筛选 一键开关自动筛选，不用再去点菜单",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-快捷键技巧-6",
+   "type": "tip",
+   "column": "C01",
+   "title": "Ctrl+方向键跳转",
+   "text": "快捷键技巧 Ctrl+方向键跳转 瞬间跳到数据区域边缘，万行表格秒穿越",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-快捷键技巧-7",
+   "type": "tip",
+   "column": "C01",
+   "title": "Ctrl+空格选整列",
+   "text": "快捷键技巧 Ctrl+空格选整列 选中当前整列；Shift+空格选中整行",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-快捷键技巧-8",
+   "type": "tip",
+   "column": "C01",
+   "title": "Ctrl+` 公式透视",
+   "text": "快捷键技巧 Ctrl+` 公式透视 切换显示公式与计算结果，查错时一眼看穿",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据透视表技巧-0",
+   "type": "tip",
+   "column": "C08",
+   "title": "一键创建数据透视表",
+   "text": "数据透视表技巧 一键创建数据透视表 选中数据区域任意单元格 → 插入 → 数据透视表 → 确定，3 秒生成汇总。记住：源数据第一行必须是标题行，且不能有合并单元格。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据透视表技巧-1",
+   "type": "tip",
+   "column": "C08",
+   "title": "拖字段三步出报表",
+   "text": "数据透视表技巧 拖字段三步出报表 行：销售员；列：月份；值：销售额。拖三个字段，一张交叉统计表就出来了，比写几十个 SUMIFS 快十倍。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据透视表技巧-2",
+   "type": "tip",
+   "column": "C08",
+   "title": "值字段设置",
+   "text": "数据透视表技巧 值字段设置 值区域默认是「求和」，点字段旁小箭头 → 值字段设置，可切换计数/平均值/最大值。同一字段拖两次可同时看求和与占比。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据透视表技巧-3",
+   "type": "tip",
+   "column": "C08",
+   "title": "日期自动分组",
+   "text": "数据透视表技巧 日期自动分组 右键日期字段 → 组合 → 按月/季度/年分组，一键把 365 天的明细变成 12 个月汇总。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据透视表技巧-4",
+   "type": "tip",
+   "column": "C08",
+   "title": "切片器秒筛选",
+   "text": "数据透视表技巧 切片器秒筛选 数据透视表分析 → 插入切片器 → 勾选「部门」。点一下按钮报表即时过滤，开会演示神器。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据透视表技巧-5",
+   "type": "tip",
+   "column": "C08",
+   "title": "值显示方式",
+   "text": "数据透视表技巧 值显示方式 右键值字段 → 值显示方式 → 占总和的百分比，直接算出每个销售员的业绩占比，不用再写公式。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据透视表技巧-6",
+   "type": "tip",
+   "column": "C08",
+   "title": "一键刷新",
+   "text": "数据透视表技巧 一键刷新 源数据增删行后，在透视表上右键 → 刷新即可更新。建议把源数据转为「表格」（Ctrl+T），新增行自动纳入。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-数据透视表技巧-7",
+   "type": "tip",
+   "column": "C08",
+   "title": "更改数据源",
+   "text": "数据透视表技巧 更改数据源 数据多了要换表？数据透视表分析 → 更改数据源，重新框选区域，之前搭好的版式原样保留。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-Power Query技巧-0",
+   "type": "tip",
+   "column": "C09",
+   "title": "从表格导入 PQ",
+   "text": "Power Query技巧 从表格导入 PQ 选中数据 → 数据 → 自表格/区域，一键进入 Power Query 编辑器。从此告别重复的手工清洗。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-Power Query技巧-1",
+   "type": "tip",
+   "column": "C09",
+   "title": "一键删除空行空列",
+   "text": "Power Query技巧 一键删除空行空列 在 PQ 里选中列 → 右键 → 删除空行；开始 → 删除列 → 删除空列。刷新后新数据自动同样处理。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-Power Query技巧-2",
+   "type": "tip",
+   "column": "C09",
+   "title": "分列拆数据",
+   "text": "Power Query技巧 分列拆数据 选中列 → 拆分列 → 按分隔符（如 - 或空格），身份证拆生日、地址拆省市，一步到位。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-Power Query技巧-3",
+   "type": "tip",
+   "column": "C09",
+   "title": "合并查询代替 VLOOKUP",
+   "text": "Power Query技巧 合并查询代替 VLOOKUP 开始 → 合并查询，把两表按关键列连接，比 VLOOKUP 快且不会列错位。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-Power Query技巧-4",
+   "type": "tip",
+   "column": "C09",
+   "title": "逆透视整理报表",
+   "text": "Power Query技巧 逆透视整理报表 选中月份列 → 转换 → 逆透视列，把横表变纵表，透视表最爱这种干净数据。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-Power Query技巧-5",
+   "type": "tip",
+   "column": "C09",
+   "title": "替换值批量清洗",
+   "text": "Power Query技巧 替换值批量清洗 选中列 → 右键 → 替换值，把「男/女」换成「先生/女士」，或把错别字批量修正。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-Power Query技巧-6",
+   "type": "tip",
+   "column": "C09",
+   "title": "添加条件列",
+   "text": "Power Query技巧 添加条件列 添加列 → 条件列，按销售额自动打标签：>=10万为A级，公式写一次、刷新终身受用。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "tip-Power Query技巧-7",
+   "type": "tip",
+   "column": "C09",
+   "title": "关闭并上载+刷新",
+   "text": "Power Query技巧 关闭并上载+刷新 做完点「关闭并上载」，结果回到 Excel。以后源数据更新，数据 → 全部刷新，一键重跑全流程。",
+   "section": "tips",
+   "ref": ""
+  },
+  {
+   "id": "solve-公式问题-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "公式不计算",
+   "text": "公式问题 公式不计算 先看公式→计算选项是否为“手动”，改回“自动”；再看单元格是否为文本格式，是则改常规后双击回车。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-公式问题-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "显示公式而非结果",
+   "text": "公式问题 显示公式而非结果 单元格格式为“文本”，或误开了“显示公式”（Ctrl+` 切换）。改为常规格式后双击单元格回车即可。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-公式问题-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "结果错误但无报错",
+   "text": "公式问题 结果错误但无报错 检查引用区域是否因增删行漂移、括号是否配对、VLOOKUP 是否误用近似匹配（第四参数应为 0）。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-公式问题-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "自动计算失效",
+   "text": "公式问题 自动计算失效 大文件常被设为手动计算。按 F9 立即重算，或公式→计算选项改回自动。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-公式问题-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "循环引用",
+   "text": "公式问题 循环引用 公式直接或间接引用了自己。看状态栏提示定位单元格，改写逻辑打破循环。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-公式问题-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "公式被锁定改不动",
+   "text": "公式问题 公式被锁定改不动 工作表被保护了。审阅→撤销工作表保护（需要密码），或联系表主。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-公式问题-6",
+   "type": "solve",
+   "column": "C16",
+   "title": "下拉填充公式不变",
+   "text": "公式问题 下拉填充公式不变 检查是否为手动计算；或填充的只是值。确认引用方式（相对/绝对）是否符合预期。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-错误代码专区-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "#N/A 查找不到",
+   "text": "错误代码专区 #N/A 查找不到 VLOOKUP/XLOOKUP 没找到匹配值。检查多余空格（TRIM）、数字与文本格式不一致；用 IFNA 包裹给友好提示。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-错误代码专区-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "#VALUE! 类型错误",
+   "text": "错误代码专区 #VALUE! 类型错误 文本参与了数值运算。检查隐藏空格、特殊字符，用 VALUE 转换或清理后再算。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-错误代码专区-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "#REF! 引用失效",
+   "text": "错误代码专区 #REF! 引用失效 引用的单元格/区域被删除。撤销删除，或把公式中的引用改为有效区域。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-错误代码专区-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "#NAME? 名称错误",
+   "text": "错误代码专区 #NAME? 名称错误 函数名拼错或用了中文括号。检查拼写，括号一律用英文半角。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-错误代码专区-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "#DIV/0! 除数为零",
+   "text": "错误代码专区 #DIV/0! 除数为零 除数为 0 或空单元格。用 =IF(除数=0,\"-\",分子/除数) 规避。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-错误代码专区-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "#NUM! 数值超范围",
+   "text": "错误代码专区 #NUM! 数值超范围 结果太大或迭代不收敛。检查参数数量级，迭代公式调大迭代次数。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-错误代码专区-6",
+   "type": "solve",
+   "column": "C16",
+   "title": "#SPILL! 溢出被挡",
+   "text": "错误代码专区 #SPILL! 溢出被挡 动态数组目标区域有内容挡住。清空溢出区域，或把公式移到空旷处。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-错误代码专区-7",
+   "type": "solve",
+   "column": "C16",
+   "title": "#CALC! 计算异常",
+   "text": "错误代码专区 #CALC! 计算异常 动态数组返回空或逻辑错误。检查筛选条件是否全不满足，调整条件。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-文件问题-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "文件打不开",
+   "text": "文件问题 文件打不开 打开 Excel→文件→打开→选中文件→点“打开”按钮下拉箭头→“打开并修复”。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-文件问题-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "文件损坏",
+   "text": "文件问题 文件损坏 先用“打开并修复”→“修复”；不行选“提取数据”；还可改后缀为 zip 解压取 xl/worksheets 下 xml 抢救。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-文件问题-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "文件恢复",
+   "text": "文件问题 文件恢复 文件→信息→管理工作簿→恢复未保存的工作簿。建议把自动恢复间隔设为 5 分钟。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-文件问题-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "文件变成只读",
+   "text": "文件问题 文件变成只读 右键文件→属性，取消只读勾选；或文件被他人占用，另存一份副本编辑。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-文件问题-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "自动关闭/闪退",
+   "text": "文件问题 自动关闭/闪退 运行 excel /safe 进安全模式排查；逐个禁用 COM 加载项，找到肇事者。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-文件问题-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "保存失败",
+   "text": "文件问题 保存失败 磁盘满、路径过长或云同步冲突。另存到本地短路径，暂停网盘同步再试。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-文件问题-6",
+   "type": "solve",
+   "column": "C16",
+   "title": "内容/公式丢失",
+   "text": "文件问题 内容/公式丢失 可能只保存了值。去自动恢复版本或文件历史版本里找回，别覆盖原文件。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-性能问题-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "Excel卡顿",
+   "text": "性能问题 Excel卡顿 计算选项改手动；删除多余条件格式；避免整列引用 A:A，改精确区域。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-性能问题-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "Excel无响应",
+   "text": "性能问题 Excel无响应 大运算时耐心等；真死机用任务管理器结束进程，再用自动恢复版本找回。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-性能问题-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "Excel崩溃",
+   "text": "性能问题 Excel崩溃 更新 Office 到最新；禁用可疑加载项；控制面板→修复 Office 安装。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-性能问题-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "启动慢",
+   "text": "性能问题 启动慢 清理 XLSTART 启动文件夹里的多余文件；文件→选项→加载项禁用不用的。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-性能问题-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "文件打开慢",
+   "text": "性能问题 文件打开慢 Ctrl+End 看已用区域是否虚大，删除空白行列的格式后保存，体积立减。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-性能问题-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "文件保存慢",
+   "text": "性能问题 文件保存慢 图片压缩一下；删掉大量图形对象；老 xls 另存为 xlsx。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-性能问题-6",
+   "type": "solve",
+   "column": "C16",
+   "title": "计算速度慢",
+   "text": "性能问题 计算速度慢 少用易失函数 NOW/TODAY/INDIRECT；数组公式改精确区域；能透视表就别堆公式。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-筛选排序问题-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "筛选不完整",
+   "text": "筛选排序问题 筛选不完整 数据中有空行空列把区域隔断。删除空行后重新开启筛选。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-筛选排序问题-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "部分数据无法筛选",
+   "text": "筛选排序问题 部分数据无法筛选 筛选只覆盖了部分区域。选中整表（Ctrl+A）再开筛选。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-筛选排序问题-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "排序错乱串行",
+   "text": "筛选排序问题 排序错乱串行 只选中单列排序导致错位。务必选“扩展选定区域”再排序。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-筛选排序问题-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "日期排序错误",
+   "text": "筛选排序问题 日期排序错误 日期是文本格式。数据→分列→日期 YMD 转正后再排序。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-筛选排序问题-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "数字排序错误",
+   "text": "筛选排序问题 数字排序错误 数字存成了文本。选中列→感叹号→转换为数字。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-筛选排序问题-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "合并单元格排不了",
+   "text": "筛选排序问题 合并单元格排不了 先取消合并，用 Ctrl+D 填充内容后再排序。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-打印问题-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "打印不全",
+   "text": "打印问题 打印不全 页面布局→缩放→调整为 1 页宽；检查打印区域是否框小了。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-打印问题-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "打印出空白页",
+   "text": "打印问题 打印出空白页 分页预览里拖蓝线收掉多余分页；删除打印区域外的残留格式。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-打印问题-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "打印内容偏移",
+   "text": "打印问题 打印内容偏移 页面设置→页边距→勾选水平居中；检查纸张大小是否匹配。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-打印问题-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "页码错误",
+   "text": "打印问题 页码错误 页眉页脚→自定义页脚插入 &[页码]；检查起始页码设置。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-打印问题-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "打印缩放异常",
+   "text": "打印问题 打印缩放异常 缩放设为“调整为 1 页”；宽表用横向打印。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-打印问题-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "表格线印不出",
+   "text": "打印问题 表格线印不出 页面设置→工作表→勾选“网格线”；或给区域加边框。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据导入问题-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "CSV乱码",
+   "text": "数据导入问题 CSV乱码 别双击打开。用数据→从文本/CSV 导入，文件原始格式选 65001:UTF-8 或 936。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据导入问题-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "中文乱码",
+   "text": "数据导入问题 中文乱码 导入时选对编码；已乱码的用 Power Query 重新指定编码导入一次。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据导入问题-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "日期错乱",
+   "text": "数据导入问题 日期错乱 导入向导第三步把该列设为“日期 YMD”；事后也可用分列转换。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据导入问题-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "数字变文本",
+   "text": "数据导入问题 数字变文本 数据→分列→完成；或 =A1*1 批量转数值。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据导入问题-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "列错位",
+   "text": "数据导入问题 列错位 分隔符选错了。导入时勾选正确的逗号/制表符分隔，预览对齐再加载。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据导入问题-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "前导零丢失",
+   "text": "数据导入问题 前导零丢失 导入前把该列设为文本；或公式 =\"'\"&编号 保留 001 开头。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-图表问题-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "图表不更新",
+   "text": "图表问题 图表不更新 数据源是固定区域。转成智能表格（Ctrl+T）或用 OFFSET 动态名称，新增自动进图。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-图表问题-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "图表数据丢失",
+   "text": "图表问题 图表数据丢失 隐藏行列被排除。右键图表→选择数据→勾选“显示隐藏行列中的数据”。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-图表问题-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "坐标轴错误",
+   "text": "图表问题 坐标轴错误 右键坐标轴→设置坐标轴格式，检查最小值/最大值、单位和对数刻度。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-图表问题-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "图表显示异常",
+   "text": "图表问题 图表显示异常 图表被拉伸变形，重置大小；兼容模式文件另存为 xlsx 再试。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-图表问题-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "图例错乱",
+   "text": "图表问题 图例错乱 右键→选择数据，重新指定系列名称和水平分类标签。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-图表问题-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "新增数据不进图表",
+   "text": "图表问题 新增数据不进图表 数据源转智能表格后图表自动扩展；或手动更改数据区域。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据透视表问题-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "无法刷新",
+   "text": "数据透视表问题 无法刷新 右键→刷新；若源区域变了，去数据透视表分析→更改数据源重框选。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据透视表问题-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "数据源错误",
+   "text": "数据透视表问题 数据源错误 源表有空行空列或列名重复。清理后重新指定数据源。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据透视表问题-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "分组失败",
+   "text": "数据透视表问题 分组失败 同一字段混有文本和日期/数字。先统一格式再分组。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据透视表问题-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "字段消失",
+   "text": "数据透视表问题 字段消失 字段列表里重新勾选；检查源表列名是否被改名。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据透视表问题-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "统计错误",
+   "text": "数据透视表问题 统计错误 值字段设置→改求和/计数/平均；文本字段默认计数是正常的。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-数据透视表问题-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "日期不自动分组",
+   "text": "数据透视表问题 日期不自动分组 365 才支持自动分组；旧版用右键→分组，或加年月辅助列。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-Power Query问题-0",
+   "type": "solve",
+   "column": "C16",
+   "title": "无法刷新",
+   "text": "Power Query问题 无法刷新 查询→刷新全部；源文件路径移动了就重新定位源。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-Power Query问题-1",
+   "type": "solve",
+   "column": "C16",
+   "title": "导入失败",
+   "text": "Power Query问题 导入失败 源文件被占用或格式不支持。关闭占用后重试，或换格式。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-Power Query问题-2",
+   "type": "solve",
+   "column": "C16",
+   "title": "合并失败",
+   "text": "Power Query问题 合并失败 连接键两边类型不一致。先把两边键统一为文本再合并。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-Power Query问题-3",
+   "type": "solve",
+   "column": "C16",
+   "title": "类型错误",
+   "text": "Power Query问题 类型错误 删除“更改的类型”步骤重设；或手动改回正确类型。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-Power Query问题-4",
+   "type": "solve",
+   "column": "C16",
+   "title": "数据丢失",
+   "text": "Power Query问题 数据丢失 逐步点击应用步骤回看，检查筛选/删除步骤是否误删。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "solve-Power Query问题-5",
+   "type": "solve",
+   "column": "C16",
+   "title": "刷新很慢",
+   "text": "Power Query问题 刷新很慢 先筛选缩小数据量再做复杂转换；减少破坏折叠的步骤。",
+   "section": "solve",
+   "ref": ""
+  },
+  {
+   "id": "faq-0",
+   "type": "faq",
+   "column": "",
+   "title": "如何统计重复数据？",
+   "text": "如何统计重复数据？ 用 COUNTIF：=COUNTIF(A:A,A2)>1 标出重复；或数据→删除重复项直接去重；365 用 =UNIQUE(A:A) 取唯一值。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-1",
+   "type": "faq",
+   "column": "",
+   "title": "如何制作动态下拉框？",
+   "text": "如何制作动态下拉框？ 二级联动：先定义各省城市为名称，一级下拉选省份，二级数据验证来源写 =INDIRECT($A2)。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-2",
+   "type": "faq",
+   "column": "",
+   "title": "为什么 VLOOKUP 返回 #N/A？",
+   "text": "为什么 VLOOKUP 返回 #N/A？ 四查：①查找值前后有空格没（TRIM）；②首列真有这个值吗；③数字存成文本（格式统一）；④第四参数写 FALSE 了吗。还不行就换 XLOOKUP。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-3",
+   "type": "faq",
+   "column": "",
+   "title": "筛选后求和不对怎么办？",
+   "text": "筛选后求和不对怎么办？ SUM 会把隐藏行也加进去，改用 =SUBTOTAL(109,区域)，109 表示只对可见单元格求和。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-4",
+   "type": "faq",
+   "column": "",
+   "title": "日期显示成数字怎么办？",
+   "text": "日期显示成数字怎么办？ 那是日期序列值，选中→Ctrl+1→设为日期格式。反过来文本日期转真日期用 DATEVALUE 或分列。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-5",
+   "type": "faq",
+   "column": "",
+   "title": "如何合并多个工作表？",
+   "text": "如何合并多个工作表？ 结构相同的表：Power Query→追加查询，一键合并几十个表，还能自动刷新。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-6",
+   "type": "faq",
+   "column": "",
+   "title": "公式太长看不懂怎么办？",
+   "text": "公式太长看不懂怎么办？ 用 LET 给中间结果起名：=LET(x,SUM(A:A),y,COUNT(A:A),x/y)。或按 Alt+Enter 在编辑栏换行。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-7",
+   "type": "faq",
+   "column": "",
+   "title": "文件太大打不开？",
+   "text": "文件太大打不开？ 先关自动重算（公式→手动）；删多余格式（Ctrl+End 看看用到哪）；另存为 xlsb 二进制格式体积减半。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-8",
+   "type": "faq",
+   "column": "",
+   "title": "如何防止别人改公式？",
+   "text": "如何防止别人改公式？ 全选→取消锁定→只选中公式区→锁定→审阅→保护工作表设密码。只锁公式，数据区可填。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-9",
+   "type": "faq",
+   "column": "",
+   "title": "打印时每页都有标题行？",
+   "text": "打印时每页都有标题行？ 页面布局→打印标题→顶端标题行→选 $1:$1。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-10",
+   "type": "faq",
+   "column": "",
+   "title": "下拉数字变成日期？",
+   "text": "下拉数字变成日期？ 如 1-2 被认成 1月2日。先设单元格为文本格式再输，或前面加英文单引号 '1-2。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-11",
+   "type": "faq",
+   "column": "",
+   "title": "VLOOKUP 只能向右找怎么办？",
+   "text": "VLOOKUP 只能向右找怎么办？ 用 INDEX+MATCH：=INDEX(返回列,MATCH(查找值,查找列,0))，方向随意。或直接 XLOOKUP。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-12",
+   "type": "faq",
+   "column": "",
+   "title": "如何批量提取括号内容？",
+   "text": "如何批量提取括号内容？ Ctrl+E 快速填充最省事；公式法 =MID(A2,FIND(\"(\",A2)+1,FIND(\")\",A2)-FIND(\"(\",A2)-1)。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-13",
+   "type": "faq",
+   "column": "",
+   "title": "条件格式太多卡顿？",
+   "text": "条件格式太多卡顿？ 条件格式→管理规则，删掉整列引用的（如 $A:$A），改成实际区域 $A$1:$A$1000。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-14",
+   "type": "faq",
+   "column": "",
+   "title": "共享后公式被改乱？",
+   "text": "共享后公式被改乱？ 保护工作表+只允许填数据区；或存 OneDrive 用版本历史找回。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-15",
+   "type": "faq",
+   "column": "",
+   "title": "如何让序号下拉不中断？",
+   "text": "如何让序号下拉不中断？ 用 =ROW()-1 公式下拉，删行不断号；或转智能表格，公式自动填充。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-16",
+   "type": "faq",
+   "column": "",
+   "title": "身份证号变成科学计数法怎么办？",
+   "text": "身份证号变成科学计数法怎么办？ 先设文本格式再录入；已变形用 =TEXT(A1,\"0\") 恢复显示。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-17",
+   "type": "faq",
+   "column": "",
+   "title": "VLOOKUP 返回 #N/A 但值明明存在？",
+   "text": "VLOOKUP 返回 #N/A 但值明明存在？ 检查多余空格（TRIM 清理）、数字与文本格式不一致，统一后再查。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-18",
+   "type": "faq",
+   "column": "",
+   "title": "如何快速删除重复行？",
+   "text": "如何快速删除重复行？ 数据→删除重复项；365 也可用 =UNIQUE(A:A) 提取唯一值。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-19",
+   "type": "faq",
+   "column": "",
+   "title": "筛选后序号不连续怎么办？",
+   "text": "筛选后序号不连续怎么办？ 用 =SUBTOTAL(103,$A$2:A2) 下拉，筛选后序号自动连续。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-20",
+   "type": "faq",
+   "column": "",
+   "title": "公式下拉后结果都一样？",
+   "text": "公式下拉后结果都一样？ 检查计算选项是否为手动，改回自动；或单元格被设为文本格式。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-21",
+   "type": "faq",
+   "column": "",
+   "title": "如何跨表汇总多个分表？",
+   "text": "如何跨表汇总多个分表？ 用 =SUM(表1:表3!B2) 三维引用；或 Power Query 合并文件夹。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-22",
+   "type": "faq",
+   "column": "",
+   "title": "打印时每页都显示标题行？",
+   "text": "打印时每页都显示标题行？ 页面布局→打印标题→顶端标题行设为 $1:$1。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-23",
+   "type": "faq",
+   "column": "",
+   "title": "CSV 打开中文乱码？",
+   "text": "CSV 打开中文乱码？ 用数据→从文本/CSV 导入，编码选 UTF-8 或 936。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-24",
+   "type": "faq",
+   "column": "",
+   "title": "文件太大打开很慢？",
+   "text": "文件太大打开很慢？ Ctrl+End 看已用区域是否虚大，删多余行列格式后保存。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-25",
+   "type": "faq",
+   "column": "",
+   "title": "如何防止别人改我的公式？",
+   "text": "如何防止别人改我的公式？ 审阅→保护工作表，锁定含公式单元格后设密码。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-26",
+   "type": "faq",
+   "column": "",
+   "title": "数据透视表日期不能按月分组？",
+   "text": "数据透视表日期不能按月分组？ 检查该列是否混入文本，先统一为日期格式再分组。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-27",
+   "type": "faq",
+   "column": "",
+   "title": "图表新增数据不自动更新？",
+   "text": "图表新增数据不自动更新？ 数据源转智能表格（Ctrl+T），图表会自动扩展。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-28",
+   "type": "faq",
+   "column": "",
+   "title": "如何批量把文本型数字转数值？",
+   "text": "如何批量把文本型数字转数值？ 选中列→分列→完成；或空单元格写 1 复制→选择性粘贴→乘。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "faq-29",
+   "type": "faq",
+   "column": "",
+   "title": "Excel 卡死没保存能找回吗？",
+   "text": "Excel 卡死没保存能找回吗？ 文件→信息→管理工作簿→恢复未保存的工作簿；建议开 5 分钟自动恢复。",
+   "section": "faq",
+   "ref": ""
+  },
+  {
+   "id": "chart-0",
+   "type": "chart",
+   "column": "C07",
+   "title": "柱状图",
+   "text": "柱状图 比较各类别数值 选中数据（含表头） 插入→柱状图→簇状 右键→添加数据标签 删除网格线",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "chart-1",
+   "type": "chart",
+   "column": "C07",
+   "title": "条形图",
+   "text": "条形图 类别名称长时的比较 选中数据 插入→条形图 类别放纵轴，名称再长也不挤",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "chart-2",
+   "type": "chart",
+   "column": "C07",
+   "title": "饼图",
+   "text": "饼图 占比（类别≤6） 选中两列（类别+数值） 插入→饼图 右键→添加数据标签→百分比",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "chart-3",
+   "type": "chart",
+   "column": "C07",
+   "title": "折线图",
+   "text": "折线图 随时间趋势 日期放横轴 插入→折线图→带数据标记 右键→添加趋势线",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "chart-4",
+   "type": "chart",
+   "column": "C07",
+   "title": "散点图",
+   "text": "散点图 两变量关系 X/Y 两列数值 插入→散点图 添加趋势线看相关性",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "chart-5",
+   "type": "chart",
+   "column": "C07",
+   "title": "雷达图",
+   "text": "雷达图 多维度评价 维度放第一列 插入→雷达图 适合 5-8 个维度",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "chart-6",
+   "type": "chart",
+   "column": "C07",
+   "title": "甘特图",
+   "text": "甘特图 项目进度 任务/开始/工期三列 插入→条形图→堆积 把「开始」系列设为无填充 调整纵轴逆序",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "chart-7",
+   "type": "chart",
+   "column": "C07",
+   "title": "漏斗图",
+   "text": "漏斗图 转化流程 阶段+人数两列 插入→漏斗图（2019+） 老版本用条形图模拟",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "chart-8",
+   "type": "chart",
+   "column": "C07",
+   "title": "旭日图",
+   "text": "旭日图 多层级占比 层级从左到右排 插入→旭日图（2016+） 适合 2-3 层",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "chart-9",
+   "type": "chart",
+   "column": "C07",
+   "title": "地图图表",
+   "text": "地图图表 地域分布 地名要规范（省/国家） 插入→地图（2019+） 值用颜色深浅表示",
+   "section": "chartlib",
+   "ref": ""
+  },
+  {
+   "id": "case-财务案例-0",
+   "type": "case",
+   "column": "C13",
+   "title": "工资表",
+   "text": "财务案例 工资表 应发=基本+绩效+补贴-社保，用 IF 判断个税 =D2+E2+F2-G2",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-财务案例-1",
+   "type": "case",
+   "column": "C13",
+   "title": "预算表",
+   "text": "财务案例 预算表 SUMIFS 按部门+月份汇总，条件格式超预算标红 =SUMIFS(实际列,部门列,A2,月份列,B2)",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-人事案例-0",
+   "type": "case",
+   "column": "C13",
+   "title": "考勤管理",
+   "text": "人事案例 考勤管理 COUNTIF 统计迟到，NETWORKDAYS 算出勤 =COUNTIF(B2:AF2,\"迟\")",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-人事案例-1",
+   "type": "case",
+   "column": "C13",
+   "title": "花名册",
+   "text": "人事案例 花名册 DATEDIF 算工龄，VLOOKUP 关联部门 =DATEDIF(C2,TODAY(),\"Y\")",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-销售案例-0",
+   "type": "case",
+   "column": "C13",
+   "title": "销售统计",
+   "text": "销售案例 销售统计 RANK 排名，SUMPRODUCT 加权 =RANK(B2,B:B)",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-销售案例-1",
+   "type": "case",
+   "column": "C13",
+   "title": "环比分析",
+   "text": "销售案例 环比分析 透视表按月分组，值显示差异百分比 =(本月-上月)/上月",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-仓库案例-0",
+   "type": "case",
+   "column": "C13",
+   "title": "库存管理",
+   "text": "仓库案例 库存管理 SUMIF 分开汇总出入库，IF 预警 =SUMIF(类型,\"入库\",数量)-SUMIF(类型,\"出库\",数量)",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-仓库案例-1",
+   "type": "case",
+   "column": "C13",
+   "title": "盘点差异",
+   "text": "仓库案例 盘点差异 实盘-账面，条件格式标差异 =D2-C2",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-采购案例-0",
+   "type": "case",
+   "column": "C13",
+   "title": "采购跟踪",
+   "text": "采购案例 采购跟踪 EOMONTH 算账期，逾期标红 =EOMONTH(下单日期,1)",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-采购案例-1",
+   "type": "case",
+   "column": "C13",
+   "title": "比价表",
+   "text": "采购案例 比价表 MIN 取最低价，INDEX+MATCH 反查供应商 =INDEX(供应商列,MATCH(MIN(价格区),价格区,0))",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-物流案例-0",
+   "type": "case",
+   "column": "C13",
+   "title": "运费统计",
+   "text": "物流案例 运费统计 SUMIFS 按线路+月份汇总 =SUMIFS(运费列,线路列,A2)",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "case-物流案例-1",
+   "type": "case",
+   "column": "C13",
+   "title": "报关数据分析",
+   "text": "物流案例 报关数据分析 透视表按 HS 编码汇总，TOP10 品名 数据透视表：行=品名，值=金额求和",
+   "section": "case",
+   "ref": ""
+  },
+  {
+   "id": "tpl-0",
+   "type": "template",
+   "column": "C17",
+   "title": "会议纪要模板",
+   "text": "会议纪要模板 记录会议决议与跟进 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-1",
+   "type": "template",
+   "column": "C17",
+   "title": "工作计划模板",
+   "text": "工作计划模板 甘特式任务跟踪 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-2",
+   "type": "template",
+   "column": "C17",
+   "title": "用印申请模板",
+   "text": "用印申请模板 印章使用审批 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-3",
+   "type": "template",
+   "column": "C17",
+   "title": "费用报销模板",
+   "text": "费用报销模板 带自动合计的报销单 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-4",
+   "type": "template",
+   "column": "C17",
+   "title": "工资条模板",
+   "text": "工资条模板 自动计算应发工资 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-5",
+   "type": "template",
+   "column": "C17",
+   "title": "应收账款模板",
+   "text": "应收账款模板 自动算未收与逾期 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-6",
+   "type": "template",
+   "column": "C17",
+   "title": "员工花名册模板",
+   "text": "员工花名册模板 员工基础信息 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-7",
+   "type": "template",
+   "column": "C17",
+   "title": "考勤统计模板",
+   "text": "考勤统计模板 自动统计迟到缺勤 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-8",
+   "type": "template",
+   "column": "C17",
+   "title": "招聘进度模板",
+   "text": "招聘进度模板 招聘漏斗跟踪 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-9",
+   "type": "template",
+   "column": "C17",
+   "title": "出入库流水模板",
+   "text": "出入库流水模板 库存流水记录 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-10",
+   "type": "template",
+   "column": "C17",
+   "title": "库存盘点模板",
+   "text": "库存盘点模板 自动算盘点差异 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-11",
+   "type": "template",
+   "column": "C17",
+   "title": "海运跟踪模板",
+   "text": "海运跟踪模板 船期跟踪 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-12",
+   "type": "template",
+   "column": "C17",
+   "title": "报关单模板",
+   "text": "报关单模板 自动算总价 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-13",
+   "type": "template",
+   "column": "C17",
+   "title": "甘特图模板",
+   "text": "甘特图模板 项目排期，附图表制作步骤 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-14",
+   "type": "template",
+   "column": "C17",
+   "title": "漏斗图模板",
+   "text": "漏斗图模板 销售转化分析，附制作步骤 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-15",
+   "type": "template",
+   "column": "C17",
+   "title": "销售仪表盘模板",
+   "text": "销售仪表盘模板 KPI+组合图，附制作步骤 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-16",
+   "type": "template",
+   "column": "C17",
+   "title": "KPI看板模板",
+   "text": "KPI看板模板 指标跟踪，附制作步骤 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-17",
+   "type": "template",
+   "column": "C17",
+   "title": "销售数据1000行",
+   "text": "销售数据1000行 订单/区域/品类齐全，配 6 个练习任务 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-18",
+   "type": "template",
+   "column": "C17",
+   "title": "人事考勤样本",
+   "text": "人事考勤样本 25 人 9 月考勤，迟到/请假公式+部门汇总 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-19",
+   "type": "template",
+   "column": "C17",
+   "title": "函数练习题",
+   "text": "函数练习题 12 道 VLOOKUP/SUMIFS/XLOOKUP 实战，附参考答案 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-20",
+   "type": "template",
+   "column": "C17",
+   "title": "透视表练习数据",
+   "text": "透视表练习数据 500 行明细，配 6 个透视表任务+避坑 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "vba-Dim",
+   "type": "vba",
+   "column": "C11",
+   "title": "Dim",
+   "text": "Dim 声明变量 作用域：过程内部，只能在当前过程中使用。",
+   "section": "vba",
+   "ref": "Dim"
+  },
+  {
+   "id": "vba-Private",
+   "type": "vba",
+   "column": "C11",
+   "title": "Private",
+   "text": "Private 模块级私有声明 ",
+   "section": "vba",
+   "ref": "Private"
+  },
+  {
+   "id": "vba-Public",
+   "type": "vba",
+   "column": "C11",
+   "title": "Public",
+   "text": "Public 公开声明 ",
+   "section": "vba",
+   "ref": "Public"
+  },
+  {
+   "id": "vba-Static",
+   "type": "vba",
+   "column": "C11",
+   "title": "Static",
+   "text": "Static 静态变量（保持值） 普通局部变量在过程结束後就销毁；`Static` 声明的变量在多次调用之间**保留上次的值**： 也可以让整个过程的变量都静态：`Static Sub CountCalls()`。",
+   "section": "vba",
+   "ref": "Static"
+  },
+  {
+   "id": "vba-Const",
+   "type": "vba",
+   "column": "C11",
+   "title": "Const",
+   "text": "Const 常量 常量在编译时确定，不能在运行中修改。魔法数字（税率、上限等）都应该用常量。",
+   "section": "vba",
+   "ref": "Const"
+  },
+  {
+   "id": "vba-ReDim",
+   "type": "vba",
+   "column": "C11",
+   "title": "ReDim",
+   "text": "ReDim 重定义动态数组 规则： - 只能用于动态数组（声明时不写上下界）。",
+   "section": "vba",
+   "ref": "ReDim"
+  },
+  {
+   "id": "vba-Option Explicit",
+   "type": "vba",
+   "column": "C11",
+   "title": "Option Explicit",
+   "text": "Option Explicit 强制变量声明 开启后，未经 `Dim` 的变量直接报错。防止拼写错误产生难以察觉的 bug。**所有模块都应该加。** ---",
+   "section": "vba",
+   "ref": "Option Explicit"
+  },
+  {
+   "id": "vba-Select / Case",
+   "type": "vba",
+   "column": "C11",
+   "title": "Select / Case",
+   "text": "Select / Case 多分支选择 `Case` 的四种形式：`Is` 比较、`To` 范围、逗号多值、`Else` 兜底。",
+   "section": "vba",
+   "ref": "Select / Case"
+  },
+  {
+   "id": "vba-For / Next",
+   "type": "vba",
+   "column": "C11",
+   "title": "For / Next",
+   "text": "For / Next 计数循环 ",
+   "section": "vba",
+   "ref": "For / Next"
+  },
+  {
+   "id": "vba-For Each",
+   "type": "vba",
+   "column": "C11",
+   "title": "For Each",
+   "text": "For Each 集合遍历 注意：`For Each` 的循环变量**必须是 Variant 或对象类型**，不能是 `Long`。",
+   "section": "vba",
+   "ref": "For Each"
+  },
+  {
+   "id": "vba-Do / Loop",
+   "type": "vba",
+   "column": "C11",
+   "title": "Do / Loop",
+   "text": "Do / Loop 条件循环 四种形式：",
+   "section": "vba",
+   "ref": "Do / Loop"
+  },
+  {
+   "id": "vba-While / Wend",
+   "type": "vba",
+   "column": "C11",
+   "title": "While / Wend",
+   "text": "While / Wend 旧式循环 功能与 `Do While...Loop` 相同，是老式写法。新代码推荐用 `Do...Loop`。",
+   "section": "vba",
+   "ref": "While / Wend"
+  },
+  {
+   "id": "vba-GoTo",
+   "type": "vba",
+   "column": "C11",
+   "title": "GoTo",
+   "text": "GoTo 跳转 现代 VBA 中 `GoTo` 主要用于错误处理。随意跳转会让代码难以维护，**不要**用它代替正常的条件分支。",
+   "section": "vba",
+   "ref": "GoTo"
+  },
+  {
+   "id": "vba-Exit",
+   "type": "vba",
+   "column": "C11",
+   "title": "Exit",
+   "text": "Exit 提前退出 常用于\"卫语句\"：先处理异常情况并退出，主逻辑保持平直：",
+   "section": "vba",
+   "ref": "Exit"
+  },
+  {
+   "id": "vba-End",
+   "type": "vba",
+   "column": "C11",
+   "title": "End",
+   "text": "End 终止程序 > **警告**：`End` 会粗暴终止一切，不触发任何清理代码。正常结束过程用 `Exit Sub`，几乎用不到 `End`。 ---",
+   "section": "vba",
+   "ref": "End"
+  },
+  {
+   "id": "vba-Sub",
+   "type": "vba",
+   "column": "C11",
+   "title": "Sub",
+   "text": "Sub 过程（做事） ",
+   "section": "vba",
+   "ref": "Sub"
+  },
+  {
+   "id": "vba-Function",
+   "type": "vba",
+   "column": "C11",
+   "title": "Function",
+   "text": "Function 函数（算值并返回） ",
+   "section": "vba",
+   "ref": "Function"
+  },
+  {
+   "id": "vba-Call",
+   "type": "vba",
+   "column": "C11",
+   "title": "Call",
+   "text": "Call 调用过程 > 省略 `Call` 是更常见的写法。注意：省略 Call 时参数不能加括号，否则会被当作求值。",
+   "section": "vba",
+   "ref": "Call"
+  },
+  {
+   "id": "vba-ByVal / ByRef",
+   "type": "vba",
+   "column": "C11",
+   "title": "ByVal / ByRef",
+   "text": "ByVal / ByRef 传值 vs 传址 **VBA 默认是 `ByRef`**（与大多数语言相反）。如果不希望过程修改传入的变量，显式写 `ByVal`。",
+   "section": "vba",
+   "ref": "ByVal / ByRef"
+  },
+  {
+   "id": "vba-Optional",
+   "type": "vba",
+   "column": "C11",
+   "title": "Optional",
+   "text": "Optional 可选参数 规则：`Optional` 参数必须有默认值，且必须放在参数列表最后。",
+   "section": "vba",
+   "ref": "Optional"
+  },
+  {
+   "id": "vba-ParamArray",
+   "type": "vba",
+   "column": "C11",
+   "title": "ParamArray",
+   "text": "ParamArray 可变数量参数 `ParamArray` 只能有一个，必须是最后一个参数，类型必须是 `Variant` 数组。 ---",
+   "section": "vba",
+   "ref": "ParamArray"
+  },
+  {
+   "id": "vba-Set",
+   "type": "vba",
+   "column": "C11",
+   "title": "Set",
+   "text": "Set 对象赋值 忘记 `Set` 会报运行时错误 424\"需要对象\"。",
+   "section": "vba",
+   "ref": "Set"
+  },
+  {
+   "id": "vba-New",
+   "type": "vba",
+   "column": "C11",
+   "title": "New",
+   "text": "New 创建对象实例 ",
+   "section": "vba",
+   "ref": "New"
+  },
+  {
+   "id": "vba-Nothing",
+   "type": "vba",
+   "column": "C11",
+   "title": "Nothing",
+   "text": "Nothing 空对象 / 释放对象 对象比较必须用 `Is` / `Is Not`，不能用 `=`。",
+   "section": "vba",
+   "ref": "Nothing"
+  },
+  {
+   "id": "vba-With",
+   "type": "vba",
+   "column": "C11",
+   "title": "With",
+   "text": "With 对象简化书写 ",
+   "section": "vba",
+   "ref": "With"
+  },
+  {
+   "id": "vba-Me",
+   "type": "vba",
+   "column": "C11",
+   "title": "Me",
+   "text": "Me 当前对象自身 在**工作表/工作簿模块**或**用户窗体**代码中，`Me` 指代当前对象： ---",
+   "section": "vba",
+   "ref": "Me"
+  },
+  {
+   "id": "vba-On Error",
+   "type": "vba",
+   "column": "C11",
+   "title": "On Error",
+   "text": "On Error 错误处理开关 三种模式： > `On Error Resume Next` 是双刃剑：它会**吞掉所有错误**。使用后必须立即检查 `Err.Number`，并尽快用 `On Error GoTo 0` 恢复。",
+   "section": "vba",
+   "ref": "On Error"
+  },
+  {
+   "id": "vba-Resume",
+   "type": "vba",
+   "column": "C11",
+   "title": "Resume",
+   "text": "Resume 恢复执行 ",
+   "section": "vba",
+   "ref": "Resume"
+  },
+  {
+   "id": "vba-Err",
+   "type": "vba",
+   "column": "C11",
+   "title": "Err",
+   "text": "Err 错误对象 常见错误号：13（类型不匹配）、9（下标越界）、424（需要对象）、91（对象变量未设置）、1004（Excel 内部错误）。 ---",
+   "section": "vba",
+   "ref": "Err"
+  },
+  {
+   "id": "vba-And / Or / Not",
+   "type": "vba",
+   "column": "C11",
+   "title": "And / Or / Not",
+   "text": "And / Or / Not 逻辑运算 注意 VBA 没有短路求值：`If A And B` 中 A、B 都会被计算。",
+   "section": "vba",
+   "ref": "And / Or / Not"
+  },
+  {
+   "id": "vba-True / False",
+   "type": "vba",
+   "column": "C11",
+   "title": "True / False",
+   "text": "True / False 布尔字面量 ",
+   "section": "vba",
+   "ref": "True / False"
+  },
+  {
+   "id": "vba-Type",
+   "type": "vba",
+   "column": "C11",
+   "title": "Type",
+   "text": "Type 自定义数据类型 ",
+   "section": "vba",
+   "ref": "Type"
+  },
+  {
+   "id": "vba-Enum",
+   "type": "vba",
+   "column": "C11",
+   "title": "Enum",
+   "text": "Enum 枚举 给一组相关的常量起名字，提高可读性：",
+   "section": "vba",
+   "ref": "Enum"
+  }
+ ]
+}
