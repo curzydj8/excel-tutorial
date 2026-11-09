@@ -2,6 +2,13 @@
 
 本章按类别系统列出 VBA 常用关键字的语法、示例和注意事项。建议收藏作为速查手册。
 
+
+## 学习目标
+
+学完本篇，你将能够：
+- 按声明、流程、过程、对象、错误、逻辑六类查用 36 个关键字
+- 用 For Each 遍历集合，用 Exit For 提前跳出循环
+- 用 On Error GoTo 写错误处理
 ---
 
 ## 一、声明类
@@ -559,3 +566,24 @@ Sub UseEnum()
     MsgBox d   ' 显示 3
 End Sub
 ```
+
+---
+
+## 练习题
+
+1. `For i = 1 To 10: S = S + i: Next i` 执行完 S 是多少？
+2. `On Error Resume Next` 与 `On Error GoTo 0` 各是什么意思？
+3. Exit For 与 Exit Sub 有什么区别？
+
+## 参考答案
+
+<details>
+<summary>点击查看答案</summary>
+
+1. 55。1+2+…+10=55。
+
+2. 前者出错时继续执行下一行（用于可预期的错误）；后者取消错误处理、恢复默认报错。
+
+3. Exit For 只跳出当前 For 循环；Exit Sub 直接退出整个过程。
+
+</details>
