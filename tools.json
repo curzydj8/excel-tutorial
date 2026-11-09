@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-09",
- "count": 26,
+ "count": 27,
  "tools": [
   {
    "id": "tool-fxcheck",
@@ -766,6 +766,61 @@
    "data_refs": [],
    "status": "verified",
    "note": "原名“AI 公式生成器”名不副实：仅 6 条固定模板查表，2026-11-09 改名"
+  },
+  {
+   "id": "tool-funccmp",
+   "name": "函数比较",
+   "name_en": "Function Compare",
+   "category": "公式",
+   "column": "C04",
+   "desc": "选 2–3 个函数，对比语法、参数、返回值、适用场景与版本；数据取自函数 v2 schema，不手写对比文案",
+   "inputs": [
+    {
+     "key": "funcA",
+     "label": "函数 A",
+     "type": "select",
+     "required": true,
+     "placeholder": "如 VLOOKUP"
+    },
+    {
+     "key": "funcB",
+     "label": "函数 B",
+     "type": "select",
+     "required": true,
+     "placeholder": "如 XLOOKUP"
+    },
+    {
+     "key": "funcC",
+     "label": "函数 C（可选）",
+     "type": "select",
+     "required": false,
+     "placeholder": "如 INDEX"
+    }
+   ],
+   "outputs": [
+    {
+     "key": "table",
+     "label": "对比表",
+     "render": "table"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "阶段 4 新增（设计 §8.3）"
   },
   {
    "id": "tool-x2json",
