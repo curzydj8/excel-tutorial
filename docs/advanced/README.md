@@ -28,7 +28,7 @@
 | 顺序 | 文档 | 学完你会 |
 |------|------|----------|
 | 5 | [数组公式与动态数组](../formulas/04-array-formulas.md) | 一公式返回多结果，FILTER/SORT/UNIQUE 替代手工筛选 |
-| 6 | [Power Query](powerquery.md) | 月报清洗流水线：多文件合并、逆透视、自动刷新 |
+| 6 | [Power Query](../powerquery/01-power-query.md) | 月报清洗流水线：多文件合并、逆透视、自动刷新 |
 
 学完六篇，你就具备了"**原始数据 → 自动出报表**"的完整能力链。
 
@@ -48,9 +48,9 @@
 | 提取不重复的客户名单 | [数组公式-UNIQUE](../formulas/04-array-formulas.md#unique去重) |
 | 按条件自动列清单 | [数组公式-FILTER](../formulas/04-array-formulas.md#filter按条件筛选) |
 | 公式报 #溢出! | [数组公式-溢出处理](../formulas/04-array-formulas.md#4-溢出-错误处理) |
-| 12 个月文件合并成一张表 | [Power Query-追加查询](powerquery.md#5-追加查询纵向堆叠) |
-| 交叉表转成明细表 | [Power Query-逆透视](powerquery.md#6-透视列与逆透视列) |
-| 给订单匹配客户名称 | [Power Query-合并查询](powerquery.md#4-合并查询比-vlookup-更强的关联) |
+| 12 个月文件合并成一张表 | [Power Query-追加查询](../powerquery/01-power-query.md#43-l2-3-合并与追加) |
+| 交叉表转成明细表 | [Power Query-逆透视](../powerquery/01-power-query.md#42-l2-2-转换操作) |
+| 给订单匹配客户名称 | [Power Query-合并查询](../powerquery/01-power-query.md#43-l2-3-合并与追加) |
 | 引用透视表里的数做二次计算 | [数据透视表-GETPIVOTDATA](../pivottable/01-pivottable.md#51-getpivotdata-函数) |
 
 ---
