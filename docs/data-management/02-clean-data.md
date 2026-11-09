@@ -82,7 +82,7 @@
 
 - 上一篇：排序筛选（docs/data-management/01-sort-filter.md）
 - 下一篇：超级表交叉引用索引（docs/data-management/03-tables-ref.md）
-- 跨栏目：数据验证（docs/data-management/04-data-validation.md）、Power Query（docs/advanced/powerquery.md）
+- 跨栏目：数据验证（docs/data-management/04-data-validation.md）、Power Query（docs/powerquery/01-power-query.md）
 
 ## 9. 练习题
 
