@@ -2,6 +2,13 @@
 
 本章讲解 Excel VBA 的核心：对象模型。理解 Application → Workbook → Worksheet → Range 这条层级链，就掌握了操作 Excel 的钥匙。
 
+
+## 学习目标
+
+学完本篇，你将能够：
+- 说出 Application → Workbook → Worksheet → Range 的层级链
+- 用 Range 与 Cells 读写单元格
+- 用 With 简化重复的对象引用
 ## 1. 四大对象与层级关系
 
 Excel 的对象是树状层级结构：
@@ -374,3 +381,24 @@ End Sub
 | 工作表模块 | `Worksheet_BeforeDoubleClick` | 双击单元格前 |
 
 事件过程必须是 `Private Sub`，且**不能改名**，否则不会被触发。
+
+---
+
+## 练习题
+
+1. Range("A1:Z100") 一共有多少个单元格？
+2. 写一行代码把 Sheet1 的 A1 改为"完成"。
+3. 为什么不要满屏写 Select/Activate？
+
+## 参考答案
+
+<details>
+<summary>点击查看答案</summary>
+
+1. 2600 个。26 列 × 100 行 = 2600。
+
+2. `Worksheets("Sheet1").Range("A1").Value = "完成"`（或 `Sheets("Sheet1").Range("A1") = "完成"`）。
+
+3. Select/Activate 又慢又脆弱（依赖当前选中状态）。直接操作对象，如 `Range("A1").Value = 1`。
+
+</details>
