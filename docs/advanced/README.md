@@ -30,6 +30,12 @@
 | 5 | [数组公式与动态数组](array-formulas.md) | 一公式返回多结果，FILTER/SORT/UNIQUE 替代手工筛选 |
 | 6 | [Power Query](powerquery.md) | 月报清洗流水线：多文件合并、逆透视、自动刷新 |
 
+### 第四阶段：AI 呈现（看推送进度）
+
+| 顺序 | 文档 | 学完你会 |
+|------|------|----------|
+| 7 | [Excel Canvas（Copilot 画布）](excel-canvas.md) | 让 Copilot 把工作簿变成自动更新的可视化看板，不用再每月手动拼图 |
+
 学完六篇，你就具备了"**原始数据 → 自动出报表**"的完整能力链。
 
 ---
@@ -50,6 +56,7 @@
 | 公式报 #溢出! | [数组公式-溢出处理](array-formulas.md#4-溢出-错误处理) |
 | 12 个月文件合并成一张表 | [Power Query-追加查询](powerquery.md#5-追加查询纵向堆叠) |
 | 交叉表转成明细表 | [Power Query-逆透视](powerquery.md#6-透视列与逆透视列) |
+| 每月都要出的报表不想手动重做图表 | [Excel Canvas](excel-canvas.md#4-基本操作) |
 | 给订单匹配客户名称 | [Power Query-合并查询](powerquery.md#4-合并查询比-vlookup-更强的关联) |
 | 引用透视表里的数做二次计算 | [数据透视表-GETPIVOTDATA](pivottable.md#8-getpivotdata-函数) |
 
@@ -65,9 +72,11 @@
 | 数据透视表 | ★★★☆☆ | 半天 |
 | 数组公式与动态数组 | ★★★★☆ | 1 天（需 365） |
 | Power Query | ★★★☆☆（M 语言 ★★★★☆） | 2 天 |
+| Excel Canvas（Copilot 画布） | ★★☆☆☆ | 1 小时（需 Copilot 授权 + 推送到位） |
 
 ## 版本提示
 
 - 动态数组函数（FILTER/SORT/UNIQUE 等）需要 **Microsoft 365 或 Excel 2021**。
 - 其余内容 Excel 2016 均可使用；切片器/时间线需 2013+。
 - 公司电脑如果是旧版本，优先学透视表 + 条件格式 + 数据验证，这三样版本兼容性最好。
+- Excel Canvas 需要 Microsoft 365 Copilot 授权，且截至 2026-10-06 仍在分批推送（预计 10 月底完成），没推送到是正常的。
