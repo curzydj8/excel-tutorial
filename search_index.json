@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-09",
- "count": 434,
+ "count": 432,
  "types": [
   "case",
   "chart",
@@ -14,92 +14,38 @@
  ],
  "items": [
   {
-   "id": "func-SUM",
+   "id": "func-ABS",
    "type": "function",
    "column": "C04",
-   "title": "SUM",
-   "text": "SUM 求和：把一堆数字加起来，最常用的函数 SUM(数值1, [数值2], ...)",
+   "title": "ABS 取绝对值",
+   "text": "ABS 取绝对值 数学函数 取绝对值 ABS(数值)",
    "section": "func",
-   "ref": "SUM"
+   "ref": "ABS"
   },
   {
-   "id": "func-SUMIF",
+   "id": "func-AGGREGATE",
    "type": "function",
    "column": "C04",
-   "title": "SUMIF",
-   "text": "SUMIF 条件求和：只加满足条件的那部分 SUMIF(条件区域, 条件, [求和区域])",
+   "title": "AGGREGATE 聚合计算",
+   "text": "AGGREGATE 聚合计算 数学函数 聚合计算：SUBTOTAL 的升级版，可忽略错误值 AGGREGATE(功能代码, 选项, 数组, [参数k])",
    "section": "func",
-   "ref": "SUMIF"
-  },
-  {
-   "id": "func-SUMIFS",
-   "type": "function",
-   "column": "C04",
-   "title": "SUMIFS",
-   "text": "SUMIFS 多条件求和：同时满足多个条件才加 SUMIFS(求和区域, 条件区域1, 条件1, [条件区域2, 条件2], ...)",
-   "section": "func",
-   "ref": "SUMIFS"
+   "ref": "AGGREGATE"
   },
   {
    "id": "func-AVERAGE",
    "type": "function",
    "column": "C04",
-   "title": "AVERAGE",
-   "text": "AVERAGE 求平均值 AVERAGE(数值1, [数值2], ...)",
+   "title": "AVERAGE 求平均值",
+   "text": "AVERAGE 求平均值 数学函数 求平均值 AVERAGE(数值1, [数值2], ...)",
    "section": "func",
    "ref": "AVERAGE"
-  },
-  {
-   "id": "func-AVERAGEIF",
-   "type": "function",
-   "column": "C04",
-   "title": "AVERAGEIF",
-   "text": "AVERAGEIF 条件平均：只对满足条件的求平均 AVERAGEIF(条件区域, 条件, [平均区域])",
-   "section": "func",
-   "ref": "AVERAGEIF"
-  },
-  {
-   "id": "func-COUNT",
-   "type": "function",
-   "column": "C04",
-   "title": "COUNT",
-   "text": "COUNT 计数：数一数有多少个数字 COUNT(数值1, [数值2], ...)",
-   "section": "func",
-   "ref": "COUNT"
-  },
-  {
-   "id": "func-ROUND",
-   "type": "function",
-   "column": "C04",
-   "title": "ROUND",
-   "text": "ROUND 四舍五入到指定位数 ROUND(数值, 小数位数)",
-   "section": "func",
-   "ref": "ROUND"
-  },
-  {
-   "id": "func-ROUNDUP",
-   "type": "function",
-   "column": "C04",
-   "title": "ROUNDUP",
-   "text": "ROUNDUP 向上舍入（只入不舍） ROUNDUP(数值, 小数位数)",
-   "section": "func",
-   "ref": "ROUNDUP"
-  },
-  {
-   "id": "func-ROUNDDOWN",
-   "type": "function",
-   "column": "C04",
-   "title": "ROUNDDOWN",
-   "text": "ROUNDDOWN 向下舍入（只舍不入） ROUNDDOWN(数值, 小数位数)",
-   "section": "func",
-   "ref": "ROUNDDOWN"
   },
   {
    "id": "func-INT",
    "type": "function",
    "column": "C04",
-   "title": "INT",
-   "text": "INT 取整：直接砍掉小数部分 INT(数值)",
+   "title": "INT 向下取整",
+   "text": "INT 向下取整 数学函数 取整：直接砍掉小数部分 INT(数值)",
    "section": "func",
    "ref": "INT"
   },
@@ -107,35 +53,17 @@
    "id": "func-MOD",
    "type": "function",
    "column": "C04",
-   "title": "MOD",
-   "text": "MOD 取余数：如判断奇偶行 MOD(被除数, 除数)",
+   "title": "MOD 取余数",
+   "text": "MOD 取余数 数学函数 取余数：如判断奇偶行 MOD(被除数, 除数)",
    "section": "func",
    "ref": "MOD"
-  },
-  {
-   "id": "func-ABS",
-   "type": "function",
-   "column": "C04",
-   "title": "ABS",
-   "text": "ABS 取绝对值 ABS(数值)",
-   "section": "func",
-   "ref": "ABS"
-  },
-  {
-   "id": "func-SQRT",
-   "type": "function",
-   "column": "C04",
-   "title": "SQRT",
-   "text": "SQRT 开平方 SQRT(数值)",
-   "section": "func",
-   "ref": "SQRT"
   },
   {
    "id": "func-POWER",
    "type": "function",
    "column": "C04",
-   "title": "POWER",
-   "text": "POWER 乘方 POWER(底数, 指数)",
+   "title": "POWER 乘方",
+   "text": "POWER 乘方 数学函数 乘方 POWER(底数, 指数)",
    "section": "func",
    "ref": "POWER"
   },
@@ -143,8 +71,8 @@
    "id": "func-RAND",
    "type": "function",
    "column": "C04",
-   "title": "RAND",
-   "text": "RAND 生成 0~1 随机小数 RAND()",
+   "title": "RAND 随机小数",
+   "text": "RAND 随机小数 数学函数 生成 0~1 随机小数 RAND()",
    "section": "func",
    "ref": "RAND"
   },
@@ -152,296 +80,296 @@
    "id": "func-RANDBETWEEN",
    "type": "function",
    "column": "C04",
-   "title": "RANDBETWEEN",
-   "text": "RANDBETWEEN 生成指定范围的随机整数 RANDBETWEEN(下限, 上限)",
+   "title": "RANDBETWEEN 随机整数",
+   "text": "RANDBETWEEN 随机整数 数学函数 生成指定范围的随机整数 RANDBETWEEN(下限, 上限)",
    "section": "func",
    "ref": "RANDBETWEEN"
   },
   {
-   "id": "func-SUMPRODUCT",
+   "id": "func-ROUND",
    "type": "function",
    "column": "C04",
-   "title": "SUMPRODUCT",
-   "text": "SUMPRODUCT 乘积求和：先对应相乘再加总，万能函数 SUMPRODUCT(数组1, [数组2], ...)",
+   "title": "ROUND 四舍五入",
+   "text": "ROUND 四舍五入 数学函数 四舍五入到指定位数 ROUND(数值, 小数位数)",
    "section": "func",
-   "ref": "SUMPRODUCT"
+   "ref": "ROUND"
+  },
+  {
+   "id": "func-ROUNDDOWN",
+   "type": "function",
+   "column": "C04",
+   "title": "ROUNDDOWN 向下舍入",
+   "text": "ROUNDDOWN 向下舍入 数学函数 向下舍入（只舍不入） ROUNDDOWN(数值, 小数位数)",
+   "section": "func",
+   "ref": "ROUNDDOWN"
+  },
+  {
+   "id": "func-ROUNDUP",
+   "type": "function",
+   "column": "C04",
+   "title": "ROUNDUP 向上舍入",
+   "text": "ROUNDUP 向上舍入 数学函数 向上舍入（只入不舍） ROUNDUP(数值, 小数位数)",
+   "section": "func",
+   "ref": "ROUNDUP"
+  },
+  {
+   "id": "func-SQRT",
+   "type": "function",
+   "column": "C04",
+   "title": "SQRT 开平方",
+   "text": "SQRT 开平方 数学函数 开平方 SQRT(数值)",
+   "section": "func",
+   "ref": "SQRT"
   },
   {
    "id": "func-SUBTOTAL",
    "type": "function",
    "column": "C04",
-   "title": "SUBTOTAL",
-   "text": "SUBTOTAL 分类汇总：只对可见单元格求和，筛选后求和不翻车 SUBTOTAL(功能代码, 区域1, [区域2], ...)",
+   "title": "SUBTOTAL 分类汇总",
+   "text": "SUBTOTAL 分类汇总 数学函数 分类汇总：只对可见单元格求和，筛选后求和不翻车 SUBTOTAL(功能代码, 区域1, [区域2], ...)",
    "section": "func",
    "ref": "SUBTOTAL"
   },
   {
-   "id": "func-AGGREGATE",
+   "id": "func-SUM",
    "type": "function",
    "column": "C04",
-   "title": "AGGREGATE",
-   "text": "AGGREGATE 聚合计算：SUBTOTAL 的升级版，可忽略错误值 AGGREGATE(功能代码, 选项, 数组, [参数k])",
+   "title": "SUM 求和",
+   "text": "SUM 求和 数学函数 求和：把一堆数字加起来，最常用的函数 SUM(数值1, [数值2], ...)",
    "section": "func",
-   "ref": "AGGREGATE"
+   "ref": "SUM"
   },
   {
-   "id": "func-LEFT",
+   "id": "func-SUMIF",
    "type": "function",
    "column": "C04",
-   "title": "LEFT",
-   "text": "LEFT 从左边取指定个数的字符 LEFT(文本, [字符数])",
+   "title": "SUMIF 条件求和",
+   "text": "SUMIF 条件求和 数学函数 条件求和：只加满足条件的那部分 SUMIF(条件区域, 条件, [求和区域])",
    "section": "func",
-   "ref": "LEFT"
+   "ref": "SUMIF"
   },
   {
-   "id": "func-RIGHT",
+   "id": "func-SUMIFS",
    "type": "function",
    "column": "C04",
-   "title": "RIGHT",
-   "text": "RIGHT 从右边取指定个数的字符 RIGHT(文本, [字符数])",
+   "title": "SUMIFS 多条件求和",
+   "text": "SUMIFS 多条件求和 数学函数 多条件求和：同时满足多个条件才加 SUMIFS(求和区域, 条件区域1, 条件1, [条件区域2, 条件2], ...)",
    "section": "func",
-   "ref": "RIGHT"
+   "ref": "SUMIFS"
   },
   {
-   "id": "func-MID",
+   "id": "func-SUMPRODUCT",
    "type": "function",
    "column": "C04",
-   "title": "MID",
-   "text": "MID 从中间指定位置取字符 MID(文本, 起始位置, 字符数)",
+   "title": "SUMPRODUCT 乘积求和",
+   "text": "SUMPRODUCT 乘积求和 数学函数 乘积求和：先对应相乘再加总，万能函数 SUMPRODUCT(数组1, [数组2], ...)",
    "section": "func",
-   "ref": "MID"
-  },
-  {
-   "id": "func-LEN",
-   "type": "function",
-   "column": "C04",
-   "title": "LEN",
-   "text": "LEN 计算文本长度（几个字） LEN(文本)",
-   "section": "func",
-   "ref": "LEN"
+   "ref": "SUMPRODUCT"
   },
   {
    "id": "func-CONCAT",
    "type": "function",
    "column": "C04",
-   "title": "CONCAT",
-   "text": "CONCAT 拼接多个文本（CONCATENATE 的升级版） CONCAT(文本1, [文本2], ...)",
+   "title": "CONCAT 拼接文本",
+   "text": "CONCAT 拼接文本 文本函数 拼接多个文本（CONCATENATE 的升级版） CONCAT(文本1, [文本2], ...)",
    "section": "func",
    "ref": "CONCAT"
-  },
-  {
-   "id": "func-TEXTJOIN",
-   "type": "function",
-   "column": "C04",
-   "title": "TEXTJOIN",
-   "text": "TEXTJOIN 用分隔符拼接，自动跳过空值 TEXTJOIN(分隔符, 忽略空值, 文本1, [文本2], ...)",
-   "section": "func",
-   "ref": "TEXTJOIN"
-  },
-  {
-   "id": "func-TEXT",
-   "type": "function",
-   "column": "C04",
-   "title": "TEXT",
-   "text": "TEXT 把数字按指定格式转成文本 TEXT(数值, 格式代码)",
-   "section": "func",
-   "ref": "TEXT"
-  },
-  {
-   "id": "func-VALUE",
-   "type": "function",
-   "column": "C04",
-   "title": "VALUE",
-   "text": "VALUE 把文本转成数字 VALUE(文本)",
-   "section": "func",
-   "ref": "VALUE"
-  },
-  {
-   "id": "func-UPPER",
-   "type": "function",
-   "column": "C04",
-   "title": "UPPER",
-   "text": "UPPER 转大写 UPPER(文本)",
-   "section": "func",
-   "ref": "UPPER"
-  },
-  {
-   "id": "func-LOWER",
-   "type": "function",
-   "column": "C04",
-   "title": "LOWER",
-   "text": "LOWER 转小写 LOWER(文本)",
-   "section": "func",
-   "ref": "LOWER"
-  },
-  {
-   "id": "func-TRIM",
-   "type": "function",
-   "column": "C04",
-   "title": "TRIM",
-   "text": "TRIM 去掉首尾和多余空格 TRIM(文本)",
-   "section": "func",
-   "ref": "TRIM"
-  },
-  {
-   "id": "func-SUBSTITUTE",
-   "type": "function",
-   "column": "C04",
-   "title": "SUBSTITUTE",
-   "text": "SUBSTITUTE 替换指定的文本 SUBSTITUTE(文本, 旧文本, 新文本, [替换第几个])",
-   "section": "func",
-   "ref": "SUBSTITUTE"
-  },
-  {
-   "id": "func-REPLACE",
-   "type": "function",
-   "column": "C04",
-   "title": "REPLACE",
-   "text": "REPLACE 按位置替换文本 REPLACE(旧文本, 起始位置, 字符数, 新文本)",
-   "section": "func",
-   "ref": "REPLACE"
   },
   {
    "id": "func-FIND",
    "type": "function",
    "column": "C04",
-   "title": "FIND",
-   "text": "FIND 查找字符位置（区分大小写） FIND(查找文本, 源文本, [起始位置])",
+   "title": "FIND 查找位置",
+   "text": "FIND 查找位置 文本函数 查找字符位置（区分大小写） FIND(查找文本, 源文本, [起始位置])",
    "section": "func",
    "ref": "FIND"
+  },
+  {
+   "id": "func-LEFT",
+   "type": "function",
+   "column": "C04",
+   "title": "LEFT 取左 N 字符",
+   "text": "LEFT 取左 N 字符 文本函数 从左边取指定个数的字符 LEFT(文本, [字符数])",
+   "section": "func",
+   "ref": "LEFT"
+  },
+  {
+   "id": "func-LEN",
+   "type": "function",
+   "column": "C04",
+   "title": "LEN 文本长度",
+   "text": "LEN 文本长度 文本函数 计算文本长度（几个字） LEN(文本)",
+   "section": "func",
+   "ref": "LEN"
+  },
+  {
+   "id": "func-LOWER",
+   "type": "function",
+   "column": "C04",
+   "title": "LOWER 转小写",
+   "text": "LOWER 转小写 文本函数 转小写 LOWER(文本)",
+   "section": "func",
+   "ref": "LOWER"
+  },
+  {
+   "id": "func-MID",
+   "type": "function",
+   "column": "C04",
+   "title": "MID 取中间字符",
+   "text": "MID 取中间字符 文本函数 从中间指定位置取字符 MID(文本, 起始位置, 字符数)",
+   "section": "func",
+   "ref": "MID"
+  },
+  {
+   "id": "func-REPLACE",
+   "type": "function",
+   "column": "C04",
+   "title": "REPLACE 按位置替换",
+   "text": "REPLACE 按位置替换 文本函数 按位置替换文本 REPLACE(旧文本, 起始位置, 字符数, 新文本)",
+   "section": "func",
+   "ref": "REPLACE"
+  },
+  {
+   "id": "func-RIGHT",
+   "type": "function",
+   "column": "C04",
+   "title": "RIGHT 取右 N 字符",
+   "text": "RIGHT 取右 N 字符 文本函数 从右边取指定个数的字符 RIGHT(文本, [字符数])",
+   "section": "func",
+   "ref": "RIGHT"
   },
   {
    "id": "func-SEARCH",
    "type": "function",
    "column": "C04",
-   "title": "SEARCH",
-   "text": "SEARCH 查找字符位置（不区分大小写，支持通配符） SEARCH(查找文本, 源文本, [起始位置])",
+   "title": "SEARCH 查找位置",
+   "text": "SEARCH 查找位置 文本函数 查找字符位置（不区分大小写，支持通配符） SEARCH(查找文本, 源文本, [起始位置])",
    "section": "func",
    "ref": "SEARCH"
   },
   {
-   "id": "func-TEXTBEFORE",
+   "id": "func-SUBSTITUTE",
    "type": "function",
    "column": "C04",
-   "title": "TEXTBEFORE",
-   "text": "TEXTBEFORE 取分隔符之前的文本（新函数） TEXTBEFORE(文本, 分隔符, [第几个], [区分大小写], ...)",
+   "title": "SUBSTITUTE 按内容替换",
+   "text": "SUBSTITUTE 按内容替换 文本函数 替换指定的文本 SUBSTITUTE(文本, 旧文本, 新文本, [替换第几个])",
    "section": "func",
-   "ref": "TEXTBEFORE"
+   "ref": "SUBSTITUTE"
+  },
+  {
+   "id": "func-TEXT",
+   "type": "function",
+   "column": "C04",
+   "title": "TEXT 数字转文本",
+   "text": "TEXT 数字转文本 文本函数 把数字按指定格式转成文本 TEXT(数值, 格式代码)",
+   "section": "func",
+   "ref": "TEXT"
   },
   {
    "id": "func-TEXTAFTER",
    "type": "function",
    "column": "C04",
-   "title": "TEXTAFTER",
-   "text": "TEXTAFTER 取分隔符之后的文本（新函数） TEXTAFTER(文本, 分隔符, [第几个], ...)",
+   "title": "TEXTAFTER 取分隔符后文本",
+   "text": "TEXTAFTER 取分隔符后文本 文本函数 取分隔符之后的文本（新函数） TEXTAFTER(文本, 分隔符, [第几个], [区分大小写], [匹配到末尾], [未找到时])",
    "section": "func",
    "ref": "TEXTAFTER"
+  },
+  {
+   "id": "func-TEXTBEFORE",
+   "type": "function",
+   "column": "C04",
+   "title": "TEXTBEFORE 取分隔符前文本",
+   "text": "TEXTBEFORE 取分隔符前文本 文本函数 取分隔符之前的文本（新函数） TEXTBEFORE(文本, 分隔符, [第几个], [区分大小写], [匹配到末尾], [未找到时])",
+   "section": "func",
+   "ref": "TEXTBEFORE"
+  },
+  {
+   "id": "func-TEXTJOIN",
+   "type": "function",
+   "column": "C04",
+   "title": "TEXTJOIN 分隔符拼接",
+   "text": "TEXTJOIN 分隔符拼接 文本函数 用分隔符拼接，自动跳过空值 TEXTJOIN(分隔符, 忽略空值, 文本1, [文本2], ...)",
+   "section": "func",
+   "ref": "TEXTJOIN"
   },
   {
    "id": "func-TEXTSPLIT",
    "type": "function",
    "column": "C04",
-   "title": "TEXTSPLIT",
-   "text": "TEXTSPLIT 按分隔符拆分文本到多列（新函数） TEXTSPLIT(文本, 列分隔符, [行分隔符], ...)",
+   "title": "TEXTSPLIT 按分隔符拆分",
+   "text": "TEXTSPLIT 按分隔符拆分 文本函数 按分隔符拆分文本到多列（新函数） TEXTSPLIT(文本, 列分隔符, [行分隔符], [忽略空值], [区分大小写], [不足补齐值])",
    "section": "func",
    "ref": "TEXTSPLIT"
   },
   {
-   "id": "func-TODAY",
+   "id": "func-TRIM",
    "type": "function",
    "column": "C04",
-   "title": "TODAY",
-   "text": "TODAY 返回今天的日期 TODAY()",
+   "title": "TRIM 去多余空格",
+   "text": "TRIM 去多余空格 文本函数 去掉首尾和多余空格 TRIM(文本)",
    "section": "func",
-   "ref": "TODAY"
+   "ref": "TRIM"
   },
   {
-   "id": "func-NOW",
+   "id": "func-UPPER",
    "type": "function",
    "column": "C04",
-   "title": "NOW",
-   "text": "NOW 返回当前日期和时间 NOW()",
+   "title": "UPPER 转大写",
+   "text": "UPPER 转大写 文本函数 转大写 UPPER(文本)",
    "section": "func",
-   "ref": "NOW"
+   "ref": "UPPER"
+  },
+  {
+   "id": "func-VALUE",
+   "type": "function",
+   "column": "C04",
+   "title": "VALUE 文本转数字",
+   "text": "VALUE 文本转数字 文本函数 把文本转成数字 VALUE(文本)",
+   "section": "func",
+   "ref": "VALUE"
   },
   {
    "id": "func-DATE",
    "type": "function",
    "column": "C04",
-   "title": "DATE",
-   "text": "DATE 用年月日组成日期 DATE(年, 月, 日)",
+   "title": "DATE 组成日期",
+   "text": "DATE 组成日期 日期与时间函数 用年月日组成日期 DATE(年, 月, 日)",
    "section": "func",
    "ref": "DATE"
-  },
-  {
-   "id": "func-TIME",
-   "type": "function",
-   "column": "C04",
-   "title": "TIME",
-   "text": "TIME 用时分秒组成时间 TIME(时, 分, 秒)",
-   "section": "func",
-   "ref": "TIME"
-  },
-  {
-   "id": "func-YEAR",
-   "type": "function",
-   "column": "C04",
-   "title": "YEAR",
-   "text": "YEAR 提取年份 YEAR(日期)",
-   "section": "func",
-   "ref": "YEAR"
-  },
-  {
-   "id": "func-MONTH",
-   "type": "function",
-   "column": "C04",
-   "title": "MONTH",
-   "text": "MONTH 提取月份 MONTH(日期)",
-   "section": "func",
-   "ref": "MONTH"
-  },
-  {
-   "id": "func-DAY",
-   "type": "function",
-   "column": "C04",
-   "title": "DAY",
-   "text": "DAY 提取日 DAY(日期)",
-   "section": "func",
-   "ref": "DAY"
-  },
-  {
-   "id": "func-HOUR",
-   "type": "function",
-   "column": "C04",
-   "title": "HOUR",
-   "text": "HOUR 提取小时 HOUR(时间)",
-   "section": "func",
-   "ref": "HOUR"
-  },
-  {
-   "id": "func-MINUTE",
-   "type": "function",
-   "column": "C04",
-   "title": "MINUTE",
-   "text": "MINUTE 提取分钟 MINUTE(时间)",
-   "section": "func",
-   "ref": "MINUTE"
   },
   {
    "id": "func-DATEDIF",
    "type": "function",
    "column": "C04",
-   "title": "DATEDIF",
-   "text": "DATEDIF 计算两个日期的差（年/月/日） DATEDIF(开始日期, 结束日期, 单位)",
+   "title": "DATEDIF 日期差",
+   "text": "DATEDIF 日期差 日期与时间函数 计算两个日期的差（年/月/日） DATEDIF(开始日期, 结束日期, 单位)",
    "section": "func",
    "ref": "DATEDIF"
+  },
+  {
+   "id": "func-DATEVALUE",
+   "type": "function",
+   "column": "C04",
+   "title": "DATEVALUE 文本转日期",
+   "text": "DATEVALUE 文本转日期 日期与时间函数 把文本转成日期 DATEVALUE(日期文本)",
+   "section": "func",
+   "ref": "DATEVALUE"
+  },
+  {
+   "id": "func-DAY",
+   "type": "function",
+   "column": "C04",
+   "title": "DAY 提取日",
+   "text": "DAY 提取日 日期与时间函数 提取日 DAY(日期)",
+   "section": "func",
+   "ref": "DAY"
   },
   {
    "id": "func-EDATE",
    "type": "function",
    "column": "C04",
-   "title": "EDATE",
-   "text": "EDATE 返回 N 个月之前/之后的日期 EDATE(开始日期, 月数)",
+   "title": "EDATE N 个月前后日期",
+   "text": "EDATE N 个月前后日期 日期与时间函数 返回 N 个月之前/之后的日期 EDATE(开始日期, 月数)",
    "section": "func",
    "ref": "EDATE"
   },
@@ -449,107 +377,125 @@
    "id": "func-EOMONTH",
    "type": "function",
    "column": "C04",
-   "title": "EOMONTH",
-   "text": "EOMONTH 返回 N 个月之前/之后的月末日期 EOMONTH(开始日期, 月数)",
+   "title": "EOMONTH 月末日期",
+   "text": "EOMONTH 月末日期 日期与时间函数 返回 N 个月之前/之后的月末日期 EOMONTH(开始日期, 月数)",
    "section": "func",
    "ref": "EOMONTH"
   },
   {
-   "id": "func-WEEKDAY",
+   "id": "func-HOUR",
    "type": "function",
    "column": "C04",
-   "title": "WEEKDAY",
-   "text": "WEEKDAY 返回星期几 WEEKDAY(日期, [类型])",
+   "title": "HOUR 提取小时",
+   "text": "HOUR 提取小时 日期与时间函数 提取小时 HOUR(时间)",
    "section": "func",
-   "ref": "WEEKDAY"
+   "ref": "HOUR"
+  },
+  {
+   "id": "func-MINUTE",
+   "type": "function",
+   "column": "C04",
+   "title": "MINUTE 提取分钟",
+   "text": "MINUTE 提取分钟 日期与时间函数 提取分钟 MINUTE(时间)",
+   "section": "func",
+   "ref": "MINUTE"
+  },
+  {
+   "id": "func-MONTH",
+   "type": "function",
+   "column": "C04",
+   "title": "MONTH 提取月份",
+   "text": "MONTH 提取月份 日期与时间函数 提取月份 MONTH(日期)",
+   "section": "func",
+   "ref": "MONTH"
   },
   {
    "id": "func-NETWORKDAYS",
    "type": "function",
    "column": "C04",
-   "title": "NETWORKDAYS",
-   "text": "NETWORKDAYS 计算两个日期间的工作日天数 NETWORKDAYS(开始日期, 结束日期, [节假日区域])",
+   "title": "NETWORKDAYS 工作日天数",
+   "text": "NETWORKDAYS 工作日天数 日期与时间函数 计算两个日期间的工作日天数 NETWORKDAYS(开始日期, 结束日期, [节假日区域])",
    "section": "func",
    "ref": "NETWORKDAYS"
+  },
+  {
+   "id": "func-NOW",
+   "type": "function",
+   "column": "C04",
+   "title": "NOW 当前日期时间",
+   "text": "NOW 当前日期时间 日期与时间函数 返回当前日期和时间 NOW()",
+   "section": "func",
+   "ref": "NOW"
+  },
+  {
+   "id": "func-TIME",
+   "type": "function",
+   "column": "C04",
+   "title": "TIME 组成时间",
+   "text": "TIME 组成时间 日期与时间函数 用时分秒组成时间 TIME(时, 分, 秒)",
+   "section": "func",
+   "ref": "TIME"
+  },
+  {
+   "id": "func-TODAY",
+   "type": "function",
+   "column": "C04",
+   "title": "TODAY 今天日期",
+   "text": "TODAY 今天日期 日期与时间函数 返回今天的日期 TODAY()",
+   "section": "func",
+   "ref": "TODAY"
+  },
+  {
+   "id": "func-WEEKDAY",
+   "type": "function",
+   "column": "C04",
+   "title": "WEEKDAY 星期几",
+   "text": "WEEKDAY 星期几 日期与时间函数 返回星期几 WEEKDAY(日期, [类型])",
+   "section": "func",
+   "ref": "WEEKDAY"
   },
   {
    "id": "func-WORKDAY",
    "type": "function",
    "column": "C04",
-   "title": "WORKDAY",
-   "text": "WORKDAY 返回 N 个工作日之后/之前的日期 WORKDAY(开始日期, 天数, [节假日区域])",
+   "title": "WORKDAY 工作日推算",
+   "text": "WORKDAY 工作日推算 日期与时间函数 返回 N 个工作日之后/之前的日期 WORKDAY(开始日期, 天数, [节假日区域])",
    "section": "func",
    "ref": "WORKDAY"
   },
   {
-   "id": "func-DATEVALUE",
+   "id": "func-YEAR",
    "type": "function",
    "column": "C04",
-   "title": "DATEVALUE",
-   "text": "DATEVALUE 把文本转成日期 DATEVALUE(日期文本)",
+   "title": "YEAR 提取年份",
+   "text": "YEAR 提取年份 日期与时间函数 提取年份 YEAR(日期)",
    "section": "func",
-   "ref": "DATEVALUE"
-  },
-  {
-   "id": "func-IF",
-   "type": "function",
-   "column": "C04",
-   "title": "IF",
-   "text": "IF 如果…就…否则…，最常用的逻辑判断 IF(条件, 条件成立的值, 条件不成立的值)",
-   "section": "func",
-   "ref": "IF"
-  },
-  {
-   "id": "func-IFS",
-   "type": "function",
-   "column": "C04",
-   "title": "IFS",
-   "text": "IFS 多条件判断（IF 的嵌套升级版） IFS(条件1, 值1, [条件2, 值2], ...)",
-   "section": "func",
-   "ref": "IFS"
+   "ref": "YEAR"
   },
   {
    "id": "func-AND",
    "type": "function",
    "column": "C04",
-   "title": "AND",
-   "text": "AND 并且：所有条件都成立才为真 AND(条件1, [条件2], ...)",
+   "title": "AND 并且",
+   "text": "AND 并且 逻辑函数 并且：所有条件都成立才为真 AND(条件1, [条件2], ...)",
    "section": "func",
    "ref": "AND"
   },
   {
-   "id": "func-OR",
+   "id": "func-IF",
    "type": "function",
    "column": "C04",
-   "title": "OR",
-   "text": "OR 或者：任一条件成立即为真 OR(条件1, [条件2], ...)",
+   "title": "IF 条件判断",
+   "text": "IF 条件判断 逻辑函数 如果…就…否则…，最常用的逻辑判断 IF(条件, [条件成立的值], [条件不成立的值])",
    "section": "func",
-   "ref": "OR"
-  },
-  {
-   "id": "func-NOT",
-   "type": "function",
-   "column": "C04",
-   "title": "NOT",
-   "text": "NOT 取反 NOT(逻辑值)",
-   "section": "func",
-   "ref": "NOT"
-  },
-  {
-   "id": "func-XOR",
-   "type": "function",
-   "column": "C04",
-   "title": "XOR",
-   "text": "XOR 异或：奇数个真才为真 XOR(条件1, [条件2], ...)",
-   "section": "func",
-   "ref": "XOR"
+   "ref": "IF"
   },
   {
    "id": "func-IFERROR",
    "type": "function",
    "column": "C04",
-   "title": "IFERROR",
-   "text": "IFERROR 出错时显示指定内容，告别 #N/A 满屏 IFERROR(公式, 出错时返回的值)",
+   "title": "IFERROR 容错处理",
+   "text": "IFERROR 容错处理 逻辑函数 出错时显示指定内容，告别 #N/A 满屏 IFERROR(公式, 出错时返回的值)",
    "section": "func",
    "ref": "IFERROR"
   },
@@ -557,71 +503,125 @@
    "id": "func-IFNA",
    "type": "function",
    "column": "C04",
-   "title": "IFNA",
-   "text": "IFNA 只处理 #N/A 错误 IFNA(公式, 为#N/A时返回的值)",
+   "title": "IFNA 处理 #N/A",
+   "text": "IFNA 处理 #N/A 逻辑函数 只处理 #N/A 错误 IFNA(公式, 为#N/A时返回的值)",
    "section": "func",
    "ref": "IFNA"
+  },
+  {
+   "id": "func-IFS",
+   "type": "function",
+   "column": "C04",
+   "title": "IFS 多条件判断",
+   "text": "IFS 多条件判断 逻辑函数 多条件判断（IF 的嵌套升级版） IFS(条件1, 值1, [条件2, 值2], ...)",
+   "section": "func",
+   "ref": "IFS"
   },
   {
    "id": "func-LET",
    "type": "function",
    "column": "C04",
-   "title": "LET",
-   "text": "LET 给公式中的重复计算起个名字，提高可读性 LET(名称1, 值1, [名称2, 值2], ..., 计算式)",
+   "title": "LET 定义名称",
+   "text": "LET 定义名称 逻辑函数 给公式中的重复计算起个名字，提高可读性 LET(名称1, 值1, [名称2, 值2], ..., 计算式)",
    "section": "func",
    "ref": "LET"
+  },
+  {
+   "id": "func-NOT",
+   "type": "function",
+   "column": "C04",
+   "title": "NOT 取反",
+   "text": "NOT 取反 逻辑函数 取反 NOT(逻辑值)",
+   "section": "func",
+   "ref": "NOT"
+  },
+  {
+   "id": "func-OR",
+   "type": "function",
+   "column": "C04",
+   "title": "OR 或者",
+   "text": "OR 或者 逻辑函数 或者：任一条件成立即为真 OR(条件1, [条件2], ...)",
+   "section": "func",
+   "ref": "OR"
   },
   {
    "id": "func-SWITCH",
    "type": "function",
    "column": "C04",
-   "title": "SWITCH",
-   "text": "SWITCH 多值匹配，比嵌套 IF 清晰 SWITCH(表达式, 值1, 结果1, [值2, 结果2], ..., [默认值])",
+   "title": "SWITCH 多值匹配",
+   "text": "SWITCH 多值匹配 逻辑函数 多值匹配，比嵌套 IF 清晰 SWITCH(表达式, 值1, 结果1, [值2, 结果2], ..., [默认值])",
    "section": "func",
    "ref": "SWITCH"
   },
   {
-   "id": "func-VLOOKUP",
+   "id": "func-XOR",
    "type": "function",
    "column": "C04",
-   "title": "VLOOKUP",
-   "text": "VLOOKUP 纵向查找：按关键字在表格中找对应值 VLOOKUP(查找值, 表格区域, 返回第几列, [精确/模糊匹配])",
+   "title": "XOR 异或",
+   "text": "XOR 异或 逻辑函数 异或：奇数个真才为真 XOR(条件1, [条件2], ...)",
    "section": "func",
-   "ref": "VLOOKUP"
+   "ref": "XOR"
+  },
+  {
+   "id": "func-CHOOSE",
+   "type": "function",
+   "column": "C04",
+   "title": "CHOOSE 按序号取值",
+   "text": "CHOOSE 按序号取值 查找与引用函数 按序号从列表中取值 CHOOSE(序号, 值1, 值2, ...)",
+   "section": "func",
+   "ref": "CHOOSE"
+  },
+  {
+   "id": "func-COLUMN",
+   "type": "function",
+   "column": "C04",
+   "title": "COLUMN 返回列号",
+   "text": "COLUMN 返回列号 查找与引用函数 返回列号 COLUMN([单元格])",
+   "section": "func",
+   "ref": "COLUMN"
+  },
+  {
+   "id": "func-FILTER",
+   "type": "function",
+   "column": "C04",
+   "title": "FILTER 动态筛选",
+   "text": "FILTER 动态筛选 查找与引用函数 动态数组：按条件筛选（新函数） FILTER(数组, 筛选条件, [无结果时显示])",
+   "section": "func",
+   "ref": "FILTER"
   },
   {
    "id": "func-HLOOKUP",
    "type": "function",
    "column": "C04",
-   "title": "HLOOKUP",
-   "text": "HLOOKUP 横向查找（VLOOKUP 的横版） HLOOKUP(查找值, 表格区域, 返回第几行, [精确/模糊匹配])",
+   "title": "HLOOKUP 横向查找",
+   "text": "HLOOKUP 横向查找 查找与引用函数 横向查找（VLOOKUP 的横版） HLOOKUP(查找值, 表格区域, 返回第几行, [精确/模糊匹配])",
    "section": "func",
    "ref": "HLOOKUP"
-  },
-  {
-   "id": "func-XLOOKUP",
-   "type": "function",
-   "column": "C04",
-   "title": "XLOOKUP",
-   "text": "XLOOKUP 新一代查找：VLOOKUP 的完美替代品 XLOOKUP(查找值, 查找区域, 返回区域, [未找到时], [匹配模式], [搜索模式])",
-   "section": "func",
-   "ref": "XLOOKUP"
   },
   {
    "id": "func-INDEX",
    "type": "function",
    "column": "C04",
-   "title": "INDEX",
-   "text": "INDEX 按行列号取区域中的值 INDEX(区域, 行号, [列号])",
+   "title": "INDEX 按行列号取值",
+   "text": "INDEX 按行列号取值 查找与引用函数 按行列号取区域中的值 INDEX(区域, 行号, [列号])",
    "section": "func",
    "ref": "INDEX"
+  },
+  {
+   "id": "func-INDIRECT",
+   "type": "function",
+   "column": "C04",
+   "title": "INDIRECT 文本转引用",
+   "text": "INDIRECT 文本转引用 查找与引用函数 把文本转成引用，实现动态引用 INDIRECT(文本地址, [A1样式])",
+   "section": "func",
+   "ref": "INDIRECT"
   },
   {
    "id": "func-MATCH",
    "type": "function",
    "column": "C04",
-   "title": "MATCH",
-   "text": "MATCH 找某个值在区域中的位置 MATCH(查找值, 查找区域, [匹配类型])",
+   "title": "MATCH 查找位置序号",
+   "text": "MATCH 查找位置序号 查找与引用函数 找某个值在区域中的位置 MATCH(查找值, 查找区域, [匹配类型])",
    "section": "func",
    "ref": "MATCH"
   },
@@ -629,134 +629,71 @@
    "id": "func-OFFSET",
    "type": "function",
    "column": "C04",
-   "title": "OFFSET",
-   "text": "OFFSET 以某个单元格为基准偏移取区域 OFFSET(基准单元格, 下移行数, 右移列数, [高度], [宽度])",
+   "title": "OFFSET 偏移引用",
+   "text": "OFFSET 偏移引用 查找与引用函数 以某个单元格为基准偏移取区域 OFFSET(基准单元格, 下移行数, 右移列数, [高度], [宽度])",
    "section": "func",
    "ref": "OFFSET"
-  },
-  {
-   "id": "func-INDIRECT",
-   "type": "function",
-   "column": "C04",
-   "title": "INDIRECT",
-   "text": "INDIRECT 把文本转成引用，实现动态引用 INDIRECT(文本地址, [A1样式])",
-   "section": "func",
-   "ref": "INDIRECT"
-  },
-  {
-   "id": "func-CHOOSE",
-   "type": "function",
-   "column": "C04",
-   "title": "CHOOSE",
-   "text": "CHOOSE 按序号从列表中取值 CHOOSE(序号, 值1, 值2, ...)",
-   "section": "func",
-   "ref": "CHOOSE"
   },
   {
    "id": "func-ROW",
    "type": "function",
    "column": "C04",
-   "title": "ROW",
-   "text": "ROW 返回行号 ROW([单元格])",
+   "title": "ROW 返回行号",
+   "text": "ROW 返回行号 查找与引用函数 返回行号 ROW([单元格])",
    "section": "func",
    "ref": "ROW"
-  },
-  {
-   "id": "func-COLUMN",
-   "type": "function",
-   "column": "C04",
-   "title": "COLUMN",
-   "text": "COLUMN 返回列号 COLUMN([单元格])",
-   "section": "func",
-   "ref": "COLUMN"
-  },
-  {
-   "id": "func-TRANSPOSE",
-   "type": "function",
-   "column": "C04",
-   "title": "TRANSPOSE",
-   "text": "TRANSPOSE 行列转置 TRANSPOSE(数组)",
-   "section": "func",
-   "ref": "TRANSPOSE"
   },
   {
    "id": "func-SORT",
    "type": "function",
    "column": "C04",
-   "title": "SORT",
-   "text": "SORT 动态数组：自动排序（新函数） SORT(数组, [排序列], [升/降序], [按行/列])",
+   "title": "SORT 动态排序",
+   "text": "SORT 动态排序 查找与引用函数 动态数组：自动排序（新函数） SORT(数组, [排序列], [升/降序], [按行/列])",
    "section": "func",
    "ref": "SORT"
   },
   {
-   "id": "func-FILTER",
+   "id": "func-TRANSPOSE",
    "type": "function",
    "column": "C04",
-   "title": "FILTER",
-   "text": "FILTER 动态数组：按条件筛选（新函数） FILTER(数组, 筛选条件, [无结果时显示])",
+   "title": "TRANSPOSE 行列转置",
+   "text": "TRANSPOSE 行列转置 查找与引用函数 行列转置 TRANSPOSE(数组)",
    "section": "func",
-   "ref": "FILTER"
+   "ref": "TRANSPOSE"
   },
   {
    "id": "func-UNIQUE",
    "type": "function",
    "column": "C04",
-   "title": "UNIQUE",
-   "text": "UNIQUE 动态数组：去重取唯一值（新函数） UNIQUE(数组, [按列], [只取唯一值])",
+   "title": "UNIQUE 去重取唯一值",
+   "text": "UNIQUE 去重取唯一值 查找与引用函数 动态数组：去重取唯一值（新函数） UNIQUE(数组, [按列], [只取唯一值])",
    "section": "func",
    "ref": "UNIQUE"
   },
   {
-   "id": "func-COUNT",
+   "id": "func-VLOOKUP",
    "type": "function",
    "column": "C04",
-   "title": "COUNT",
-   "text": "COUNT 计数：数一数有多少个数字 COUNT(数值1, [数值2], ...)",
+   "title": "VLOOKUP 纵向查找",
+   "text": "VLOOKUP 纵向查找 查找与引用函数 纵向查找：按关键字在表格中找对应值 VLOOKUP(查找值, 表格区域, 返回第几列, [精确/模糊匹配])",
    "section": "func",
-   "ref": "COUNT"
+   "ref": "VLOOKUP"
   },
   {
-   "id": "func-COUNTA",
+   "id": "func-XLOOKUP",
    "type": "function",
    "column": "C04",
-   "title": "COUNTA",
-   "text": "COUNTA 计数：数一数有多少个非空单元格 COUNTA(数值1, [数值2], ...)",
+   "title": "XLOOKUP 新一代查找",
+   "text": "XLOOKUP 新一代查找 查找与引用函数 新一代查找：VLOOKUP 的完美替代品 XLOOKUP(查找值, 查找区域, 返回区域, [未找到时], [匹配模式], [搜索模式])",
    "section": "func",
-   "ref": "COUNTA"
-  },
-  {
-   "id": "func-COUNTBLANK",
-   "type": "function",
-   "column": "C04",
-   "title": "COUNTBLANK",
-   "text": "COUNTBLANK 数一数有多少个空单元格 COUNTBLANK(区域)",
-   "section": "func",
-   "ref": "COUNTBLANK"
-  },
-  {
-   "id": "func-COUNTIF",
-   "type": "function",
-   "column": "C04",
-   "title": "COUNTIF",
-   "text": "COUNTIF 条件计数：满足条件的有几个 COUNTIF(条件区域, 条件)",
-   "section": "func",
-   "ref": "COUNTIF"
-  },
-  {
-   "id": "func-COUNTIFS",
-   "type": "function",
-   "column": "C04",
-   "title": "COUNTIFS",
-   "text": "COUNTIFS 多条件计数 COUNTIFS(条件区域1, 条件1, [条件区域2, 条件2], ...)",
-   "section": "func",
-   "ref": "COUNTIFS"
+   "ref": "XLOOKUP"
   },
   {
    "id": "func-AVERAGEIF",
    "type": "function",
    "column": "C04",
-   "title": "AVERAGEIF",
-   "text": "AVERAGEIF 条件平均：只对满足条件的求平均 AVERAGEIF(条件区域, 条件, [平均区域])",
+   "title": "AVERAGEIF 条件平均",
+   "text": "AVERAGEIF 条件平均 统计函数 条件平均：只对满足条件的求平均 AVERAGEIF(条件区域, 条件, [平均区域])",
    "section": "func",
    "ref": "AVERAGEIF"
   },
@@ -764,80 +701,125 @@
    "id": "func-AVERAGEIFS",
    "type": "function",
    "column": "C04",
-   "title": "AVERAGEIFS",
-   "text": "AVERAGEIFS 多条件平均 AVERAGEIFS(平均区域, 条件区域1, 条件1, ...)",
+   "title": "AVERAGEIFS 多条件平均",
+   "text": "AVERAGEIFS 多条件平均 统计函数 多条件平均 AVERAGEIFS(平均区域, 条件区域1, 条件1, ...)",
    "section": "func",
    "ref": "AVERAGEIFS"
   },
   {
-   "id": "func-MAX",
+   "id": "func-COUNT",
    "type": "function",
    "column": "C04",
-   "title": "MAX",
-   "text": "MAX 取最大值 MAX(数值1, [数值2], ...)",
+   "title": "COUNT 计数",
+   "text": "COUNT 计数 统计函数 计数：数一数有多少个数字 COUNT(数值1, [数值2], ...)",
    "section": "func",
-   "ref": "MAX"
+   "ref": "COUNT"
   },
   {
-   "id": "func-MIN",
+   "id": "func-COUNTA",
    "type": "function",
    "column": "C04",
-   "title": "MIN",
-   "text": "MIN 取最小值 MIN(数值1, [数值2], ...)",
+   "title": "COUNTA 数非空单元格",
+   "text": "COUNTA 数非空单元格 统计函数 计数：数一数有多少个非空单元格 COUNTA(数值1, [数值2], ...)",
    "section": "func",
-   "ref": "MIN"
+   "ref": "COUNTA"
+  },
+  {
+   "id": "func-COUNTBLANK",
+   "type": "function",
+   "column": "C04",
+   "title": "COUNTBLANK 数空单元格",
+   "text": "COUNTBLANK 数空单元格 统计函数 数一数有多少个空单元格 COUNTBLANK(区域)",
+   "section": "func",
+   "ref": "COUNTBLANK"
+  },
+  {
+   "id": "func-COUNTIF",
+   "type": "function",
+   "column": "C04",
+   "title": "COUNTIF 条件计数",
+   "text": "COUNTIF 条件计数 统计函数 条件计数：满足条件的有几个 COUNTIF(条件区域, 条件)",
+   "section": "func",
+   "ref": "COUNTIF"
+  },
+  {
+   "id": "func-COUNTIFS",
+   "type": "function",
+   "column": "C04",
+   "title": "COUNTIFS 多条件计数",
+   "text": "COUNTIFS 多条件计数 统计函数 多条件计数 COUNTIFS(条件区域1, 条件1, [条件区域2, 条件2], ...)",
+   "section": "func",
+   "ref": "COUNTIFS"
   },
   {
    "id": "func-LARGE",
    "type": "function",
    "column": "C04",
-   "title": "LARGE",
-   "text": "LARGE 取第 N 大的值 LARGE(数组, k)",
+   "title": "LARGE 取第 N 大",
+   "text": "LARGE 取第 N 大 统计函数 取第 N 大的值 LARGE(数组, k)",
    "section": "func",
    "ref": "LARGE"
   },
   {
-   "id": "func-SMALL",
+   "id": "func-MAX",
    "type": "function",
    "column": "C04",
-   "title": "SMALL",
-   "text": "SMALL 取第 N 小的值 SMALL(数组, k)",
+   "title": "MAX 取最大值",
+   "text": "MAX 取最大值 统计函数 取最大值 MAX(数值1, [数值2], ...)",
    "section": "func",
-   "ref": "SMALL"
-  },
-  {
-   "id": "func-RANK",
-   "type": "function",
-   "column": "C04",
-   "title": "RANK",
-   "text": "RANK 排名 RANK(数值, 引用区域, [排序方式])",
-   "section": "func",
-   "ref": "RANK"
+   "ref": "MAX"
   },
   {
    "id": "func-MEDIAN",
    "type": "function",
    "column": "C04",
-   "title": "MEDIAN",
-   "text": "MEDIAN 取中位数 MEDIAN(数值1, [数值2], ...)",
+   "title": "MEDIAN 取中位数",
+   "text": "MEDIAN 取中位数 统计函数 取中位数 MEDIAN(数值1, [数值2], ...)",
    "section": "func",
    "ref": "MEDIAN"
+  },
+  {
+   "id": "func-MIN",
+   "type": "function",
+   "column": "C04",
+   "title": "MIN 取最小值",
+   "text": "MIN 取最小值 统计函数 取最小值 MIN(数值1, [数值2], ...)",
+   "section": "func",
+   "ref": "MIN"
   },
   {
    "id": "func-MODE",
    "type": "function",
    "column": "C04",
-   "title": "MODE",
-   "text": "MODE 取众数 MODE(数值1, [数值2], ...)",
+   "title": "MODE 取众数",
+   "text": "MODE 取众数 统计函数 取众数 MODE(数值1, [数值2], ...)",
    "section": "func",
    "ref": "MODE"
+  },
+  {
+   "id": "func-RANK",
+   "type": "function",
+   "column": "C04",
+   "title": "RANK 排名",
+   "text": "RANK 排名 统计函数 排名 RANK(数值, 引用区域, [排序方式])",
+   "section": "func",
+   "ref": "RANK"
+  },
+  {
+   "id": "func-SMALL",
+   "type": "function",
+   "column": "C04",
+   "title": "SMALL 取第 N 小",
+   "text": "SMALL 取第 N 小 统计函数 取第 N 小的值 SMALL(数组, k)",
+   "section": "func",
+   "ref": "SMALL"
   },
   {
    "id": "func-STDEV",
    "type": "function",
    "column": "C04",
-   "title": "STDEV",
-   "text": "STDEV 标准差（样本） STDEV(数值1, [数值2], ...)",
+   "title": "STDEV 标准差",
+   "text": "STDEV 标准差 统计函数 标准差（样本） STDEV(数值1, [数值2], ...)",
    "section": "func",
    "ref": "STDEV"
   },
@@ -845,91 +827,91 @@
    "id": "func-VAR",
    "type": "function",
    "column": "C04",
-   "title": "VAR",
-   "text": "VAR 方差（样本） VAR(数值1, [数值2], ...)",
+   "title": "VAR 方差",
+   "text": "VAR 方差 统计函数 方差（样本） VAR(数值1, [数值2], ...)",
    "section": "func",
    "ref": "VAR"
-  },
-  {
-   "id": "func-PMT",
-   "type": "function",
-   "column": "C04",
-   "title": "PMT",
-   "text": "PMT 计算每期还款额（房贷月供） PMT(利率, 期数, 现值, [终值], [类型])",
-   "section": "func",
-   "ref": "PMT"
-  },
-  {
-   "id": "func-FV",
-   "type": "function",
-   "column": "C04",
-   "title": "FV",
-   "text": "FV 终值：现在存钱未来值多少 FV(利率, 期数, 每期付款, [现值], [类型])",
-   "section": "func",
-   "ref": "FV"
-  },
-  {
-   "id": "func-PV",
-   "type": "function",
-   "column": "C04",
-   "title": "PV",
-   "text": "PV 现值：未来的钱现在值多少 PV(利率, 期数, 每期付款, [终值], [类型])",
-   "section": "func",
-   "ref": "PV"
-  },
-  {
-   "id": "func-NPV",
-   "type": "function",
-   "column": "C04",
-   "title": "NPV",
-   "text": "NPV 净现值：评估投资值不值 NPV(利率, 现金流1, [现金流2], ...)",
-   "section": "func",
-   "ref": "NPV"
-  },
-  {
-   "id": "func-IRR",
-   "type": "function",
-   "column": "C04",
-   "title": "IRR",
-   "text": "IRR 内部收益率 IRR(现金流数组, [预估值])",
-   "section": "func",
-   "ref": "IRR"
-  },
-  {
-   "id": "func-RATE",
-   "type": "function",
-   "column": "C04",
-   "title": "RATE",
-   "text": "RATE 利率 RATE(期数, 每期付款, 现值, [终值], [类型], [预估值])",
-   "section": "func",
-   "ref": "RATE"
-  },
-  {
-   "id": "func-NPER",
-   "type": "function",
-   "column": "C04",
-   "title": "NPER",
-   "text": "NPER 期数 NPER(利率, 每期付款, 现值, [终值], [类型])",
-   "section": "func",
-   "ref": "NPER"
-  },
-  {
-   "id": "func-SLN",
-   "type": "function",
-   "column": "C04",
-   "title": "SLN",
-   "text": "SLN 直线折旧法 SLN(原值, 残值, 使用年限)",
-   "section": "func",
-   "ref": "SLN"
   },
   {
    "id": "func-DB",
    "type": "function",
    "column": "C04",
-   "title": "DB",
-   "text": "DB 余额递减折旧法 DB(原值, 残值, 使用年限, 第几年, [首年月份数])",
+   "title": "DB 余额递减折旧",
+   "text": "DB 余额递减折旧 财务函数 余额递减折旧法 DB(原值, 残值, 使用年限, 第几年, [首年月份数])",
    "section": "func",
    "ref": "DB"
+  },
+  {
+   "id": "func-FV",
+   "type": "function",
+   "column": "C04",
+   "title": "FV 终值",
+   "text": "FV 终值 财务函数 终值：现在存钱未来值多少 FV(利率, 期数, 每期付款, [现值], [类型])",
+   "section": "func",
+   "ref": "FV"
+  },
+  {
+   "id": "func-IRR",
+   "type": "function",
+   "column": "C04",
+   "title": "IRR 内部收益率",
+   "text": "IRR 内部收益率 财务函数 内部收益率 IRR(现金流数组, [预估值])",
+   "section": "func",
+   "ref": "IRR"
+  },
+  {
+   "id": "func-NPER",
+   "type": "function",
+   "column": "C04",
+   "title": "NPER 期数",
+   "text": "NPER 期数 财务函数 期数 NPER(利率, 每期付款, 现值, [终值], [类型])",
+   "section": "func",
+   "ref": "NPER"
+  },
+  {
+   "id": "func-NPV",
+   "type": "function",
+   "column": "C04",
+   "title": "NPV 净现值",
+   "text": "NPV 净现值 财务函数 净现值：评估投资值不值 NPV(利率, 现金流1, [现金流2], ...)",
+   "section": "func",
+   "ref": "NPV"
+  },
+  {
+   "id": "func-PMT",
+   "type": "function",
+   "column": "C04",
+   "title": "PMT 每期还款额",
+   "text": "PMT 每期还款额 财务函数 计算每期还款额（房贷月供） PMT(利率, 期数, 现值, [终值], [类型])",
+   "section": "func",
+   "ref": "PMT"
+  },
+  {
+   "id": "func-PV",
+   "type": "function",
+   "column": "C04",
+   "title": "PV 现值",
+   "text": "PV 现值 财务函数 现值：未来的钱现在值多少 PV(利率, 期数, 每期付款, [终值], [类型])",
+   "section": "func",
+   "ref": "PV"
+  },
+  {
+   "id": "func-RATE",
+   "type": "function",
+   "column": "C04",
+   "title": "RATE 利率",
+   "text": "RATE 利率 财务函数 利率 RATE(期数, 每期付款, 现值, [终值], [类型], [预估值])",
+   "section": "func",
+   "ref": "RATE"
+  },
+  {
+   "id": "func-SLN",
+   "type": "function",
+   "column": "C04",
+   "title": "SLN 直线折旧",
+   "text": "SLN 直线折旧 财务函数 直线折旧法 SLN(原值, 残值, 使用年限)",
+   "section": "func",
+   "ref": "SLN"
   },
   {
    "id": "tut-interface",
