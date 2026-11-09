@@ -15,7 +15,7 @@
 | [05-lookup.md](05-lookup.md) | 查找引用函数 | 14 | 查表、匹配、动态数组、去重筛选 |
 | [06-statistical.md](06-statistical.md) | 统计函数 | 16 | 计数、最值、排名、中位数、标准差 |
 | [07-financial.md](07-financial.md) | 财务函数 | 9 | 房贷月供、定投终值、NPV、IRR、折旧 |
-| **合计** | | **102** | |
+| **合计** | | **102 条目（去重 100 个函数）** | |
 
 ## 函数速查表
 
@@ -25,8 +25,8 @@
 |------|-----------|
 | SUM | 求和 |
 | SUMIF / SUMIFS | 单条件 / 多条件求和 |
-| AVERAGE / AVERAGEIF | 求平均 / 条件平均 |
-| COUNT | 统计数字个数 |
+| AVERAGE / AVERAGEIF | 求平均 / 条件平均（AVERAGEIF 完整条目见统计函数章）|
+| COUNT | 统计数字个数（完整条目见统计函数章）|
 | ROUND / ROUNDUP / ROUNDDOWN | 四舍五入 / 向上进位 / 向下舍去 |
 | INT | 向下取整 |
 | MOD | 取余数 |
