@@ -10,13 +10,16 @@
 
 > **验证说明**：本篇 VBA 语法经 Microsoft 官方文档核对，数值经 Python 独立验算；**所有 VBA 代码均未在 Excel 内执行验证**（无 Excel 环境）。前置基础（变量、循环、Sub/Function）见本目录 [01-basics.md](01-basics.md)。
 
-## 学习目标
+## 1. 学习目标
 
 学完本篇，你将能够：
 - 说出 Application → Workbook → Worksheet → Range 的层级链
 - 用 Range 与 Cells 读写单元格
 - 用 With 简化重复的对象引用
-## 1. 四大对象与层级关系
+
+## 2. 基础概念
+
+### 2.1 四大对象与层级关系
 
 Excel 的对象是树状层级结构：
 
@@ -54,7 +57,7 @@ End Sub
 
 > **ThisWorkbook vs ActiveWorkbook**：`ThisWorkbook` 是代码所在的工作簿（固定），`ActiveWorkbook` 是当前显示在最前面的工作簿（会变）。写代码时优先用 `ThisWorkbook`，避免用户切换窗口导致操作错对象。
 
-## 2. Application 对象
+### 2.2 Application 对象
 
 代表 Excel 程序本身，控制全局行为：
 
@@ -102,7 +105,7 @@ Sub ProgressDemo()
 End Sub
 ```
 
-## 3. Workbook 对象
+### 2.3 Workbook 对象
 
 ```vb
 Sub WorkbookDemo()
@@ -131,7 +134,7 @@ End Sub
 
 > **Set 的作用**：对象变量赋值必须用 `Set`，普通变量（数字、字符串）直接用 `=`。忘记 `Set` 会报"需要对象"错误。
 
-## 4. Worksheet 对象
+### 2.4 Worksheet 对象
 
 ```vb
 Sub WorksheetDemo()
@@ -164,32 +167,13 @@ ws.Delete
 Application.DisplayAlerts = True
 ```
 
-## 5. Range 对象：核心中的核心
+### 2.5 Range 对象：核心中的核心
 
 ### Cells vs Range
 
 两者都能定位单元格，区别在写法：
 
-```vb
-Sub CellsVsRange()
-    ' Range：用 A1 式地址，直观
-    Range("A1").Value = 1
-    Range("A1:C3").Value = 2
-
-    ' Cells：用行号+列号，适合循环
-    Cells(1, 1).Value = 1        ' = Range("A1")
-    Cells(1, "A").Value = 1      ' 列也可以用字母
-
-    Dim i As Long
-    For i = 1 To 10
-        Cells(i, 2).Value = i * 10   ' B列填 10,20,...,100
-    Next i
-
-    ' 组合：Cells 定位起点，Resize 扩展区域
-    Cells(1, 1).Resize(5, 3).Value = 0   ' A1:C5 填 0
-End Sub
-```
-
+示例代码见 §5 公式和代码（Range 与 Cells 读写对照）。
 | 场景 | 推荐 |
 |------|------|
 | 固定地址 | `Range("A1")` |
@@ -222,7 +206,7 @@ End Sub
 
 `End(xlUp)` 相当于在单元格按 `Ctrl + ↑`，是找"最后一行"最常用的方法。四个方向：`xlUp`、`xlDown`、`xlToLeft`、`xlToRight`。
 
-## 6. 常用属性
+### 2.6 常用属性
 
 ### Value / Formula
 
@@ -282,7 +266,7 @@ Range("A1").RowHeight = 30
 Range("B1").ColumnWidth = 20
 ```
 
-## 7. 常用方法
+### 2.7 常用方法
 
 ```vb
 Sub MethodDemo()
@@ -319,7 +303,7 @@ End Sub
 
 > `Find` 找不到时返回 `Nothing`，必须用 `If Not found Is Nothing` 判断，否则报错。
 
-## 8. With 语句
+### 2.8 With 语句
 
 对同一对象多次操作时，避免重复书写：
 
@@ -340,13 +324,13 @@ End With
 
 With 可以嵌套，内层 `.Font` 指的是外层对象的 Font。
 
-## 9. 对象浏览器
+### 2.9 对象浏览器
 
 按 `F2` 打开对象浏览器，可以查看所有对象、属性、方法的说明。选中一个成员，底部会显示语法和简要说明，是查资料最快的方式。
 
 使用技巧：在代码中选中一个关键字（如 `Range`），按 `Shift + F2` 直接跳转到它的定义。
 
-## 10. 事件
+### 2.10 事件
 
 事件是"发生某事时自动执行的代码"，写在特定位置：
 
@@ -391,19 +375,57 @@ End Sub
 
 事件过程必须是 `Private Sub`，且**不能改名**，否则不会被触发。
 
----
+## 3. 操作步骤
 
-## 实际工作场景
+1. 按 `Alt + F11` 打开 VBE，在标准模块中写代码。
+2. 沿层级链拿到对象：`ThisWorkbook` → `Worksheets("表名")` → `Range("A1")`，优先用 `ThisWorkbook` 而不用 `ActiveWorkbook`。
+3. 固定地址用 `Range("A1")`，循环中动态定位用 `Cells(行, 列)`，找最后一行用 `Cells(Rows.Count, 1).End(xlUp).Row`。
+4. 对同一对象多次操作时用 `With` 包裹，避免重复书写对象路径。
+5. 批量操作前关掉性能三件套（`ScreenUpdating = False`、`Calculation = xlCalculationManual`、`EnableEvents = False`），结束后再恢复。
+6. 需要自动触发时写事件过程（如 `Worksheet_Change`），在事件内改单元格必须用 `EnableEvents = False/True` 包裹，防止无限递归。
+7. 保存为 `.xlsm`，并用 VBE「调试 → 编译」检查。
+
+## 4. 图文示例
+
+日报表一键美化前后：美化前是导出的原始报表，无格式；美化后标题行用微软雅黑 14 号加粗（§2.6 的 `Font` 写法），日期列设成 `yyyy-mm-dd` 数字格式，占比列设成 `0.00%`，B 列宽设为 20；整套操作写成一个过程，每天打开报表按一次宏就完成（做法见 §6 场景 1）。 ![日报表一键美化前后](images/u12-vba-02-objects-01.png)
+
+## 5. 公式和代码
+
+Range 与 Cells 读写对照（出自 §2.5）：
+
+```vb
+Sub CellsVsRange()
+    ' Range：用 A1 式地址，直观
+    Range("A1").Value = 1
+    Range("A1:C3").Value = 2
+
+    ' Cells：用行号+列号，适合循环
+    Cells(1, 1).Value = 1        ' = Range("A1")
+    Cells(1, "A").Value = 1      ' 列也可以用字母
+
+    Dim i As Long
+    For i = 1 To 10
+        Cells(i, 2).Value = i * 10   ' B列填 10,20,...,100
+    Next i
+
+    ' 组合：Cells 定位起点，Resize 扩展区域
+    Cells(1, 1).Resize(5, 3).Value = 0   ' A1:C5 填 0
+End Sub
+```
+
+运行结果：B 列填入 10、20、……、100（`Cells(i, 2).Value = i * 10`，i 从 1 到 10）；A1:C5 填 0（`Cells(1, 1).Resize(5, 3).Value = 0`）。其余 17 个代码块见 §2 各小节（层级链、Application、Workbook、Worksheet、属性、方法、With、事件）。
+
+## 6. 实际工作场景
 
 ### 场景 1：日报表一键美化
 
-每天导出的日报表都要做同一套美化：标题行加粗、A 列加宽、金额列设成两位小数。做法：把第 6 节的 `Font` / `Interior` / `NumberFormat` 写成一个过程，配合第 2 节的性能三件套（关屏幕刷新、关自动重算、关事件），每天打开报表按一次宏就完成。结果：原来 10 分钟的手工点选变成 2 秒，且每次格式完全一致。
+每天导出的日报表都要做同一套美化：标题行加粗、A 列加宽、金额列设成两位小数。做法：把 §2.6 的 `Font` / `Interior` / `NumberFormat` 写成一个过程，配合 §2.2 的性能三件套（关屏幕刷新、关自动重算、关事件），每天打开报表按一次宏就完成。结果：原来 10 分钟的手工点选变成 2 秒，且每次格式完全一致。
 
 ### 场景 2：多表数据汇总到一张总表
 
-12 个月各一张工作表，结构相同，要汇总到"全年"表。做法：用第 5 节的 `End(xlUp)` 找每张表的最后一行，用 `For Each ws In Worksheets` 遍历，逐表把数据区复制到总表末尾（`Cells(targetRow, 1)` 定位写入行）。结果：新增一个月只要再加一张表重跑一次，不用改代码。
+12 个月各一张工作表，结构相同，要汇总到"全年"表。做法：用 §2.5 的 `End(xlUp)` 找每张表的最后一行，用 `For Each ws In Worksheets` 遍历，逐表把数据区复制到总表末尾（`Cells(targetRow, 1)` 定位写入行）。结果：新增一个月只要再加一张表重跑一次，不用改代码。
 
-## 常见错误
+## 7. 常见错误
 
 | 错误现象 | 原因 | 解决方案 |
 |---|---|---|
@@ -417,14 +439,14 @@ End Sub
 | 批量操作后屏幕一直不刷新 / 事件不触发 | 过程出错提前退出，没把 `ScreenUpdating` / `EnableEvents` 恢复成 True | 在错误处理段里恢复开关（见 05-advanced.md 第 4.4 节集中处理写法）；或立即窗口执行 `Application.ScreenUpdating = True` 救急 |
 | `Cells(Rows.Count, 1).End(xlUp).Row` 返回 1，但表里明明有数据 | A 列全空（数据在 B 列），按 A 列找最后一行自然是 1 | 按实际有数据的列找最后一行；多列时对每列分别找，或用 `UsedRange` |
 
-## 相关教程
+## 8. 相关教程
 
 - 同栏目上一篇：[01-basics.md](01-basics.md)（VBA 基础：变量、循环、Sub/Function）
 - 同栏目下一篇：[03-keywords.md](03-keywords.md)（VBA 关键字大全：Set、With、Me 速查）
 - 同栏目相关：[04-examples.md](04-examples.md)（VBA 实战实例：合并工作簿、生成报表都用本章对象）、[05-advanced.md](05-advanced.md)（VBA 进阶：UserForm、类模块、加载宏）
 - 跨栏目相关：数据管理（C05）——汇总前先确认各表结构一致
 
-## 练习题
+## 9. 练习题
 
 1. Range("A1:Z100") 一共有多少个单元格？
 2. 写一行代码把 Sheet1 的 A1 改为"完成"。
@@ -433,7 +455,7 @@ End Sub
 5. A 列数据从 A1 连续填到 A20（A21 为空），`Cells(Rows.Count, 1).End(xlUp).Row` 返回多少？如果 A 列全空呢？
 6. 按本章第 5 节的循环 `For i = 1 To 10: Cells(i, 2).Value = i * 10: Next i`，B10 的值是多少？B1:B10 的合计是多少？
 
-## 参考答案
+## 10. 参考答案
 
 <details>
 <summary>点击查看答案</summary>
