@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-09",
- "count": 484,
+ "count": 515,
  "types": [
   "case",
   "chart",
@@ -1857,6 +1857,78 @@
    "text": "高级 DAX 与商业案例：排名、TOPN、动态度量值、销售仪表盘与库存周转 ### 2.1 组合的思路 单个函数解决单个问题，组合解决真实问题。高价值订单利润要先筛（FILTER）再逐行算（SUMX）；排名要先定范围（ALL）再比大小（RANKX）；动态标题要先取当前筛选值（SELECTEDVALUE）再拼字符串。写高级 DAX 时先画三步：筛出哪些行、对每行算什么、最后怎么汇总。 ### 2.2 RANKX 与 TOPN 的区别 - **RANKX**：给每一行一个名次。返回的是数字（1、2、3），适合放在透视表里当一列看。 - **TOPN**：返回前 N 行组成的一张子表。返回的是表，不能直接当度量值，要配 SUMX 或 COUNTROWS 用，适合算“前 N 名合计”。 两者都要注意并列：RANKX 默认并列同名次、下一名次跳号；TOPN 遇到并列边界时可能多返回一行（例如第 2 名和第 3 名同分，TOPN(2) 会返回 3 行），做“前 N 名合计”时要先检查边界有没有并列。 ### 2.3 动态标题与动态度量值 - **动态标题**：一个度量值返回文本，标题引用它。切片器选华东，标题变成“华东地区销售额”；不选，标题是“全部地区销售额”。 - **动态度量值**：一个切片器切换指标。参数表里放三行（销售额、利润、利润率），度量值用 SWITCH 判断当前选了哪一行，再",
    "section": "tut",
    "ref": "powerpivot-dax-05-advanced-dax-cases"
+  },
+  {
+   "id": "tut-vba-05-advanced",
+   "type": "tutorial",
+   "column": "C11",
+   "title": "VBA 进阶：用户窗体、类模块、加载宏与错误处理进阶",
+   "text": "VBA 进阶：用户窗体、类模块、加载宏与错误处理进阶 ### 1.1 用户窗体（UserForm） UserForm 是 VBA 自带的对话框设计器：在 VBE 中「插入 → 用户窗体」，拖入文本框（TextBox）、标签（Label）、下拉框（ComboBox）、按钮（CommandButton）等控件，双击控件写事件代码。窗体本身是一个对象，有 `Show`、`Hide`、`Unload` 三个基本动作： - `Show`：显示窗体。默认模态（vbModal，值为 1）：用户必须先关闭窗体才能操作工作表，`Show` 之后的代码暂停执行，直到窗体关闭或隐藏。 - `Show vbModeless`（值为 0）：非模态：用户可以一边开着窗体一边操作工作表，`Show` 之后的代码立即继续执行。 - `Hide`：隐藏窗体但保留其中的输入值；`Unload Me`：彻底卸载，输入值丢失。 窗体有两个最常用的事件：`UserForm_Initialize`（窗体第一次加载时执行一次，适合填下拉框初始值）和各控件的 `Click` / `Change` 事件。窗体代码写在窗体自己的代码窗口里（双击窗体打开），而「显示窗体」的那行 `frmEntry.Show` 通常写在标准模块里。 ### 1.2 类模块（Class Module） 类模块是自定义对象的蓝图：在 VBE 中「插入 → ",
+   "section": "tut",
+   "ref": "vba-05-advanced"
+  },
+  {
+   "id": "tut-office-scripts-01-introduction",
+   "type": "tutorial",
+   "column": "C12",
+   "title": "Office Scripts 入门：不用 VBA 也能让 Excel 自己干活",
+   "text": "Office Scripts 入门：不用 VBA 也能让 Excel 自己干活 ### 2.1 Office Scripts 是什么 Office Scripts 是 Excel 里的一套自动化功能：把一串重复操作写成脚本（Script），以后点一下运行，Excel 就按脚本把这些操作自动做完。它用 TypeScript 写代码，脚本存在云端（OneDrive for Business 或 SharePoint），运行也在云端完成。 一句话定位：Office Scripts 是“云端版的 Excel 宏”，面向的是网页版 Excel 和跨平台办公；VBA 是“桌面版的 Excel 宏”，面向的是 Windows 桌面版 Excel。 ### 2.2 它由哪几部分组成 - **操作记录器（Action Recorder）**：不用写代码，把手动操作录下来，Excel 自动生成一段 TypeScript 脚本。适合“动作固定、每周都要做一次”的任务。 - **代码编辑器（Code Editor）**：在浏览器里直接写 TypeScript，可以加判断、循环和参数。适合录制做不到的任务，例如“只处理金额大于 10000 的行”。 - **自动执行（Automate）选项卡**：网页版 Excel 功能区里的入口，所有脚本的新建、查看、运行都从这里开始。 - **Power Automat",
+   "section": "tut",
+   "ref": "office-scripts-01-introduction"
+  },
+  {
+   "id": "tut-office-scripts-02-typescript-basics",
+   "type": "tutorial",
+   "column": "C12",
+   "title": "TypeScript 基础：写出你的第一段 Office Scripts 代码",
+   "text": "TypeScript 基础：写出你的第一段 Office Scripts 代码 ### 2.1 TypeScript 与 Office Scripts 的关系 Office Scripts 的脚本语言是 TypeScript。TypeScript 是 JavaScript 的超集：会 JavaScript 的人，写 TypeScript 只需要多学一样东西，就是类型注解（写明每个变量是什么类型）。Office Scripts 只支持 TypeScript 的一个子集，不支持引用外部第三方库，只能用内置 JavaScript 对象与 Office Scripts API（Microsoft 官方文档“Using built-in JavaScript objects in Office Scripts”）。 ### 2.2 main 函数：脚本的入口 每个脚本必须有一个 main 函数，它是脚本的起点。它的第一个参数固定是 ExcelScript.Workbook 类型的工作簿对象，脚本通过这个参数拿到整个工作簿，再一层层往下取工作表、区域和表格（Microsoft 官方文档“Fundamentals for Office Scripts in Excel”）： ```typescript function main(workbook: ExcelScript.Workbook) {",
+   "section": "tut",
+   "ref": "office-scripts-02-typescript-basics"
+  },
+  {
+   "id": "tut-office-scripts-03-automation-cases",
+   "type": "tutorial",
+   "column": "C12",
+   "title": "自动化实战：定时任务、Power Automate 联动与 3 个完整案例",
+   "text": "自动化实战：定时任务、Power Automate 联动与 3 个完整案例 ### 2.1 Office Scripts 没有自己的触发器 Office Scripts 只负责“改工作簿”这一件事：它没有定时器，也没有“收到邮件就运行”这种事件触发。触发器由 Power Automate 提供，分工是：Power Automate 决定“什么时候跑”，Office Scripts 决定“跑的时候对工作簿做什么”。这个分工是理解本篇全部内容的前提。 ### 2.2 Power Automate 联动的三要素 - **触发器（Trigger）**：流程的起因。常用三种：定时触发（Scheduled cloud flow，按固定周期运行）、邮件到达（When a new email arrives，收到新邮件时运行）、手动触发（Manually trigger a flow，点按钮运行）。 - **Run script 动作**：Excel Online (Business) 连接器里的动作。它的作用是“在某个工作簿上运行某段脚本”。脚本存在 OneDrive for Business 的默认位置时用 Run script，脚本存在团队 SharePoint 库里时用 Run script from a SharePoint library（Microsoft 官方教程“Automati",
+   "section": "tut",
+   "ref": "office-scripts-03-automation-cases"
+  },
+  {
+   "id": "tut-python-excel-01-openpyxl",
+   "type": "tutorial",
+   "column": "C15",
+   "title": "openpyxl：用 Python 读写 Excel 工作簿",
+   "text": "openpyxl：用 Python 读写 Excel 工作簿 ### 2.1 openpyxl 是什么 openpyxl 是一个读写 xlsx 文件的 Python 库。它不启动 Excel、不需要装 Excel，在没有 Excel 的电脑（例如 Linux 服务器）上也能生成与读取 xlsx 文件。它操作的是文件本身：打开文件、改单元格、保存文件，全程 Excel 程序没有参与。 ### 2.2 三个核心对象 - 工作簿（Workbook）：一个 xlsx 文件就是一个工作簿，用 `openpyxl.Workbook()` 新建、用 `load_workbook(路径)` 打开。 - 工作表（Worksheet）：工作簿里的一张表。`wb.active` 取当前活动表，`wb.create_sheet(表名)` 新建一张表，`wb[表名]` 按名字取表。 - 单元格（Cell）：行列交叉处的一个格子。`ws[\"A1\"]` 按坐标取，`ws.cell(row=行, column=列)` 按行列号取，`.value` 是格子里的值。 ### 2.3 openpyxl 能做什么、不能做什么 - 能：读写单元格的值、设置样式（字体、颜色、边框、对齐、数字格式）、写公式文本、合并单元格、冻结窗格、设置筛选、调整行高列宽。 - 不能：计算公式结果。openpyxl 没有 Excel 的计算引",
+   "section": "tut",
+   "ref": "python-excel-01-openpyxl"
+  },
+  {
+   "id": "tut-python-excel-02-pandas",
+   "type": "tutorial",
+   "column": "C15",
+   "title": "pandas：DataFrame 与 Excel 互转、数据清洗与分组汇总",
+   "text": "pandas：DataFrame 与 Excel 互转、数据清洗与分组汇总 ### 2.1 DataFrame 是什么 DataFrame 是 pandas 里的一张“内存中的表”：有行、有列、有表头，跟 Excel 工作表几乎一一对应。区别在于 DataFrame 活在 Python 内存里，可以整列运算、整表筛选、分组汇总，一行代码顶 Excel 里几十步操作。`read_excel` 把工作表变成 DataFrame，`to_excel` 把 DataFrame 变成工作表，互转就是本篇的起点。 ### 2.2 DataFrame 与 Excel 工作表的对应关系 | DataFrame | Excel 工作表 | |---|---| | 一列（Series） | 一列数据 | | 列名（columns） | 标题行 | | 索引（index） | 行号（但 pandas 索引可以是日期、订单号等任意值） | | 一行 | 一行记录 | | `df.shape`（行数，列数） | 表的规模 | 注意：`to_excel` 默认会把索引也写进文件，多出一列无名列；写文件时通常加 `index=False` 不写索引。 ### 2.3 数据分析流程 本篇的流程固定为五步：读入、清洗、转换、汇总、写出。读入解决“数据进来”，清洗解决“数据能用”，转换解决“算出新列”（金额、利润、月",
+   "section": "tut",
+   "ref": "python-excel-02-pandas"
+  },
+  {
+   "id": "tut-python-excel-03-xlwings",
+   "type": "tutorial",
+   "column": "C15",
+   "title": "xlwings：调用正在运行的 Excel，批量处理工作簿",
+   "text": "xlwings：调用正在运行的 Excel，批量处理工作簿 ### 2.1 xlwings 是什么 xlwings 是一个让 Python 驱动 Excel 的库：Python 脚本通过 xlwings 向正在运行的 Excel 发命令——打开文件、选中区域、写入数值、调用宏、触发重算，再把结果读回来。Excel 是执行者，Python 是指挥者。 ### 2.2 xlwings 与 openpyxl 的根本区别 | 对比项 | openpyxl（01 篇） | xlwings（本篇） | |---|---|---| | 需不需要装 Excel | 不需要，在 Linux 服务器上也能跑 | 需要，目标机器上必须装有 Excel | | 支持的操作系统 | Windows、macOS、Linux 都行 | 交互模式仅 Windows 与 macOS（Linux 上只能用 xlwings Server 或 Reader） | | 工作方式 | 直接读写 xlsx 文件 | 驱动正在运行的 Excel 程序 | | 公式 | 只写公式文本，不计算 | 可触发 Excel 重算，读到计算结果 | | 宏与加载项 | 不能运行 | 可以调用 VBA 宏 | | 速度 | 快，纯文件操作 | 慢，每步都要经过 Excel | | 适用场景 | 服务器上批量生成报表 | 办公室里批量操作已打开",
+   "section": "tut",
+   "ref": "python-excel-03-xlwings"
+  },
+  {
+   "id": "tut-python-excel-04-python-in-excel",
+   "type": "tutorial",
+   "column": "C15",
+   "title": "Python in Excel：用 =PY() 在单元格里写 Python",
+   "text": "Python in Excel：用 =PY() 在单元格里写 Python ### 2.1 Python in Excel 是什么 Python in Excel 是微软把 Python 放进 Excel 单元格的功能：在单元格里输入 `=PY(`，写 Python 代码，代码被送到微软云端（由 Anaconda 提供运行环境）执行，结果返回到工作表。不用在本机装 Python，不用装任何库，pandas、Matplotlib 这些数据分析库在云端已经装好。 ### 2.2 =PY() 与 xl() - `=PY()`：进入 Python 模式的公式。在单元格里输入 `=PY(` 后写 Python 代码，确认后单元格开始计算，计算时显示 BUSY，算完后返回结果。 - `xl()`：Python 代码里引用 Excel 对象的专用函数。`xl(\"A1\")` 取一个格子，`xl(\"A1:G13\", headers=True)` 取一个区域并把第一行当表头返回 DataFrame，`xl(\"表名[#All]\", headers=True)` 取一整张表。 - 输出类型：公式栏里的 Python 输出菜单可以切换两种输出。Python 对象：单元格显示 DataFrame 这样的对象卡片，点卡片看详情；Excel 值：把结果转成普通单元格数值，可以继续用公式引用、做图表。两种输出的数字",
+   "section": "tut",
+   "ref": "python-excel-04-python-in-excel"
   },
   {
    "id": "tip-数据录入技巧-0",
@@ -4069,6 +4141,213 @@
    "column": "C17",
    "title": "Power Pivot 与 DAX 配套示例",
    "text": "Power Pivot 与 DAX 配套示例 订单/产品/客户/日期/库存表，数据模型与 DAX 度量值示例数据 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-33",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 批量重命名工作表",
+   "text": "VBA 批量重命名工作表 按部门_序号批量重命名工作表，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-34",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 合并多个工作簿",
+   "text": "VBA 合并多个工作簿 把多个工作簿的数据合并到一张总表，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-35",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 自动生成报表",
+   "text": "VBA 自动生成报表 按模板自动生成月度报表，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-36",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 查找替换增强",
+   "text": "VBA 查找替换增强 多词批量查找替换，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-37",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 数据去重",
+   "text": "VBA 数据去重 按关键列删除重复行，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-38",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 批量插入图片",
+   "text": "VBA 批量插入图片 按单元格批量插入并适配图片，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-39",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 用 Outlook 发邮件",
+   "text": "VBA 用 Outlook 发邮件 自动生成并发送报表邮件，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-40",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 自定义函数",
+   "text": "VBA 自定义函数 RMB 大写、按生日算年龄等自定义函数，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-41",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 用户窗体示例",
+   "text": "VBA 用户窗体示例 数据录入用户窗体，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-42",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 类模块示例",
+   "text": "VBA 类模块示例 员工类模块：属性校验与自定义错误，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-43",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 加载宏工具集",
+   "text": "VBA 加载宏工具集 打包成 .xlam 加载宏的工具函数集，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-44",
+   "type": "template",
+   "column": "C17",
+   "title": "VBA 错误处理模板",
+   "text": "VBA 错误处理模板 集中错误处理与日志记录模板，VBA 示例代码 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-45",
+   "type": "template",
+   "column": "C17",
+   "title": "Office Scripts 日报自动汇总",
+   "text": "Office Scripts 日报自动汇总 汇总多日销售明细并写合计，Office Scripts 示例脚本 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-46",
+   "type": "template",
+   "column": "C17",
+   "title": "Office Scripts 数据清洗",
+   "text": "Office Scripts 数据清洗 去空行、去重、规范金额列，Office Scripts 示例脚本 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-47",
+   "type": "template",
+   "column": "C17",
+   "title": "Office Scripts 格式标准化",
+   "text": "Office Scripts 格式标准化 统一表头样式与金额格式并排序，Office Scripts 示例脚本 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-48",
+   "type": "template",
+   "column": "C17",
+   "title": "Python openpyxl 报表脚本",
+   "text": "Python openpyxl 报表脚本 用 openpyxl 批量生成带公式与样式的报表（本机实测通过） 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-49",
+   "type": "template",
+   "column": "C17",
+   "title": "Python pandas 分析脚本",
+   "text": "Python pandas 分析脚本 用 pandas 清洗并汇总销售数据（本机实测通过） 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-50",
+   "type": "template",
+   "column": "C17",
+   "title": "Python xlwings 批量脚本",
+   "text": "Python xlwings 批量脚本 用 xlwings 批量合并分表（Excel 驱动部分未在 Excel 内执行验证） 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-51",
+   "type": "template",
+   "column": "C17",
+   "title": "Python in Excel 演示脚本",
+   "text": "Python in Excel 演示脚本 =PY() 示例的本地 pandas 等价运算脚本（本机实测通过） 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-52",
+   "type": "template",
+   "column": "C17",
+   "title": "Python openpyxl 报表示例",
+   "text": "Python openpyxl 报表示例 明细 12 行 + 按产品汇总，金额列与合计行为公式 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-53",
+   "type": "template",
+   "column": "C17",
+   "title": "Python pandas 分析示例",
+   "text": "Python pandas 分析示例 原始数据/清洗后明细/按产品/按地区/按月汇总，共 5 张表 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-54",
+   "type": "template",
+   "column": "C17",
+   "title": "Python xlwings 分表示例",
+   "text": "Python xlwings 分表示例 华东/华南/华西 3 张分表，xlwings 批量合并示例数据 模板下载",
+   "section": "tpl",
+   "ref": ""
+  },
+  {
+   "id": "tpl-55",
+   "type": "template",
+   "column": "C17",
+   "title": "Python in Excel 演示示例",
+   "text": "Python in Excel 演示示例 明细/按产品汇总/描述统计，=PY() 演示示例数据 模板下载",
    "section": "tpl",
    "ref": ""
   },
