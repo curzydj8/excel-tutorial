@@ -49,28 +49,28 @@ Office Scripts 只负责“改工作簿”这一件事：它没有定时器，�
 
 ### 3.1 搭建定时流程：每天 9 点运行日报汇总脚本
 
-1. 在网页版 Excel 里打开日报工作簿，确认“明细”工作表已按案例一的数据格式准备好（待补图）。
-2. 打开 Power Automate（flow.microsoft.com），点“创建”→“计划的云端流”，填流程名（例如“每天 9 点汇总日报”），设置开始时间与重复周期（每天、9:00），点“创建”（待补图）。
-3. 点“新建步骤”，搜索“Excel run script”，选 Excel Online (Business) 连接器的“Run script”动作（待补图）。
-4. 在 Run script 动作里依次选：位置（OneDrive for Business）、文档库、文件（日报工作簿）、脚本（日报自动汇总脚本）；不要选本机文件（待补图）。
-5. 点“保存”，再点“测试”→“手动测试”跑一次，检查日报工作簿的“日报汇总”工作表是不是生成了（待补图）。
-6. 测试通过后不用再管：流程每天 9 点自动运行一次；想停用时在“我的流”里把流程关掉（待补图）。
+1. 在网页版 Excel 里打开日报工作簿，确认“明细”工作表已按案例一的数据格式准备好 ![在网页版 Excel 里打开日报工作簿](images/u12-office-scripts-03-automation-cases-01.png)
+2. 打开 Power Automate（flow.microsoft.com），点“创建”→“计划的云端流”，填流程名（例如“每天 9 点汇总日报”），设置开始时间与重复周期（每天、9:00），点“创建” ![打开 Power Automate（fl](images/u12-office-scripts-03-automation-cases-02.png)
+3. 点“新建步骤”，搜索“Excel run script”，选 Excel Online (Business) 连接器的“Run script”动作 ![点“新建步骤”](images/u12-office-scripts-03-automation-cases-03.png)
+4. 在 Run script 动作里依次选：位置（OneDrive for Business）、文档库、文件（日报工作簿）、脚本（日报自动汇总脚本）；不要选本机文件 ![在 Run script 动作里依次选](images/u12-office-scripts-03-automation-cases-04.png)
+5. 点“保存”，再点“测试”→“手动测试”跑一次，检查日报工作簿的“日报汇总”工作表是不是生成了 ![点“保存”](images/u12-office-scripts-03-automation-cases-05.png)
+6. 测试通过后不用再管：流程每天 9 点自动运行一次；想停用时在“我的流”里把流程关掉 ![测试通过后不用再管](images/u12-office-scripts-03-automation-cases-06.png)
 
 ### 3.2 搭建邮件触发流程：收到邮件后记一笔并通知 Teams
 
-1. 在 Power Automate 里点“创建”→“自动化的云端流”，触发器选“收到新邮件时”（When a new email arrives），可按发件人或主题做筛选条件（待补图）。
-2. 加一个步骤，选 Excel Online (Business) 连接器的“Run script”动作，选定工作簿与记录邮件的脚本，并把触发器的动态内容（发件人、主题、收到时间）作为脚本参数传进去（待补图）。
-3. 再加一个步骤，选 Teams 连接器的“在聊天或频道中发布消息”动作，把脚本返回的结果（例如“已记录 1 封邮件，来自张三”）写进消息内容，选定要通知的频道（待补图）。
-4. 保存后发一封测试邮件，检查三件事：工作簿里多了一行记录、Teams 频道收到通知、流程运行历史里显示成功（待补图）。
+1. 在 Power Automate 里点“创建”→“自动化的云端流”，触发器选“收到新邮件时”（When a new email arrives），可按发件人或主题做筛选条件 ![在 Power Automate 里点“](images/u12-office-scripts-03-automation-cases-07.png)
+2. 加一个步骤，选 Excel Online (Business) 连接器的“Run script”动作，选定工作簿与记录邮件的脚本，并把触发器的动态内容（发件人、主题、收到时间）作为脚本参数传进去 ![加一个步骤](images/u12-office-scripts-03-automation-cases-08.png)
+3. 再加一个步骤，选 Teams 连接器的“在聊天或频道中发布消息”动作，把脚本返回的结果（例如“已记录 1 封邮件，来自张三”）写进消息内容，选定要通知的频道 ![再加一个步骤](images/u12-office-scripts-03-automation-cases-09.png)
+4. 保存后发一封测试邮件，检查三件事：工作簿里多了一行记录、Teams 频道收到通知、流程运行历史里显示成功 ![保存后发一封测试邮件](images/u12-office-scripts-03-automation-cases-10.png)
 5. 如果多封邮件同时到达导致工作簿冲突，把邮件触发器的并发控制打开，一次只处理一封（Microsoft 官方教程的建议）。
 
 ### 3.3 把脚本交给流程前，先在 Excel 里手动跑一遍
 
-1. 在网页版 Excel 里打开目标工作簿，手动运行一次脚本，确认结果符合预期（待补图）。
-2. 检查脚本里没有 getActiveWorksheet()，所有工作表都按名字取（待补图）。
-3. 检查脚本里没有 fetch 等外部调用（流程里跑会失败）（待补图）。
-4. 确认工作簿与脚本都在 OneDrive for Business 或 SharePoint 里（待补图）。
-5. 再去 Power Automate 里建流程、选脚本、测试运行（待补图）。
+1. 在网页版 Excel 里打开目标工作簿，手动运行一次脚本，确认结果符合预期 ![在网页版 Excel 里打开目标工作簿](images/u12-office-scripts-03-automation-cases-11.png)
+2. 检查脚本里没有 getActiveWorksheet()，所有工作表都按名字取 ![检查脚本里没有 getActiveWor](images/u12-office-scripts-03-automation-cases-12.png)
+3. 检查脚本里没有 fetch 等外部调用（流程里跑会失败） ![检查脚本里没有 fetch 等外部调用（](images/u12-office-scripts-03-automation-cases-13.png)
+4. 确认工作簿与脚本都在 OneDrive for Business 或 SharePoint 里 ![确认工作簿与脚本都在 OneDrive ](images/u12-office-scripts-03-automation-cases-14.png)
+5. 再去 Power Automate 里建流程、选脚本、测试运行 ![再去 Power Automate 里建](images/u12-office-scripts-03-automation-cases-15.png)
 
 ## 4. 图文示例
 
@@ -79,7 +79,7 @@ Office Scripts 只负责“改工作簿”这一件事：它没有定时器，�
 - 第一格是触发器：每天 9:00（Scheduled cloud flow，重复周期每天）。
 - 第二格是 Run script 动作：Excel Online (Business) 连接器，位置 OneDrive for Business，文件是日报工作簿，脚本是“日报自动汇总”。
 - 第三格（可选）是 Teams 通知动作：把脚本返回的“今日合计 30000 元”发到“销售日报”频道。
-- 箭头方向：触发器 → Run script → Teams 通知；任何一格失败，流程运行历史里会标出失败的那一格，先修那一格再重跑（待补图）。
+- 箭头方向：触发器 → Run script → Teams 通知；任何一格失败，流程运行历史里会标出失败的那一格，先修那一格再重跑 ![- 箭头方向](images/u12-office-scripts-03-automation-cases-16.png)
 
 ## 5. 公式和代码
 
