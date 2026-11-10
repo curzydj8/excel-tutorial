@@ -8,19 +8,20 @@
 - **预计阅读时长**：30 分钟
 - **更新日期**：2026-11-10
 
-> **验证说明**：本篇 VBA 语法经 Microsoft 官方文档核对，数值经 Python 独立验算；**所有 VBA 代码均未在 Excel 内执行验证**（无 Excel 环境）。本篇为**速查体**：按设计模板第 7.1 节取舍规则，可免操作步骤与实际工作场景两项；语法入门见本目录 [01-basics.md](01-basics.md)（VBA 基础）。
+> **验证说明**：本篇 VBA 语法经 Microsoft 官方文档核对，数值经 Python 独立验算；**所有 VBA 代码均未在 Excel 内执行验证**（无 Excel 环境）。本篇为**速查体**：36 个关键字按六类编排，正文以速查条目为主；已按设计模板第 7.1 节补齐操作步骤（查用方法）与实际工作场景两节；语法入门见本目录 [01-basics.md](01-basics.md)（VBA 基础）。
 
-## 学习目标
+## 1. 学习目标
 
 学完本篇，你将能够：
 - 按声明、流程、过程、对象、错误、逻辑六类查用 36 个关键字
 - 用 For Each 遍历集合，用 Exit For 提前跳出循环
 - 用 On Error GoTo 写错误处理
----
 
-## 一、声明类
+## 2. 基础概念
 
-### Dim — 声明变量
+### 2.1 一、声明类
+
+#### Dim — 声明变量
 
 ```vb
 Dim name As String          ' 声明单个变量
@@ -31,7 +32,7 @@ Dim ws As Worksheet         ' 声明对象变量
 
 作用域：过程内部，只能在当前过程中使用。
 
-### Private — 模块级私有声明
+#### Private — 模块级私有声明
 
 ```vb
 Private counter As Long     ' 模块顶部，整个模块可用，外部模块不可见
@@ -41,7 +42,7 @@ Private Sub Helper()
 End Sub
 ```
 
-### Public — 公开声明
+#### Public — 公开声明
 
 ```vb
 Public appName As String    ' 整个工程可用
@@ -51,7 +52,7 @@ Public Sub Main()
 End Sub
 ```
 
-### Static — 静态变量（保持值）
+#### Static — 静态变量（保持值）
 
 普通局部变量在过程结束後就销毁；`Static` 声明的变量在多次调用之间**保留上次的值**：
 
@@ -65,7 +66,7 @@ End Sub
 
 也可以让整个过程的变量都静态：`Static Sub CountCalls()`。
 
-### Const — 常量
+#### Const — 常量
 
 ```vb
 Const TAX_RATE As Double = 0.13
@@ -75,7 +76,7 @@ Const APP_NAME As String = "报表系统"
 
 常量在编译时确定，不能在运行中修改。魔法数字（税率、上限等）都应该用常量。
 
-### ReDim — 重定义动态数组
+#### ReDim — 重定义动态数组
 
 ```vb
 Dim arr() As Long
@@ -88,7 +89,7 @@ ReDim Preserve arr(1 To 20)     ' 扩大并保留原有数据
 - `ReDim` 会清空数组，加 `Preserve` 则保留数据。
 - `Preserve` 只能改变**最后一维**的大小。
 
-### Option Explicit — 强制变量声明
+#### Option Explicit — 强制变量声明
 
 ```vb
 Option Explicit   ' 必须写在模块最顶部，所有代码之前
@@ -96,11 +97,9 @@ Option Explicit   ' 必须写在模块最顶部，所有代码之前
 
 开启后，未经 `Dim` 的变量直接报错。防止拼写错误产生难以察觉的 bug。**所有模块都应该加。**
 
----
+### 2.2 二、流程控制类
 
-## 二、流程控制类
-
-### If / Then / Else / ElseIf
+#### If / Then / Else / ElseIf
 
 ```vb
 If 条件1 Then
@@ -115,7 +114,7 @@ End If
 If x > 0 Then MsgBox "正数"
 ```
 
-### Select / Case — 多分支选择
+#### Select / Case — 多分支选择
 
 ```vb
 Select Case score
@@ -132,7 +131,7 @@ End Select
 
 `Case` 的四种形式：`Is` 比较、`To` 范围、逗号多值、`Else` 兜底。
 
-### For / Next — 计数循环
+#### For / Next — 计数循环
 
 ```vb
 For i = 1 To 10 Step 2    ' Step 可省略（默认1），可为负数
@@ -140,18 +139,13 @@ For i = 1 To 10 Step 2    ' Step 可省略（默认1），可为负数
 Next i
 ```
 
-### For Each — 集合遍历
+#### For Each — 集合遍历
 
-```vb
-Dim ws As Worksheet
-For Each ws In Worksheets
-    Debug.Print ws.Name
-Next ws
-```
+完整代码见 §5 公式和代码（`For Each` 遍历集合示例）。
 
 注意：`For Each` 的循环变量**必须是 Variant 或对象类型**，不能是 `Long`。
 
-### Do / Loop — 条件循环
+#### Do / Loop — 条件循环
 
 四种形式：
 
@@ -173,7 +167,7 @@ Do
 Loop Until 条件
 ```
 
-### While / Wend — 旧式循环
+#### While / Wend — 旧式循环
 
 ```vb
 While i < 10
@@ -183,7 +177,7 @@ Wend
 
 功能与 `Do While...Loop` 相同，是老式写法。新代码推荐用 `Do...Loop`。
 
-### GoTo — 跳转
+#### GoTo — 跳转
 
 ```vb
 Sub Demo()
@@ -198,7 +192,7 @@ End Sub
 
 现代 VBA 中 `GoTo` 主要用于错误处理。随意跳转会让代码难以维护，**不要**用它代替正常的条件分支。
 
-### Exit — 提前退出
+#### Exit — 提前退出
 
 ```vb
 Exit Sub        ' 退出 Sub 过程
@@ -219,7 +213,7 @@ Sub Process(ws As Worksheet)
 End Sub
 ```
 
-### End — 终止程序
+#### End — 终止程序
 
 ```vb
 End   ' 立即终止所有代码执行，释放所有变量
@@ -227,11 +221,9 @@ End   ' 立即终止所有代码执行，释放所有变量
 
 > **警告**：`End` 会粗暴终止一切，不触发任何清理代码。正常结束过程用 `Exit Sub`，几乎用不到 `End`。
 
----
+### 2.3 三、过程定义类
 
-## 三、过程定义类
-
-### Sub — 过程（做事）
+#### Sub — 过程（做事）
 
 ```vb
 Sub SayHello()
@@ -243,7 +235,7 @@ Sub Greet(name As String, Optional title As String = "先生")
 End Sub
 ```
 
-### Function — 函数（算值并返回）
+#### Function — 函数（算值并返回）
 
 ```vb
 Function CircleArea(r As Double) As Double
@@ -260,7 +252,7 @@ Function SafeDiv(a As Double, b As Double) As Variant
 End Function
 ```
 
-### Call — 调用过程
+#### Call — 调用过程
 
 ```vb
 Call Greet("张三")   ' 显式调用，加括号
@@ -269,7 +261,7 @@ Greet "张三"         ' 省略 Call，不加括号（效果相同）
 
 > 省略 `Call` 是更常见的写法。注意：省略 Call 时参数不能加括号，否则会被当作求值。
 
-### ByVal / ByRef — 传值 vs 传址
+#### ByVal / ByRef — 传值 vs 传址
 
 ```vb
 Sub ByValDemo(ByVal x As Long)   ' 传值：复制一份，内部修改不影响外部
@@ -292,7 +284,7 @@ End Sub
 
 **VBA 默认是 `ByRef`**（与大多数语言相反）。如果不希望过程修改传入的变量，显式写 `ByVal`。
 
-### Optional — 可选参数
+#### Optional — 可选参数
 
 ```vb
 Sub Print2D(rng As Range, Optional copies As Long = 1)
@@ -308,7 +300,7 @@ Print2D Range("A1"), 3       ' 打印 3 份
 
 规则：`Optional` 参数必须有默认值，且必须放在参数列表最后。
 
-### ParamArray — 可变数量参数
+#### ParamArray — 可变数量参数
 
 ```vb
 Function SumAll(ParamArray nums() As Variant) As Double
@@ -325,11 +317,9 @@ Debug.Print SumAll(10, 20, 30, 40)   ' 100
 
 `ParamArray` 只能有一个，必须是最后一个参数，类型必须是 `Variant` 数组。
 
----
+### 2.4 四、对象操作类
 
-## 四、对象操作类
-
-### Set — 对象赋值
+#### Set — 对象赋值
 
 ```vb
 Dim ws As Worksheet
@@ -341,7 +331,7 @@ n = 100                                    ' 普通变量直接 =
 
 忘记 `Set` 会报运行时错误 424"需要对象"。
 
-### New — 创建对象实例
+#### New — 创建对象实例
 
 ```vb
 Dim dict As Object
@@ -351,7 +341,7 @@ Set dict = New Scripting.Dictionary   ' 需要引用 Microsoft Scripting Runtime
 Dim dict2 As New Scripting.Dictionary
 ```
 
-### Nothing — 空对象 / 释放对象
+#### Nothing — 空对象 / 释放对象
 
 ```vb
 Dim ws As Worksheet
@@ -365,7 +355,7 @@ End If
 
 对象比较必须用 `Is` / `Is Not`，不能用 `=`。
 
-### With — 对象简化书写
+#### With — 对象简化书写
 
 ```vb
 With Range("A1")
@@ -376,7 +366,7 @@ With Range("A1")
 End With
 ```
 
-### Me — 当前对象自身
+#### Me — 当前对象自身
 
 在**工作表/工作簿模块**或**用户窗体**代码中，`Me` 指代当前对象：
 
@@ -392,11 +382,9 @@ Private Sub UserForm_Click()
 End Sub
 ```
 
----
+### 2.5 五、错误处理类
 
-## 五、错误处理类
-
-### On Error — 错误处理开关
+#### On Error — 错误处理开关
 
 三种模式：
 
@@ -428,7 +416,7 @@ End Sub
 
 > `On Error Resume Next` 是双刃剑：它会**吞掉所有错误**。使用后必须立即检查 `Err.Number`，并尽快用 `On Error GoTo 0` 恢复。
 
-### Resume — 恢复执行
+#### Resume — 恢复执行
 
 ```vb
 Sub Demo()
@@ -444,7 +432,7 @@ ExitHere:
 End Sub
 ```
 
-### Err — 错误对象
+#### Err — 错误对象
 
 ```vb
 Sub ErrDemo()
@@ -464,11 +452,9 @@ End Sub
 
 常见错误号：13（类型不匹配）、9（下标越界）、424（需要对象）、91（对象变量未设置）、1004（Excel 内部错误）。
 
----
+### 2.6 六、逻辑与其他
 
-## 六、逻辑与其他
-
-### And / Or / Not — 逻辑运算
+#### And / Or / Not — 逻辑运算
 
 ```vb
 If age >= 18 And age <= 60 Then MsgBox "劳动年龄"
@@ -478,7 +464,7 @@ If Not done Then MsgBox "还没完成"
 
 注意 VBA 没有短路求值：`If A And B` 中 A、B 都会被计算。
 
-### True / False — 布尔字面量
+#### True / False — 布尔字面量
 
 ```vb
 Dim done As Boolean
@@ -486,7 +472,7 @@ done = True
 If done = False Then MsgBox "还没完成"   ' 也可以写 If Not done Then
 ```
 
-### Empty / Null / Nothing 的区别
+#### Empty / Null / Nothing 的区别
 
 这是新手最容易混淆的三个概念：
 
@@ -517,7 +503,7 @@ End Sub
 
 配套判断函数：`IsEmpty()`、`IsNull()`、`Is Nothing`（注意 `Is` 前后空格）。
 
-### 其他常用关键字速览
+#### 其他常用关键字速览
 
 | 关键字 | 用途 | 示例 |
 |--------|------|------|
@@ -536,7 +522,7 @@ End Sub
 | `Type` | 自定义类型 | 见下 |
 | `Enum` | 枚举 | 见下 |
 
-### Type — 自定义数据类型
+#### Type — 自定义数据类型
 
 ```vb
 ' 模块顶部定义
@@ -555,7 +541,7 @@ Sub UseType()
 End Sub
 ```
 
-### Enum — 枚举
+#### Enum — 枚举
 
 给一组相关的常量起名字，提高可读性：
 
@@ -574,9 +560,43 @@ Sub UseEnum()
 End Sub
 ```
 
----
+## 3. 操作步骤
 
-## 常见错误
+1. 先定类别：要声明变量查 §2.1，要写分支循环查 §2.2，要定义过程查 §2.3，要操作对象查 §2.4，要处理错误查 §2.5，要算逻辑查 §2.6。
+2. 在对应条目里看语法与示例：每条先给完整代码，再给作用域、规则或注意事项。
+3. 把示例复制到模块里，改变量名与参数后按 `F5` 试跑。
+4. 遇到“规则”行先读一遍再写代码（如 `Preserve` 只能改最后一维、`ParamArray` 只能有一个且必须最后、`Optional` 必须有默认值且放最后）。
+5. 出错时查 §2.5 错误处理类与 §7 常见错误表，先确认是拼写、类型还是作用域问题。
+6. 只查关键字不够时回 [01-basics.md](01-basics.md) 学完整语法（变量、条件、循环、数组的成篇讲解在该篇）。
+
+## 4. 图文示例
+
+接手一段旧宏，第一行就是 `On Error Resume Next`，不知道它吞掉了哪些错误。查用方法：到 §2.5 的 `On Error` 条目，对照三种模式——`GoTo 标签`是出错跳转、`Resume Next` 是出错继续下一行、`GoTo 0` 是恢复默认；再看 `Err` 条目，用 `Err.Number` 判断是否真出错、用 `Err.Clear` 清除状态。结论：`Resume Next` 之后必须立即检查 `Err.Number`，并尽快用 `On Error GoTo 0` 恢复，否则后续错误会被悄悄吞掉。 ![接手一段旧宏](images/u12-vba-03-keywords-01.png)
+
+## 5. 公式和代码
+
+`For Each` 遍历集合（出自 §2.2，是 36 个关键字里最常用的遍历写法）：
+
+```vb
+Dim ws As Worksheet
+For Each ws In Worksheets
+    Debug.Print ws.Name
+Next ws
+```
+
+运行结果：依次输出当前工作簿全部工作表的名称（`Debug.Print ws.Name`，输出到立即窗口）。其余 35 个关键字的示例代码见 §2 各条目。
+
+## 6. 实际工作场景
+
+### 场景 1：接手旧宏，先查错误处理
+
+接手同事留下的旧宏，第一行就是 `On Error Resume Next`，跑起来没报错但结果不对。做法：按 §3 的查用方法到 §2.5 查 `On Error` 三种模式与 `Err` 对象，确认这段代码是在“可预期的错误逐个处理”还是在“吞掉所有错误”；是后者时，在关键步骤后补 `If Err.Number <> 0 Then` 判断，并用 `On Error GoTo 0` 恢复默认。结果：错误不再被悄悄吞掉，出问题能定位到具体行。
+
+### 场景 2：写循环前先查遍历与退出
+
+要遍历全部工作表并提前跳出。做法：查 §2.2 的 `For Each`（循环变量必须是 Variant 或对象类型，不能是 `Long`）与 `Exit`（`Exit For` 只跳出循环，`Exit Sub` 退出整个过程），组合写法见 §2.2 各条目。结果：循环写对类型、退出语义不混淆，不用反复试错。
+
+## 7. 常见错误
 
 | 错误现象 | 原因 | 解决方案 |
 |---|---|---|
@@ -589,12 +609,12 @@ End Sub
 | `Exit Sub` 写在了 `Function` 里报错 | 退出函数要用 `Exit Function`，`Exit Sub` 只能退出 Sub | 按过程类型用对：Sub 用 `Exit Sub`，Function 用 `Exit Function`，循环用 `Exit For` / `Exit Do` |
 | 用 `End` 结束程序后变量全丢了 | `End` 会立即终止一切，不触发任何清理代码 | 正常结束用 `Exit Sub`；`End` 几乎用不到 |
 
-## 相关教程
+## 8. 相关教程
 
 - 同栏目相关：[01-basics.md](01-basics.md)（VBA 基础：本章关键字的入门讲解与完整示例）、[02-objects.md](02-objects.md)（VBA 对象模型：Set、With、Me 的对象语境）、[04-examples.md](04-examples.md)（VBA 实战实例：关键字在真实代码里的组合用法）
 - 同栏目相关：[05-advanced.md](05-advanced.md)（VBA 进阶：Err 对象、集中错误处理与日志）
 
-## 练习题
+## 9. 练习题
 
 1. `For i = 1 To 10: S = S + i: Next i` 执行完 S 是多少？
 2. `On Error Resume Next` 与 `On Error GoTo 0` 各是什么意思？
@@ -603,7 +623,7 @@ End Sub
 5. `n = 5`，依次调用 `ByValDemo n`（内部 `x = x + 10`）与 `ByRefDemo n`（内部 `x = x + 10`），两次调用后 n 各是多少？最终 n 是多少？
 6. 用本章的 `CircleArea` 函数（`3.14159 * r * r`）算半径 2 的圆面积，结果是多少（保留 5 位小数）？
 
-## 参考答案
+## 10. 参考答案
 
 <details>
 <summary>点击查看答案</summary>
