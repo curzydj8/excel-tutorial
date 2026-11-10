@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-10",
- "count": 27,
+ "count": 35,
  "tools": [
   {
    "id": "tool-fxcheck",
@@ -41,7 +41,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "粘贴一条公式，检查括号是否配对、有无全角符号、是否以 = 开头。",
+   "example": "=VLOOKUP（A2，表1!A:B，2，0）",
+   "example_file": ""
   },
   {
    "id": "tool-dedup",
@@ -87,7 +90,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "每行一条粘贴内容，找出重复项与出现次数。",
+   "example": "张三\n李四\n张三\n王五\n李四",
+   "example_file": ""
   },
   {
    "id": "tool-split",
@@ -135,7 +141,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "每行一条文本，按分隔符拆成多列预览（默认逗号）。",
+   "example": "张三,销售部,12000\n李四,技术部,9800",
+   "example_file": ""
   },
   {
    "id": "tool-addr",
@@ -176,7 +185,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "粘贴完整地址，拆出省、市、区/县与详细地址。",
+   "example": "广东省深圳市南山区科技园1号",
+   "example_file": ""
   },
   {
    "id": "tool-phone",
@@ -217,7 +229,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "粘贴含手机号的文本，批量提取并去重。",
+   "example": "联系张三 13812345678，李四 13987654321，座机 010-12345678",
+   "example_file": ""
   },
   {
    "id": "tool-idcheck",
@@ -258,7 +273,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "输入 18 位身份证，校验校验码并解析出生日期与性别。",
+   "example": "110101199003078881",
+   "example_file": ""
   },
   {
    "id": "tool-colletter",
@@ -299,7 +317,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "输入列号数字得列字母，或输入列字母得列号。",
+   "example": "28",
+   "example_file": ""
   },
   {
    "id": "tool-tax",
@@ -354,7 +375,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "输入税前月薪、社保公积金、专项附加扣除，按月度税率表估算个税（起征点 5000），仅供参考。",
+   "example": "税前月薪 20000，社保公积金 2000，专项附加扣除 2000",
+   "example_file": ""
   },
   {
    "id": "tool-pct",
@@ -402,7 +426,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "算 A 占 B 的百分比。",
+   "example": "45 占 300",
+   "example_file": ""
   },
   {
    "id": "tool-loan",
@@ -457,7 +484,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "输入贷款额、年利率、年限，算等额本息月供与总利息。",
+   "example": "贷款 1000000，年利率 3.8%，年限 30 年",
+   "example_file": ""
   },
   {
    "id": "tool-datecalc",
@@ -505,7 +535,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "选两个日期，算相差天数（也给出年/月换算）。",
+   "example": "2026-01-01 到 2026-11-10",
+   "example_file": ""
   },
   {
    "id": "tool-workdays",
@@ -553,7 +586,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "算两个日期间的工作日天数（不含周末）。",
+   "example": "2026-11-02 到 2026-11-13",
+   "example_file": ""
   },
   {
    "id": "tool-workdate",
@@ -601,7 +637,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "从某日期起推 N 个工作日后的日期（跳过周末）。",
+   "example": "2026-11-02 起加 10 个工作日",
+   "example_file": ""
   },
   {
    "id": "tool-senior",
@@ -642,7 +681,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "选入职日期，算工龄（年/月）。",
+   "example": "入职 2020-03-15",
+   "example_file": ""
   },
   {
    "id": "tool-age",
@@ -683,7 +725,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "选出生日期，算年龄（岁/月）。",
+   "example": "出生 1990-05-20",
+   "example_file": ""
   },
   {
    "id": "tool-lottery",
@@ -724,7 +769,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": ""
+   "note": "",
+   "usage": "每行一个名字，随机抽取不放回；抽完点重置可重新抽。",
+   "example": "张三\n李四\n王五\n赵六",
+   "example_file": ""
   },
   {
    "id": "tool-formula-lib",
@@ -765,7 +813,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": "原名“AI 公式生成器”名不副实：仅 6 条固定模板查表，2026-11-09 改名"
+   "note": "原名“AI 公式生成器”名不副实：仅 6 条固定模板查表，2026-11-09 改名",
+   "usage": "按场景查 6 个常用公式模板，改参数即用（模板查表，无 AI 逻辑）。",
+   "example": "场景：条件求和",
+   "example_file": ""
   },
   {
    "id": "tool-funccmp",
@@ -820,7 +871,10 @@
    "deps": [],
    "data_refs": [],
    "status": "verified",
-   "note": "阶段 4 新增（设计 §8.3）"
+   "note": "阶段 4 新增（设计 §8.3）",
+   "usage": "选 2–3 个函数出对比表（语法、参数、返回值、适用场景、版本），数据取自函数 v2。",
+   "example": "SUM 对比 XLOOKUP",
+   "example_file": ""
   },
   {
    "id": "tool-x2json",
@@ -860,8 +914,11 @@
    "run": "纯前端函数，输入→输出，无后端调用",
    "deps": [],
    "data_refs": [],
-   "status": "pending",
-   "note": "待浏览器实测（依赖 SheetJS CDN）"
+   "status": "verified",
+   "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
+   "usage": "上传 xlsx/xls/csv，前 100 行转 JSON 预览，可复制。",
+   "example": "",
+   "example_file": "数据-销售数据1000行.xlsx"
   },
   {
    "id": "tool-x2sql",
@@ -901,8 +958,11 @@
    "run": "纯前端函数，输入→输出，无后端调用",
    "deps": [],
    "data_refs": [],
-   "status": "pending",
-   "note": "待浏览器实测"
+   "status": "verified",
+   "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
+   "usage": "上传表格，生成建表与 INSERT 语句（默认前 500 条）。",
+   "example": "",
+   "example_file": "数据-销售数据1000行.xlsx"
   },
   {
    "id": "tool-x2csv",
@@ -942,8 +1002,11 @@
    "run": "纯前端函数，输入→输出，无后端调用",
    "deps": [],
    "data_refs": [],
-   "status": "pending",
-   "note": "待浏览器实测"
+   "status": "verified",
+   "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
+   "usage": "上传表格，下载 CSV（UTF-8 带 BOM，Excel 打开不乱码）。",
+   "example": "",
+   "example_file": "数据-销售数据1000行.xlsx"
   },
   {
    "id": "tool-csv2x",
@@ -983,8 +1046,11 @@
    "run": "纯前端函数，输入→输出，无后端调用",
    "deps": [],
    "data_refs": [],
-   "status": "pending",
-   "note": "待浏览器实测"
+   "status": "verified",
+   "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
+   "usage": "上传 CSV，下载 xlsx。",
+   "example": "",
+   "example_file": "销售2026-01.csv"
   },
   {
    "id": "tool-x2xml",
@@ -1024,8 +1090,11 @@
    "run": "纯前端函数，输入→输出，无后端调用",
    "deps": [],
    "data_refs": [],
-   "status": "pending",
-   "note": "待浏览器实测"
+   "status": "verified",
+   "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
+   "usage": "上传表格，生成 XML 下载。",
+   "example": "",
+   "example_file": "数据-销售数据1000行.xlsx"
   },
   {
    "id": "tool-json2x",
@@ -1065,8 +1134,11 @@
    "run": "纯前端函数，输入→输出，无后端调用",
    "deps": [],
    "data_refs": [],
-   "status": "pending",
-   "note": "待浏览器实测"
+   "status": "verified",
+   "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
+   "usage": "粘贴 JSON 数组（元素为对象），下载 xlsx。",
+   "example": "[{\"姓名\":\"张三\",\"销售额\":12000},{\"姓名\":\"李四\",\"销售额\":9800}]",
+   "example_file": ""
   },
   {
    "id": "tool-md2x",
@@ -1106,8 +1178,11 @@
    "run": "纯前端函数，输入→输出，无后端调用",
    "deps": [],
    "data_refs": [],
-   "status": "pending",
-   "note": "待浏览器实测"
+   "status": "verified",
+   "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
+   "usage": "粘贴 Markdown 表格（含表头行和分隔行），下载 xlsx。",
+   "example": "| 姓名 | 销售额 |\n| --- | --- |\n| 张三 | 12000 |",
+   "example_file": ""
   },
   {
    "id": "tool-diff",
@@ -1154,8 +1229,14 @@
    "run": "纯前端函数，输入→输出，无后端调用",
    "deps": [],
    "data_refs": [],
-   "status": "pending",
-   "note": "待浏览器实测"
+   "status": "verified",
+   "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
+   "usage": "上传两个表格文件，找差异行（A 独有 / B 独有各列前 20 行）。",
+   "example": "上传 销售2026-01.csv 与 销售2026-02.csv 对比",
+   "example_file": [
+    "销售2026-01.csv",
+    "销售2026-02.csv"
+   ]
   },
   {
    "id": "tool-ocr",
@@ -1196,7 +1277,445 @@
    "deps": [],
    "data_refs": [],
    "status": "pending",
-   "note": "首次需联网下载语言包，待浏览器实测"
+   "note": "首次需联网下载语言包，待浏览器实测",
+   "usage": "上传带表格的图片，识别文字（首次需联网下载语言包）；识别后复制到 Excel 用分列整理。",
+   "example": "拍一张带表格的照片上传",
+   "example_file": ""
+  },
+  {
+   "id": "tool-fxgen",
+   "name": "公式生成器（模板版）",
+   "name_en": "Formula Builder",
+   "category": "公式",
+   "column": "C03",
+   "desc": "选场景填参数，拼出可直接用的公式（模板组装，无 AI）",
+   "inputs": [
+    {
+     "key": "scene",
+     "label": "场景",
+     "type": "select",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "p1",
+     "label": "参数 1",
+     "type": "text",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "p2",
+     "label": "参数 2",
+     "type": "text",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "p3",
+     "label": "参数 3",
+     "type": "text",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "formula",
+     "label": "生成的公式",
+     "render": "text"
+    },
+    {
+     "key": "explain",
+     "label": "逐段解释",
+     "render": "list"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "阶段 9 新增，node vm 实测通过",
+   "usage": "选场景、填参数，拼出可直接粘贴到 Excel 的公式，并逐段解释每个参数。",
+   "example": "场景：条件求和；求和区域 C:C；条件区域 A:A；条件 销售部",
+   "example_file": ""
+  },
+  {
+   "id": "tool-fxexplain",
+   "name": "公式解释器",
+   "name_en": "Formula Explainer",
+   "category": "公式",
+   "column": "C03",
+   "desc": "粘贴一条公式，逐段讲清每部分含义与计算顺序",
+   "inputs": [
+    {
+     "key": "formula",
+     "label": "公式",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "parts",
+     "label": "分段解释",
+     "render": "list"
+    },
+    {
+     "key": "order",
+     "label": "计算顺序",
+     "render": "list"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "阶段 9 新增，node vm 实测通过；仅支持本站函数库 100 个函数",
+   "usage": "粘贴一条公式，逐段讲清每个函数、引用、运算符的含义与计算顺序；仅支持本站函数库 100 个函数，不支持的函数会明说暂不支持，不编造解释。",
+   "example": "=SUMIFS(C:C,A:A,\"销售部\")",
+   "example_file": ""
+  },
+  {
+   "id": "tool-fxcalc",
+   "name": "公式计算器",
+   "name_en": "Formula Calculator",
+   "category": "公式",
+   "column": "C03",
+   "desc": "输入 Excel 公式直接算出结果，支持常用函数与单元格变量",
+   "inputs": [
+    {
+     "key": "formula",
+     "label": "公式",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "vars",
+     "label": "变量赋值（可选）",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "value",
+     "label": "计算结果",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "阶段 9 新增，node vm 实测通过，结果与 Python 独立验算一致",
+   "usage": "输入 Excel 公式直接算出结果；支持 +-*/^% & 比较运算、括号、字符串与 SUM/AVERAGE/MAX/MIN/COUNT/ROUND/IF/PMT/FV/PV 等函数；单元格变量在下方按 A1=85 的格式赋值。",
+   "example": "=PMT(0.045/12,240,500000)",
+   "example_file": ""
+  },
+  {
+   "id": "tool-chartprev",
+   "name": "图表预览",
+   "name_en": "Chart Preview",
+   "category": "图表",
+   "column": "C07",
+   "desc": "粘贴 CSV 数据选图表类型，即时预览（Canvas 绘制，仅作示意）",
+   "inputs": [
+    {
+     "key": "csv",
+     "label": "示例数据（CSV）",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "type",
+     "label": "图表类型",
+     "type": "select",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "preview",
+     "label": "图表预览",
+     "render": "text"
+    },
+    {
+     "key": "steps",
+     "label": "Excel 创建步骤",
+     "render": "list"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "阶段 9 新增，node vm 实测通过（Canvas 存根验证绘图调用）；预览效果不等于 Excel 实际渲染",
+   "usage": "粘贴 CSV 数据（第一行为表头、第一列为分类），选图表类型即时预览；预览仅作示意，不等于 Excel 实际渲染，下方有在 Excel 里的创建步骤。",
+   "example": "产品,销售额\n电脑,40000\n手机,15000\n耳机,9000",
+   "example_file": ""
+  },
+  {
+   "id": "tool-dataclean",
+   "name": "数据清洗",
+   "name_en": "Data Cleaning",
+   "category": "数据处理",
+   "column": "C05",
+   "desc": "去空格、去重、删空行、转数值，一键清洗并出清洗报告",
+   "inputs": [
+    {
+     "key": "data",
+     "label": "待清洗数据（每行一条）",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "cleaned",
+     "label": "清洗后数据",
+     "render": "list"
+    },
+    {
+     "key": "report",
+     "label": "清洗报告",
+     "render": "table"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "阶段 9 新增，node vm 实测通过",
+   "usage": "每行一条粘贴数据，勾选清洗项后运行：去首尾空格、删空行、去重、转数值（去掉千分位逗号）；输出清洗后数据与清洗报告，可下载。",
+   "example": " 张三 \n李四\n张三\n\n王五\n1,200",
+   "example_file": ""
+  },
+  {
+   "id": "tool-dataconv",
+   "name": "数据转换",
+   "name_en": "Data Converter",
+   "category": "数据处理",
+   "column": "C05",
+   "desc": "CSV / JSON / Markdown 表格互转（粘贴文本版）",
+   "inputs": [
+    {
+     "key": "src",
+     "label": "源格式",
+     "type": "select",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "dst",
+     "label": "目标格式",
+     "type": "select",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "text",
+     "label": "待转换文本",
+     "type": "textarea",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "result",
+     "label": "转换结果",
+     "render": "text"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "阶段 9 新增，node vm 实测通过（6 个方向全过）",
+   "usage": "选源格式与目标格式，粘贴文本互转：CSV / JSON / Markdown 表格六个方向；结果可复制或下载。",
+   "example": "姓名,销售额\n张三,12000\n李四,9800",
+   "example_file": ""
+  },
+  {
+   "id": "tool-randata",
+   "name": "随机数据生成",
+   "name_en": "Random Data Generator",
+   "category": "数据处理",
+   "column": "C05",
+   "desc": "生成姓名 / 日期 / 金额 / 随机数测试数据，可下载 CSV",
+   "inputs": [
+    {
+     "key": "kind",
+     "label": "数据类型",
+     "type": "select",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "rows",
+     "label": "行数",
+     "type": "number",
+     "required": true,
+     "placeholder": ""
+    },
+    {
+     "key": "seed",
+     "label": "随机种子（可选，填了可复现）",
+     "type": "text",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "table",
+     "label": "随机数据表",
+     "render": "table"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "阶段 9 新增，node vm 实测通过（种子模式可复现）",
+   "usage": "选数据类型与行数，生成测试数据表，可下载 CSV；填随机种子可复现同一批数据（演示与出题用），不填则每次随机；姓名为内置百家姓组合，不用真实个人信息。",
+   "example": "类型：姓名；行数 5；种子 42",
+   "example_file": ""
+  },
+  {
+   "id": "tool-keys",
+   "name": "快捷键速查表",
+   "name_en": "Shortcut Cheat Sheet",
+   "category": "其他",
+   "column": "C01",
+   "desc": "84 个快捷键可搜索过滤，仅看高频 ★；与 C01 快捷键专篇互链",
+   "inputs": [
+    {
+     "key": "q",
+     "label": "搜索关键词",
+     "type": "text",
+     "required": true,
+     "placeholder": ""
+    }
+   ],
+   "outputs": [
+    {
+     "key": "list",
+     "label": "快捷键列表",
+     "render": "table"
+    }
+   ],
+   "errors": [
+    {
+     "code": "E_EMPTY",
+     "message": "输入为空",
+     "fix": "请先输入内容再运行"
+    },
+    {
+     "code": "E_FORMAT",
+     "message": "格式错误",
+     "fix": "按提示的输入格式重新填写"
+    }
+   ],
+   "run": "纯前端函数，输入→输出，无后端调用",
+   "deps": [],
+   "data_refs": [],
+   "status": "verified",
+   "note": "阶段 9 新增：keys 聚合页加搜索过滤，node vm 实测通过",
+   "usage": "输入关键词过滤快捷键（如 复制、Ctrl+C），或勾选仅看高频 ★；完整专篇见 docs/basics/04-shortcuts.md。",
+   "example": "搜索：复制",
+   "example_file": ""
   }
  ]
 }

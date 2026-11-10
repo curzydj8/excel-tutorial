@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-10",
- "count": 528,
+ "count": 563,
  "types": [
   "case",
   "chart",
@@ -9,6 +9,7 @@
   "solve",
   "template",
   "tip",
+  "tool",
   "tutorial",
   "vba"
  ],
@@ -4764,6 +4765,321 @@
    "text": "Enum 枚举 给一组相关的常量起名字，提高可读性：",
    "section": "vba",
    "ref": "Enum"
+  },
+  {
+   "id": "tool-tool-fxcheck",
+   "type": "tool",
+   "column": "C03",
+   "title": "公式体检",
+   "text": "公式体检 检查括号配对与全角符号 在线工具 粘贴一条公式，检查括号是否配对、有无全角符号、是否以 = 开头。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-dedup",
+   "type": "tool",
+   "column": "C05",
+   "title": "重复值检测",
+   "text": "重复值检测 输入一列值，找出重复项与出现次数 在线工具 每行一条粘贴内容，找出重复项与出现次数。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-split",
+   "type": "tool",
+   "column": "C05",
+   "title": "文本拆分",
+   "text": "文本拆分 按分隔符把文本拆成多列 在线工具 每行一条文本，按分隔符拆成多列预览（默认逗号）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-addr",
+   "type": "tool",
+   "column": "C05",
+   "title": "地址解析",
+   "text": "地址解析 拆出省/市/区与详细地址 在线工具 粘贴完整地址，拆出省、市、区/县与详细地址。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-phone",
+   "type": "tool",
+   "column": "C05",
+   "title": "手机号提取",
+   "text": "手机号提取 从文本中批量提取手机号 在线工具 粘贴含手机号的文本，批量提取并去重。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-idcheck",
+   "type": "tool",
+   "column": "C05",
+   "title": "身份证校验",
+   "text": "身份证校验 校验 18 位身份证并解析出生日期与性别 在线工具 输入 18 位身份证，校验校验码并解析出生日期与性别。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-colletter",
+   "type": "tool",
+   "column": "C05",
+   "title": "列字母互转",
+   "text": "列字母互转 数字⟷Excel 列字母双向转换 在线工具 输入列号数字得列字母，或输入列字母得列号。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-tax",
+   "type": "tool",
+   "column": "C13",
+   "title": "个税计算器",
+   "text": "个税计算器 按月度税率表估算个税（起征点 5000） 在线工具 输入税前月薪、社保公积金、专项附加扣除，按月度税率表估算个税（起征点 5000），仅供参考。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-pct",
+   "type": "tool",
+   "column": "C03",
+   "title": "百分比计算器",
+   "text": "百分比计算器 数值占总数的百分比 在线工具 算 A 占 B 的百分比。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-loan",
+   "type": "tool",
+   "column": "C13",
+   "title": "房贷计算器",
+   "text": "房贷计算器 等额本息月供与总利息 在线工具 输入贷款额、年利率、年限，算等额本息月供与总利息。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-datecalc",
+   "type": "tool",
+   "column": "C04",
+   "title": "日期计算器",
+   "text": "日期计算器 两个日期相差天数 在线工具 选两个日期，算相差天数（也给出年/月换算）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-workdays",
+   "type": "tool",
+   "column": "C04",
+   "title": "工作日计算器",
+   "text": "工作日计算器 两个日期间的工作日天数（不含周末） 在线工具 算两个日期间的工作日天数（不含周末）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-workdate",
+   "type": "tool",
+   "column": "C04",
+   "title": "工作日推算",
+   "text": "工作日推算 从某日期起推 N 个工作日后的日期 在线工具 从某日期起推 N 个工作日后的日期（跳过周末）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-senior",
+   "type": "tool",
+   "column": "C13",
+   "title": "工龄计算器",
+   "text": "工龄计算器 入职至今的工龄（年/月） 在线工具 选入职日期，算工龄（年/月）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-age",
+   "type": "tool",
+   "column": "C04",
+   "title": "年龄计算器",
+   "text": "年龄计算器 出生至今的年龄 在线工具 选出生日期，算年龄（岁/月）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-lottery",
+   "type": "tool",
+   "column": "C01",
+   "title": "随机点名",
+   "text": "随机点名 名单不放回随机抽取 在线工具 每行一个名字，随机抽取不放回；抽完点重置可重新抽。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-formula-lib",
+   "type": "tool",
+   "column": "C03",
+   "title": "公式模板库",
+   "text": "公式模板库 按场景查 6 个常用公式模板（原名 AI 公式生成器，无 AI 逻辑，已改名） 在线工具 按场景查 6 个常用公式模板，改参数即用（模板查表，无 AI 逻辑）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-funccmp",
+   "type": "tool",
+   "column": "C04",
+   "title": "函数比较",
+   "text": "函数比较 选 2–3 个函数，对比语法、参数、返回值、适用场景与版本；数据取自函数 v2 schema，不手写对比文案 在线工具 选 2–3 个函数出对比表（语法、参数、返回值、适用场景、版本），数据取自函数 v2。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-x2json",
+   "type": "tool",
+   "column": "C05",
+   "title": "Excel 转 JSON",
+   "text": "Excel 转 JSON 上传 Excel/CSV，一键转 JSON 在线工具 上传 xlsx/xls/csv，前 100 行转 JSON 预览，可复制。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-x2sql",
+   "type": "tool",
+   "column": "C05",
+   "title": "Excel 转 SQL",
+   "text": "Excel 转 SQL 生成建表与 INSERT 语句 在线工具 上传表格，生成建表与 INSERT 语句（默认前 500 条）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-x2csv",
+   "type": "tool",
+   "column": "C05",
+   "title": "Excel 转 CSV",
+   "text": "Excel 转 CSV 上传表格，下载 CSV 在线工具 上传表格，下载 CSV（UTF-8 带 BOM，Excel 打开不乱码）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-csv2x",
+   "type": "tool",
+   "column": "C05",
+   "title": "CSV 转 Excel",
+   "text": "CSV 转 Excel 上传 CSV，下载 xlsx 在线工具 上传 CSV，下载 xlsx。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-x2xml",
+   "type": "tool",
+   "column": "C05",
+   "title": "Excel 转 XML",
+   "text": "Excel 转 XML 上传表格，生成 XML 下载 在线工具 上传表格，生成 XML 下载。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-json2x",
+   "type": "tool",
+   "column": "C05",
+   "title": "JSON 转 Excel",
+   "text": "JSON 转 Excel 粘贴 JSON 数组，下载 xlsx 在线工具 粘贴 JSON 数组（元素为对象），下载 xlsx。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-md2x",
+   "type": "tool",
+   "column": "C05",
+   "title": "Markdown 转 Excel",
+   "text": "Markdown 转 Excel 粘贴 MD 表格，下载 xlsx 在线工具 粘贴 Markdown 表格（含表头行和分隔行），下载 xlsx。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-diff",
+   "type": "tool",
+   "column": "C05",
+   "title": "Excel 自动比对",
+   "text": "Excel 自动比对 两个表格找差异 在线工具 上传两个表格文件，找差异行（A 独有 / B 独有各列前 20 行）。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-ocr",
+   "type": "tool",
+   "column": "C05",
+   "title": "OCR 识别表格",
+   "text": "OCR 识别表格 图片转表格（Tesseract.js） 在线工具 上传带表格的图片，识别文字（首次需联网下载语言包）；识别后复制到 Excel 用分列整理。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-fxgen",
+   "type": "tool",
+   "column": "C03",
+   "title": "公式生成器（模板版）",
+   "text": "公式生成器（模板版） 选场景填参数，拼出可直接用的公式（模板组装，无 AI） 在线工具 选场景、填参数，拼出可直接粘贴到 Excel 的公式，并逐段解释每个参数。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-fxexplain",
+   "type": "tool",
+   "column": "C03",
+   "title": "公式解释器",
+   "text": "公式解释器 粘贴一条公式，逐段讲清每部分含义与计算顺序 在线工具 粘贴一条公式，逐段讲清每个函数、引用、运算符的含义与计算顺序；仅支持本站函数库 100 个函数，不支持的函数会明说暂不支持，不编造解释。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-fxcalc",
+   "type": "tool",
+   "column": "C03",
+   "title": "公式计算器",
+   "text": "公式计算器 输入 Excel 公式直接算出结果，支持常用函数与单元格变量 在线工具 输入 Excel 公式直接算出结果；支持 +-*/^% & 比较运算、括号、字符串与 SUM/AVERAGE/MAX/MIN/COUNT/ROUND/IF/PMT/FV/PV 等函数；单元格变量在下方按 A1=85 的格式赋值。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-chartprev",
+   "type": "tool",
+   "column": "C07",
+   "title": "图表预览",
+   "text": "图表预览 粘贴 CSV 数据选图表类型，即时预览（Canvas 绘制，仅作示意） 在线工具 粘贴 CSV 数据（第一行为表头、第一列为分类），选图表类型即时预览；预览仅作示意，不等于 Excel 实际渲染，下方有在 Excel 里的创建步骤。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-dataclean",
+   "type": "tool",
+   "column": "C05",
+   "title": "数据清洗",
+   "text": "数据清洗 去空格、去重、删空行、转数值，一键清洗并出清洗报告 在线工具 每行一条粘贴数据，勾选清洗项后运行：去首尾空格、删空行、去重、转数值（去掉千分位逗号）；输出清洗后数据与清洗报告，可下载。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-dataconv",
+   "type": "tool",
+   "column": "C05",
+   "title": "数据转换",
+   "text": "数据转换 CSV / JSON / Markdown 表格互转（粘贴文本版） 在线工具 选源格式与目标格式，粘贴文本互转：CSV / JSON / Markdown 表格六个方向；结果可复制或下载。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-randata",
+   "type": "tool",
+   "column": "C05",
+   "title": "随机数据生成",
+   "text": "随机数据生成 生成姓名 / 日期 / 金额 / 随机数测试数据，可下载 CSV 在线工具 选数据类型与行数，生成测试数据表，可下载 CSV；填随机种子可复现同一批数据（演示与出题用），不填则每次随机；姓名为内置百家姓组合，不用真实个人信息。",
+   "section": "tools",
+   "ref": ""
+  },
+  {
+   "id": "tool-tool-keys",
+   "type": "tool",
+   "column": "C01",
+   "title": "快捷键速查表",
+   "text": "快捷键速查表 84 个快捷键可搜索过滤，仅看高频 ★；与 C01 快捷键专篇互链 在线工具 输入关键词过滤快捷键（如 复制、Ctrl+C），或勾选仅看高频 ★；完整专篇见 docs/basics/04-shortcuts.md。",
+   "section": "tools",
+   "ref": ""
   }
  ]
 }
