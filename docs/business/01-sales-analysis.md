@@ -299,6 +299,6 @@
 
 ## 11. 可下载示例文件
 
-- [示例-销售数据分析.xlsx](templates/示例-销售数据分析.xlsx)（订单明细表 + 按产品汇总 + 按地区汇总 + 按月汇总，汇总表用 SUMIF/SUMIFS 公式）
-- [示例-Power-Pivot-数据模型与DAX.xlsx](templates/示例-Power-Pivot-数据模型与DAX.xlsx)（同一份 12 行订单的订单表、产品表、客户表、库存表，可对照核对）
-- [数据-销售数据1000行.xlsx](templates/数据-销售数据1000行.xlsx)（1000 行销售数据，练熟本篇做法后可换大数据量练习）
+- [示例-销售数据分析.xlsx](../../templates/示例-销售数据分析.xlsx)（订单明细表 + 按产品汇总 + 按地区汇总 + 按月汇总，汇总表用 SUMIF/SUMIFS 公式）
+- [示例-Power-Pivot-数据模型与DAX.xlsx](../../templates/示例-Power-Pivot-数据模型与DAX.xlsx)（同一份 12 行订单的订单表、产品表、客户表、库存表，可对照核对）
+- [数据-销售数据1000行.xlsx](../../templates/数据-销售数据1000行.xlsx)（1000 行销售数据，练熟本篇做法后可换大数据量练习）

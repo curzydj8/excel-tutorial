@@ -1,6 +1,6 @@
 # 查找引用函数大全
 
-查找引用是 Excel 进阶的分水岭：从"算得快"到"找得准"。本章共收录 14 个函数。XLOOKUP、FILTER、SORT、UNIQUE、TRANSPOSE（动态数组）仅 Microsoft 365 / Excel 2021+ 可用。
+查找引用是 Excel 进阶的分水岭：从"算得快"到"找得准"。本章共收录 14 个函数。XLOOKUP、FILTER、SORT、UNIQUE（动态数组）仅 Microsoft 365 / Excel 2021+ 可用；TRANSPOSE 是老函数（旧版可用），仅溢出行为是新的。
 
 
 ## 学习目标

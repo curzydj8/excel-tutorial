@@ -911,8 +911,10 @@
      "fix": "按提示的输入格式重新填写"
     }
    ],
-   "run": "纯前端函数，输入→输出，无后端调用",
-   "deps": [],
+   "run": "纯前端函数，输入→输出，无后端调用；依赖 SheetJS 0.18.5 CDN（cdnjs），离线不可用",
+   "deps": [
+    "xlsx 0.18.5 CDN"
+   ],
    "data_refs": [],
    "status": "verified",
    "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
@@ -955,8 +957,10 @@
      "fix": "按提示的输入格式重新填写"
     }
    ],
-   "run": "纯前端函数，输入→输出，无后端调用",
-   "deps": [],
+   "run": "纯前端函数，输入→输出，无后端调用；依赖 SheetJS 0.18.5 CDN（cdnjs），离线不可用",
+   "deps": [
+    "xlsx 0.18.5 CDN"
+   ],
    "data_refs": [],
    "status": "verified",
    "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
@@ -999,8 +1003,10 @@
      "fix": "按提示的输入格式重新填写"
     }
    ],
-   "run": "纯前端函数，输入→输出，无后端调用",
-   "deps": [],
+   "run": "纯前端函数，输入→输出，无后端调用；依赖 SheetJS 0.18.5 CDN（cdnjs），离线不可用",
+   "deps": [
+    "xlsx 0.18.5 CDN"
+   ],
    "data_refs": [],
    "status": "verified",
    "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
@@ -1043,8 +1049,10 @@
      "fix": "按提示的输入格式重新填写"
     }
    ],
-   "run": "纯前端函数，输入→输出，无后端调用",
-   "deps": [],
+   "run": "纯前端函数，输入→输出，无后端调用；依赖 SheetJS 0.18.5 CDN（cdnjs），离线不可用",
+   "deps": [
+    "xlsx 0.18.5 CDN"
+   ],
    "data_refs": [],
    "status": "verified",
    "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
@@ -1087,8 +1095,10 @@
      "fix": "按提示的输入格式重新填写"
     }
    ],
-   "run": "纯前端函数，输入→输出，无后端调用",
-   "deps": [],
+   "run": "纯前端函数，输入→输出，无后端调用；依赖 SheetJS 0.18.5 CDN（cdnjs），离线不可用",
+   "deps": [
+    "xlsx 0.18.5 CDN"
+   ],
    "data_refs": [],
    "status": "verified",
    "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
@@ -1131,8 +1141,10 @@
      "fix": "按提示的输入格式重新填写"
     }
    ],
-   "run": "纯前端函数，输入→输出，无后端调用",
-   "deps": [],
+   "run": "纯前端函数，输入→输出，无后端调用；依赖 SheetJS 0.18.5 CDN（cdnjs），离线不可用",
+   "deps": [
+    "xlsx 0.18.5 CDN"
+   ],
    "data_refs": [],
    "status": "verified",
    "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
@@ -1175,8 +1187,10 @@
      "fix": "按提示的输入格式重新填写"
     }
    ],
-   "run": "纯前端函数，输入→输出，无后端调用",
-   "deps": [],
+   "run": "纯前端函数，输入→输出，无后端调用；依赖 SheetJS 0.18.5 CDN（cdnjs），离线不可用",
+   "deps": [
+    "xlsx 0.18.5 CDN"
+   ],
    "data_refs": [],
    "status": "verified",
    "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
@@ -1226,8 +1240,10 @@
      "fix": "按提示的输入格式重新填写"
     }
    ],
-   "run": "纯前端函数，输入→输出，无后端调用",
-   "deps": [],
+   "run": "纯前端函数，输入→输出，无后端调用；依赖 SheetJS 0.18.5 CDN（cdnjs），离线不可用",
+   "deps": [
+    "xlsx 0.18.5 CDN"
+   ],
    "data_refs": [],
    "status": "verified",
    "note": "阶段 9 经真实 SheetJS 在 node vm 中实测通过",
@@ -1277,7 +1293,7 @@
    "deps": [],
    "data_refs": [],
    "status": "pending",
-   "note": "首次需联网下载语言包，待浏览器实测",
+   "note": "首次需联网下载语言包，待浏览器实测；实测：黑框线表格识别效果差，暂不可用；无框线/浅色框线图片可用",
    "usage": "上传带表格的图片，识别文字（首次需联网下载语言包）；识别后复制到 Excel 用分列整理。",
    "example": "拍一张带表格的照片上传",
    "example_file": ""

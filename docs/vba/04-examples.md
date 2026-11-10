@@ -547,13 +547,13 @@ End Function
 
 8 个实例的代码另存为 .bas 文件（与正文代码同一来源，改教程即改 .bas），可用 VBE「文件 → 导入文件」导入，或用记事本打开复制到标准模块：
 
-- [VBA-BatchRename.bas](templates/VBA-BatchRename.bas)（实例 1：批量重命名工作表）
-- [VBA-MergeWorkbooks.bas](templates/VBA-MergeWorkbooks.bas)（实例 2：合并多个工作簿）
-- [VBA-ReportGenerator.bas](templates/VBA-ReportGenerator.bas)（实例 3：自动生成报表，带格式）
-- [VBA-BatchReplace.bas](templates/VBA-BatchReplace.bas)（实例 4：查找替换增强版）
-- [VBA-RemoveDuplicates.bas](templates/VBA-RemoveDuplicates.bas)（实例 5：数据去重）
-- [VBA-BatchInsertPictures.bas](templates/VBA-BatchInsertPictures.bas)（实例 6：批量插入图片）
-- [VBA-SendMailViaOutlook.bas](templates/VBA-SendMailViaOutlook.bas)（实例 7：发送邮件 Outlook）
-- [VBA-CustomFunctions.bas](templates/VBA-CustomFunctions.bas)（实例 8：自定义函数 UDF，含 GetBirth、IsWeekend、RMBUpper）
+- [VBA-BatchRename.bas](../../templates/VBA-BatchRename.bas)（实例 1：批量重命名工作表）
+- [VBA-MergeWorkbooks.bas](../../templates/VBA-MergeWorkbooks.bas)（实例 2：合并多个工作簿）
+- [VBA-ReportGenerator.bas](../../templates/VBA-ReportGenerator.bas)（实例 3：自动生成报表，带格式）
+- [VBA-BatchReplace.bas](../../templates/VBA-BatchReplace.bas)（实例 4：查找替换增强版）
+- [VBA-RemoveDuplicates.bas](../../templates/VBA-RemoveDuplicates.bas)（实例 5：数据去重）
+- [VBA-BatchInsertPictures.bas](../../templates/VBA-BatchInsertPictures.bas)（实例 6：批量插入图片）
+- [VBA-SendMailViaOutlook.bas](../../templates/VBA-SendMailViaOutlook.bas)（实例 7：发送邮件 Outlook）
+- [VBA-CustomFunctions.bas](../../templates/VBA-CustomFunctions.bas)（实例 8：自定义函数 UDF，含 GetBirth、IsWeekend、RMBUpper）
 
 > **说明**：.bas 文件是纯文本 VBA 模块。所有代码均未在 Excel 内执行验证，导入后请先在副本工作簿上试跑；实例 7 测试时先把 `.Send` 改成 `.Display` 预览。
