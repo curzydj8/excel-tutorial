@@ -2,6 +2,13 @@
 
 本章讲解 Excel VBA 的核心：对象模型。理解 Application → Workbook → Worksheet → Range 这条层级链，就掌握了操作 Excel 的钥匙。
 
+- **所属栏目**：C11 VBA 自动化 ／ C11-L2-2 对象模型
+- **适用版本**：Excel 2010 / 2013 / 2016 / 2019 / 2021 / 365（Windows 桌面版）
+- **难度**：入门
+- **预计阅读时长**：45 分钟
+- **更新日期**：2026-11-10
+
+> **验证说明**：本篇 VBA 语法经 Microsoft 官方文档核对，数值经 Python 独立验算；**所有 VBA 代码均未在 Excel 内执行验证**（无 Excel 环境）。前置基础（变量、循环、Sub/Function）见本目录 [01-basics.md](01-basics.md)。
 
 ## 学习目标
 
@@ -25,6 +32,8 @@ Application（Excel 应用程序本身）
 每一层都可以通过父对象拿到子对象：
 
 ```vb
+Option Explicit
+
 Sub Hierarchy()
     ' 应用程序
     Debug.Print Application.Version          ' Excel 版本号
@@ -384,11 +393,45 @@ End Sub
 
 ---
 
+## 实际工作场景
+
+### 场景 1：日报表一键美化
+
+每天导出的日报表都要做同一套美化：标题行加粗、A 列加宽、金额列设成两位小数。做法：把第 6 节的 `Font` / `Interior` / `NumberFormat` 写成一个过程，配合第 2 节的性能三件套（关屏幕刷新、关自动重算、关事件），每天打开报表按一次宏就完成。结果：原来 10 分钟的手工点选变成 2 秒，且每次格式完全一致。
+
+### 场景 2：多表数据汇总到一张总表
+
+12 个月各一张工作表，结构相同，要汇总到"全年"表。做法：用第 5 节的 `End(xlUp)` 找每张表的最后一行，用 `For Each ws In Worksheets` 遍历，逐表把数据区复制到总表末尾（`Cells(targetRow, 1)` 定位写入行）。结果：新增一个月只要再加一张表重跑一次，不用改代码。
+
+## 常见错误
+
+| 错误现象 | 原因 | 解决方案 |
+|---|---|---|
+| 报"需要对象"（错误 424） | 对象变量赋值忘了写 `Set`，如 `ws = Worksheets("数据")` | 对象赋值必须用 `Set ws = ...`；普通变量（数字、字符串）才直接用 `=` |
+| 报"对象变量未设置"（错误 91） | 对象变量还没 `Set` 就拿来用，如 `ws.Name` | 先 `Set ws = ...` 再使用；用 `If ws Is Nothing Then` 判断是否已设置 |
+| 操作跑到别的工作簿去了 | 用了 `ActiveWorkbook`，用户中途点了别的窗口 | 优先用 `ThisWorkbook`（代码所在的工作簿，固定不变） |
+| `Range("A1").Value = 100` 在别的表上生效了 | `Range` 没加限定，默认指当前活动工作表 | 写全限定：`ThisWorkbook.Worksheets("数据").Range("A1").Value = 100` |
+| VBA 里写公式报 1004 错误 | 公式用了中文函数名或分号，如 `=求和(B1:B10)` | VBA 里公式一律用英文函数名加逗号：`=SUM(B1:B10)` |
+| `Find` 找不到时直接报错 | `Find` 找不到返回 `Nothing`，代码没判断就用了返回值 | 用 `If Not found Is Nothing Then` 判断后再用 |
+| Change 事件里改单元格，Excel 卡死 | 在 `Worksheet_Change` 里改单元格又触发 Change，无限递归 | 用 `Application.EnableEvents = False/True` 包裹事件内的写入 |
+| 批量操作后屏幕一直不刷新 / 事件不触发 | 过程出错提前退出，没把 `ScreenUpdating` / `EnableEvents` 恢复成 True | 在错误处理段里恢复开关（见 05-advanced.md 第 4.4 节集中处理写法）；或立即窗口执行 `Application.ScreenUpdating = True` 救急 |
+| `Cells(Rows.Count, 1).End(xlUp).Row` 返回 1，但表里明明有数据 | A 列全空（数据在 B 列），按 A 列找最后一行自然是 1 | 按实际有数据的列找最后一行；多列时对每列分别找，或用 `UsedRange` |
+
+## 相关教程
+
+- 同栏目上一篇：[01-basics.md](01-basics.md)（VBA 基础：变量、循环、Sub/Function）
+- 同栏目下一篇：[03-keywords.md](03-keywords.md)（VBA 关键字大全：Set、With、Me 速查）
+- 同栏目相关：[04-examples.md](04-examples.md)（VBA 实战实例：合并工作簿、生成报表都用本章对象）、[05-advanced.md](05-advanced.md)（VBA 进阶：UserForm、类模块、加载宏）
+- 跨栏目相关：数据管理（C05）——汇总前先确认各表结构一致
+
 ## 练习题
 
 1. Range("A1:Z100") 一共有多少个单元格？
 2. 写一行代码把 Sheet1 的 A1 改为"完成"。
 3. 为什么不要满屏写 Select/Activate？
+4. `Cells(3, 2).Value` 指的是哪个单元格？`Cells(1, 1).Resize(5, 3)` 覆盖的是哪个区域？
+5. A 列数据从 A1 连续填到 A20（A21 为空），`Cells(Rows.Count, 1).End(xlUp).Row` 返回多少？如果 A 列全空呢？
+6. 按本章第 5 节的循环 `For i = 1 To 10: Cells(i, 2).Value = i * 10: Next i`，B10 的值是多少？B1:B10 的合计是多少？
 
 ## 参考答案
 
@@ -400,5 +443,11 @@ End Sub
 2. `Worksheets("Sheet1").Range("A1").Value = "完成"`（或 `Sheets("Sheet1").Range("A1") = "完成"`）。
 
 3. Select/Activate 又慢又脆弱（依赖当前选中状态）。直接操作对象，如 `Range("A1").Value = 1`。
+
+4. `Cells(3, 2)` 是 B3（第 3 行、第 2 列）；`Cells(1, 1).Resize(5, 3)` 是 A1:C5（从 A1 起 5 行 3 列）。
+
+5. 返回 20（A 列最后一个非空行是第 20 行）。如果 A 列全空，`End(xlUp)` 会一路顶到第 1 行，返回 1——所以"返回 1"可能是真没数据，也可能是找错了列，要结合实际列判断。
+
+6. B10 的值是 100（10×10）；B1:B10 的合计是 550（10+20+…+100 = 10×(1+2+…+10) = 10×55 = 550）。
 
 </details>
