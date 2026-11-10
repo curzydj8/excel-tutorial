@@ -17,7 +17,7 @@
 
 ## 2. 基础概念
 
-4 条路线总览如下。路线可以交叉：一篇教程可以出现在多条路线里，学过的不必重学；4 条路线合起来覆盖本站 107 篇教程中的 92 篇；模板使用说明 9 篇与练习专篇 3 篇为配套参考内容，不计入路线。
+4 条路线总览如下。路线可以交叉：一篇教程可以出现在多条路线里，学过的不必重学；4 条路线合起来覆盖本站 123 篇教程（模板使用说明 9 篇、练习专篇 3 篇、可视化专篇 3 篇、条件格式/透视表/Power Query 拆分专篇 11 篇、性能优化专篇 1 篇与 VBA 基础四篇现已全部挂入各阶段；路线图本篇（id: practice-02-roadmap）即 C18 学习路线图专篇）。
 
 | 路线 | 适合人群 | 前置要求 | 预计学时 | 出口能力 |
 | --- | --- | --- | --- | --- |
@@ -28,16 +28,51 @@
 
 补充说明：
 
-- 函数百科（C04，100 个函数）是查阅型内容，不计入路线覆盖的 92 篇教程；学到公式时按需查阅，不必先背完再动手。
-- VBA 基础语法、对象模型、关键字手册与实例精讲在 C11 VBA 栏目中，本路线所列的 VBA 教程为进阶专篇（id: vba-05-advanced）。
+- 函数百科（C04，102 个函数）是查阅型内容，不计入路线覆盖的 123 篇教程；学到公式时按需查阅，不必先背完再动手。
+- VBA 基础语法、对象模型、关键字手册与实例精讲在 C11 VBA 栏目中，本路线 7.2 阶段已挂入基础四篇（id: vba-01-basics、vba-02-objects、vba-03-keywords、vba-04-examples），再进阶学进阶专篇（id: vba-05-advanced）。
 - 站内数据教程没有独立的 md 文件，本篇用纯文字写出标题与站内 id，不放超链接；有 md 文件的教程一律用相对路径链接，可直接点开。
+
+### 阶段—题目映射表（做哪阶段、做哪篇练习的哪几题）
+
+01 篇为数据集题库（30 道：S1–S8 销售数据组、K1–K8 考勤数据组、F1–F7 函数练习组、P1–P7 透视表组）；03 篇为按章节题库（32 道：X01–X32，每题题干标出处章节）；04 篇为模拟考试（20 题：M1–M10 选择题、E01–E10 实操题）。03 篇与 04 篇的单篇入口挂在 7.5 综合阶段，各题首练按本表分布在各阶段做，不必等到 7.5；04 篇整套模拟考试在 7.5 做通关自测（60 分钟）。
+
+| 路线—阶段 | 01 篇（数据集题库 30 道） | 03 篇（按章节 32 道） | 04 篇（模拟考试 20 题） |
+|---|---|---|---|
+| 零基础 4.1 认识 Excel 与数据录入 | — | X01 | M1 |
+| 零基础 4.2 格式与打印 | — | X02 | — |
+| 零基础 4.3 数据整理入门 | — | X09、X10 | E04 |
+| 零基础 4.4 公式入门 | S1、S2、S5、S6、K1、K5、F1–F7 | X03、X05、X06、X07 | M2、M3、M4、E01、E02、E05、E06 |
+| 零基础 4.5 汇总与展示入门 | P1、S7 | X12 | M6 |
+| 零基础 4.6 办公实战入门 | S3、S4、K2、K6、K7 | X08、X24、X25、X26、X27 | E03、E09、E10 |
+| 进阶 5.1 公式进阶 | — | X04、X11、X31 | — |
+| 进阶 5.2 数据验证与规范输入 | — | — | M10 |
+| 进阶 5.3 条件格式进阶 | — | — | — |
+| 进阶 5.4 图表进阶 | — | X13、X14 | M5 |
+| 进阶 5.5 透视表进阶 | P2–P7、S8、K3、K4、K8 | X15、X16、X32 | E07、E08 |
+| 进阶 5.6 图表收尾与综合 | — | — | — |
+| 数据分析 6.1 数据获取与清洗 | — | X17、X18 | — |
+| 数据分析 6.2 Power Query 进阶 | — | — | M7 |
+| 数据分析 6.3 透视与动态图表 | P1–P7（综合复做，首练见 4.5、5.5） | X28 | — |
+| 数据分析 6.4 数据模型与 DAX 基础 | — | X19 | M8 |
+| 数据分析 6.5 DAX 进阶与 KPI | — | X20 | — |
+| 数据分析 6.6 商业场景实战 | —（复做见 4.6） | X24–X28（复做，首练见 4.6、6.3） | —（整套见 7.5） |
+| 自动化 7.1 自动化入门与版本 | — | — | — |
+| 自动化 7.2 VBA 进阶 | — | X21、X22 | M9 |
+| 自动化 7.3 Office Scripts | — | X23 | — |
+| 自动化 7.4 Python 与 Excel | — | X29、X30 | — |
+| 自动化 7.5 综合自动化项目 | — | — | M1–M10、E01–E10（整套模拟考试，60 分钟） |
+
+说明：
+
+- "—"表示该阶段无首练新题，以本阶段检查点自测为准；"复做"表示该题首练在另一阶段，本阶段用新视角重做一遍，不重复计入题数。
+- F1–F3（VLOOKUP、XLOOKUP、INDEX+MATCH）与 X05–X07（日期、查找、统计函数）的函数写法见 C04 函数百科（查阅型，不计入路线）；X21、X22、M9 练的是 VBA 基础四篇的内容，7.2 前置自学（四篇已按 §7.1 重组接入教程流并挂入 7.2）。
 
 ## 3. 操作步骤
 
 1. 定目标：先想清楚学完要解决什么工作问题，再对照第 2 节的总览表选一条主路线。
 2. 选路线：一次只走一条主路线；需要另一条路线的内容时，按本篇给出的阶段顺序补学，不必从头重走。
 3. 按阶段学：每个阶段 3–5 篇教程，按编号顺序学；每篇教程跟着做一遍，不要只看。
-4. 做练习：学完一个阶段就做 [练习题库：30 道题，跟着真实数据练](./01-exercises.md)（id: practice-01-exercises）里对应的题目。
+4. 做练习：学完一个阶段就做 [练习题库：30 道题，跟着真实数据练](./01-exercises.md)（id: practice-01-exercises）里对应的题目（哪阶段做哪几题见 §2 阶段—题目映射表；按章节的 32 道与模拟考试 20 题同表）。
 5. 自测过关：对照每阶段末尾的检查点自测，通过后再进下一阶段；没通过就重做该阶段的教程，不要带着缺口往下走。
 
 ## 4. 零基础路线
@@ -91,17 +126,23 @@
 2. [条件格式](../conditional-formatting/01-conditional-formatting.md)（id: conditional-formatting）
 3. [柱形图与条形图](../charts/01-column-bar.md)（id: charts-01-column-bar）
 4. 图表类型选择指南（站内数据，id: choose）
-5. 图表制作步骤（站内数据，id: make）
+5. [可视化原则：选对图、配好色、控住密度](../visualization/01-visualization-principles.md)（id: visualization-01-visualization-principles）
+6. 图表制作步骤（站内数据，id: make）
 
 检查点：能用数据透视表对销售明细按月、按人汇总；能用条件格式标出超标的数值；能按数据特点选对图表类型并做出一张可汇报的图。
 
 ### 4.6 第六阶段：办公实战入门
 
 1. [销售数据分析：从 12 行订单到销售仪表盘](../business/01-sales-analysis.md)（id: business-01-sales-analysis）
-2. [财务报表制作：利润表、资产负债表、现金流量表](../business/02-financial-statements.md)（id: business-02-financial-statements）
-3. [人力资源管理：考勤统计、工资条与花名册](../business/03-hr-management.md)（id: business-03-hr-management）
-4. [项目管理：项目计划表、甘特图与进度跟踪](../business/04-project-management.md)（id: business-04-project-management）
-5. [市场营销分析：营销漏斗、渠道对比与活动复盘](../business/05-marketing-analysis.md)（id: business-05-marketing-analysis）
+2. [销售新模板使用说明：客户管理、报价单](../templates/08-sales-new-templates.md)（id: templates-08-sales-new-templates）
+3. [财务报表制作：利润表、资产负债表、现金流量表](../business/02-financial-statements.md)（id: business-02-financial-statements）
+4. [财务基础模板使用说明：费用报销、工资表、应收账款](../templates/02-finance-basic-templates.md)（id: templates-02-finance-basic-templates）
+5. [人力资源管理：考勤统计、工资条与花名册](../business/03-hr-management.md)（id: business-03-hr-management）
+6. [人事模板使用说明：员工花名册、考勤表、招聘进度、绩效考核](../templates/04-hr-templates.md)（id: templates-04-hr-templates）
+7. [项目管理：项目计划表、甘特图与进度跟踪](../business/04-project-management.md)（id: business-04-project-management）
+8. [项目新模板使用说明：任务跟踪](../templates/09-project-tasktrack.md)（id: templates-09-project-tasktrack）
+9. [办公模板使用说明：会议纪要、工作计划、用印申请](../templates/01-office-templates.md)（id: templates-01-office-templates）
+10. [市场营销分析：营销漏斗、渠道对比与活动复盘](../business/05-marketing-analysis.md)（id: business-05-marketing-analysis）
 
 检查点：能任选其中两类业务场景，从原始数据出发独立做完一张可交付的分析表；做完后能向别人讲清每一步公式的含义。
 
@@ -109,7 +150,7 @@
 
 - **适合人群**：会基础操作，想把表格做得又快又规范的办公人员
 - **前置要求**：已掌握零基础路线第 1–4 阶段（录入、格式、整理、公式入门）
-- **预计学时**：约 25 小时（6 个阶段，每阶段约 4 小时）
+- **预计学时**：约 25 小时（6 个阶段，每阶段约 4–5 小时）
 - **学完能做什么**：做出防错的输入模板；用条件格式让异常一眼可见；按数据特点选对图表并美化；用透视表进阶功能做多维分析
 
 ### 5.1 第一阶段：公式进阶
@@ -138,8 +179,11 @@
 3. 图标集（站内数据，id: cfmt-2）
 4. 自定义公式（站内数据，id: cfmt-3）
 5. 案例：自动标红逾期（站内数据，id: cfmt-4）
+6. [公式规则：让条件格式听公式的](../conditional-formatting/02-formula-rules.md)（id: conditional-formatting-02-formula-rules）
+7. [规则管理：优先级、查看与清除](../conditional-formatting/03-rule-management.md)（id: conditional-formatting-03-rule-management）
+8. [迷你图与条件格式可视化：把趋势装进单元格](../visualization/03-sparklines.md)（id: visualization-03-sparklines）
 
-检查点：能用数据条与图标集做直观对比；能写公式规则实现整行高亮；能复现"自动标红逾期"的案例。
+检查点：能用数据条与图标集做直观对比；能写公式规则实现整行高亮；能说出规则优先级的含义并管理多条规则；能复现"自动标红逾期"的案例；能用迷你图在单元格内画出趋势。
 
 ### 5.4 第四阶段：图表进阶
 
@@ -158,8 +202,13 @@
 3. 多维分析（站内数据，id: pivot_adv-2）
 4. 切片器（站内数据，id: pivot_adv-3）
 5. 时间轴（站内数据，id: pivot_adv-4）
+6. [分组与筛选：把明细收进筐里再看](../pivottable/02-group-filter.md)（id: pivottable-02-group-filter）
+7. [计算字段与计算项：透视表里的自定义公式](../pivottable/03-calculated-fields-items.md)（id: pivottable-03-calculated-fields-items）
+8. [切片器与日程表：点一点就换口径](../pivottable/04-slicers-timelines.md)（id: pivottable-04-slicers-timelines）
+9. [数据透视图：会跟着透视表动的图](../pivottable/05-pivot-charts.md)（id: pivottable-05-pivot-charts）
+10. [透视表实战：四个新案例](../pivottable/06-practice-cases.md)（id: pivottable-06-practice-cases）
 
-检查点：能对日期字段做按月、按季度分组；能用切片器与时间轴做交互筛选；能用值显示方式做出占比与累计。
+检查点：能对日期字段做按月、按季度分组；能用切片器与时间轴做交互筛选；能用值显示方式做出占比与累计；能用计算字段做出自定义汇总；能做出与透视表联动的透视图；能独立完成透视表实战的四个案例。
 
 ### 5.6 第六阶段：图表收尾与综合
 
@@ -175,7 +224,7 @@
 
 - **适合人群**：要做报表、看板与多表分析的数据岗与业务岗
 - **前置要求**：已掌握公式与透视表基础（零基础路线第 4–5 阶段，或同等水平）
-- **预计学时**：约 35 小时（6 个阶段，每阶段约 6 小时）
+- **预计学时**：约 35 小时（6 个阶段，每阶段约 5–6 小时）
 - **学完能做什么**：用 Power Query 把每月重复清洗做成一键刷新；建数据模型写 DAX 度量值；做出 KPI 看板与经营仪表盘；独立完成财务、销售、人事、库存 4 类分析场景
 
 ### 6.1 第一阶段：数据获取与清洗
@@ -184,24 +233,30 @@
 2. 导入 CSV（站内数据，id: pq_adv-0）
 3. 导入网页（站内数据，id: pq_adv-1）
 4. 数据清洗（站内数据，id: pq_adv-2）
+5. [转换操作：拆分、合并、填充、透视](../powerquery/02-transform.md)（id: powerquery-02-transform）
 
-检查点：能从 CSV 与网页取数；能完成拆分列、填充、去重等清洗步骤；能说出"应用的步骤"是什么，改一步后刷新结果正确。
+检查点：能从 CSV 与网页取数；能完成拆分列、填充、去重等清洗步骤；能用拆分列与逆透视把宽表变长表；能说出"应用的步骤"是什么，改一步后刷新结果正确。
 
 ### 6.2 第二阶段：Power Query 进阶
 
 1. 合并表（站内数据，id: pq_adv-3）
 2. 拆分列（站内数据，id: pq_adv-4）
 3. 自动刷新（站内数据，id: pq_adv-5）
-4. [数据导入导出：文本/CSV 导入、从数据库与网页获取、导出格式](../data-management/05-import-export.md)（id: data-management-05-import-export）
+4. [合并与追加：多表拼成一张表](../powerquery/03-merge-append.md)（id: powerquery-03-merge-append）
+5. [M 语言入门：读懂 Power Query 背后的代码](../powerquery/04-m-language.md)（id: powerquery-04-m-language）
+6. [查询管理与刷新：让月报自己更新](../powerquery/05-query-management.md)（id: powerquery-05-query-management）
+7. [数据导入导出：文本/CSV 导入、从数据库与网页获取、导出格式](../data-management/05-import-export.md)（id: data-management-05-import-export）
 
-检查点：能合并两个结构不同的表并处理联接类型；换一份同结构的新源文件后，点刷新就能得到正确结果。
+检查点：能合并两个结构不同的表并处理联接类型；能说出六种联接类型的结果行数；能读懂一段 M 代码并改自定义列；换一份同结构的新源文件后，点刷新就能得到正确结果。
 
 ### 6.3 第三阶段：透视与动态图表
 
 1. 数据模型（站内数据，id: pivot_adv-5）
 2. 动态图表（站内数据，id: dynamic）
-3. [练习题库：30 道题，跟着真实数据练](./01-exercises.md)（id: practice-01-exercises）
-4. [仓库与物流：库存管理、出入库流水与物流单据](../business/06-inventory-logistics.md)（id: business-06-inventory-logistics）
+3. [数据集使用说明：销售数据 1000 行、人事考勤样本、函数练习题、透视表练习数据](../templates/07-data-templates.md)（id: templates-07-data-templates）
+4. [练习题库：30 道题，跟着真实数据练](./01-exercises.md)（id: practice-01-exercises）
+5. [仓库与物流：库存管理、出入库流水与物流单据](../business/06-inventory-logistics.md)（id: business-06-inventory-logistics）
+6. [仓库与物流模板使用说明：出入库流水、库存盘点、海运跟踪、报关单](../templates/05-warehouse-logistics-templates.md)（id: templates-05-warehouse-logistics-templates）
 
 检查点：能用透视表的数据模型功能关联多张表；能做出下拉菜单联动的动态图表；能独立完成练习题库里的透视表题目。
 
@@ -228,12 +283,16 @@
 ### 6.6 第六阶段：商业场景实战
 
 1. 财务报销统计（站内数据，id: scenario-0）
-2. 销售业绩分析（站内数据，id: scenario-1）
-3. 人事考勤统计（站内数据，id: scenario-2）
-4. 库存预警管理（站内数据，id: scenario-3）
-5. 经营仪表盘（站内数据，id: scenario-4）
+2. [财务新模板使用说明：预算管理、现金流量表](../templates/03-finance-new-templates.md)（id: templates-03-finance-new-templates）
+3. 销售业绩分析（站内数据，id: scenario-1）
+4. 人事考勤统计（站内数据，id: scenario-2）
+5. 库存预警管理（站内数据，id: scenario-3）
+6. 经营仪表盘（站内数据，id: scenario-4）
+7. [仪表盘设计：布局、KPI 卡片、切片器联动与动态标题](../visualization/02-dashboard-design.md)（id: visualization-02-dashboard-design）
+8. [图表模板使用说明：甘特图、漏斗图、销售仪表盘、KPI 看板](../templates/06-chart-templates.md)（id: templates-06-chart-templates）
+9. [性能优化：让 Excel 从"卡死"回到"秒回"](../troubleshooting/01-performance-optimization.md)（id: troubleshooting-01-performance-optimization）
 
-检查点：能任选其中两个场景，从原始数据出发独立复现完整分析过程；能把结果拼成一页经营仪表盘并讲清每个 KPI 的口径。
+检查点：能任选其中两个场景，从原始数据出发独立复现完整分析过程；能把结果拼成一页经营仪表盘并讲清每个 KPI 的口径；能说出全列引用与有界引用的取舍，并把一张慢表提速。
 
 ## 7. 自动化路线
 
@@ -252,11 +311,15 @@
 
 ### 7.2 第二阶段：VBA 进阶
 
-1. [VBA 进阶：用户窗体、类模块、加载宏与错误处理进阶](../vba/05-advanced.md)（id: vba-05-advanced）
-2. [销售数据分析：从 12 行订单到销售仪表盘](../business/01-sales-analysis.md)（id: business-01-sales-analysis）
-3. [数据清洗：分列、去重、TRIM/CLEAN 与查找替换清理](../data-management/02-clean-data.md)（id: data-management-02-clean-data）
+1. [VBA 基础：变量、运算符、条件、循环与数组](../vba/01-basics.md)（id: vba-01-basics）
+2. [VBA 对象模型：Application、Workbook、Worksheet、Range 与事件](../vba/02-objects.md)（id: vba-02-objects）
+3. [VBA 关键字大全：声明、流程、过程、对象、错误、逻辑六类 36 个](../vba/03-keywords.md)（id: vba-03-keywords）
+4. [VBA 实战实例：8 个实例精讲](../vba/04-examples.md)（id: vba-04-examples）
+5. [VBA 进阶：用户窗体、类模块、加载宏与错误处理进阶](../vba/05-advanced.md)（id: vba-05-advanced）
+6. [销售数据分析：从 12 行订单到销售仪表盘](../business/01-sales-analysis.md)（id: business-01-sales-analysis）
+7. [数据清洗：分列、去重、TRIM/CLEAN 与查找替换清理](../data-management/02-clean-data.md)（id: data-management-02-clean-data）
 
-检查点：能读懂一段带用户窗体的 VBA 代码并说出每部分的作用；能把"清洗加汇总"的手工流程拆成可用宏录制的步骤清单；VBA 基础语法、对象模型与关键字见 C11 VBA 栏目。
+检查点：能读懂一段带用户窗体的 VBA 代码并说出每部分的作用；能把"清洗加汇总"的手工流程拆成可用宏录制的步骤清单；学完基础四篇，能说出 36 个关键字分属哪六类，并独立完成 8 个实例中的任意一个。
 
 ### 7.3 第三阶段：Office Scripts
 
@@ -283,8 +346,10 @@
 2. [财务报表制作：利润表、资产负债表、现金流量表](../business/02-financial-statements.md)（id: business-02-financial-statements）
 3. [练习题库：30 道题，跟着真实数据练](./01-exercises.md)（id: practice-01-exercises）
 4. [高级 DAX 与商业案例：排名、TOPN、动态度量值、销售仪表盘与库存周转](../powerpivot-dax/05-advanced-dax-cases.md)（id: powerpivot-dax-05-advanced-dax-cases）
+5. [模拟考试：1 套 20 题，60 分钟测出真实水平](./04-mock-exam.md)（id: practice-04-mock-exam）
+6. [练习题库（按章节）：32 道题，跟着教程练](./03-chapter-exercises.md)（id: practice-03-chapter-exercises）
 
-检查点：能独立设计一个"换源文件、点一下就出结果"的月度报表流程，并写清每一步用的是公式、Power Query、VBA 还是 Python；能完整做完练习题库里对应的综合题。
+检查点：能独立设计一个"换源文件、点一下就出结果"的月度报表流程，并写清每一步用的是公式、Power Query、VBA 还是 Python；能完整做完练习题库里对应的综合题；能完整做完 03 篇按章节题库与 04 篇模拟考试（60 分钟）并复盘错题。
 
 ## 8. 练习题
 

@@ -63,13 +63,13 @@ Office Scripts API 用两个命名空间（Microsoft 官方文档“Fundamentals
 
 ## 3. 操作步骤
 
-1. 打开网页版 Excel，新建一个空白工作簿，在 A1:D1 写“日期、销售员、产品、金额”，在 A2:D4 写 3 行示例数据（待补图）。
-2. 点“自动执行”→“新建脚本”→“从录制创建”，选中 A1:D1，点“加粗”，再点“停止”，得到一段录制脚本（待补图）。
-3. 在代码编辑器里打开这段脚本，通读一遍：找到 getActiveWorksheet、getRange("A1:D1")、getFormat().getFont().setBold(true) 这三行，确认自己能说出每行在干什么（待补图）。
-4. 把脚本里的 A1:D1 改成 A1:D4，再点“运行”，检查是不是前四行都变粗了；如果只想加粗标题行，把地址改回 A1:D1（待补图）。
-5. 在编辑器里新建一段脚本，练习用 setValues 一次写多行数据（见第 5 节第二段代码），运行后检查 A2:D4 的值是不是写进去了（待补图）。
-6. 在同一张表上练习建表：用 addTable 把 A1:D4 变成表格，再用 getSort 按金额列排序（见第 5 节第四段代码），运行后检查表格与排序结果（待补图）。
-7. 把本篇练过的脚本各保存一个有意义的名字，例如“写表头”“建表并排序”，方便以后在“查看脚本”里找到（待补图）。
+1. 打开网页版 Excel，新建一个空白工作簿，在 A1:D1 写“日期、销售员、产品、金额”，在 A2:D4 写 3 行示例数据 ![打开网页版 Excel](images/u12-office-scripts-02-typescript-basics-01.png)
+2. 点“自动执行”→“新建脚本”→“从录制创建”，选中 A1:D1，点“加粗”，再点“停止”，得到一段录制脚本 ![点“自动执行”→“新建脚本”→“从录制创](images/u12-office-scripts-02-typescript-basics-02.png)
+3. 在代码编辑器里打开这段脚本，通读一遍：找到 getActiveWorksheet、getRange("A1:D1")、getFormat().getFont().setBold(true) 这三行，确认自己能说出每行在干什么 ![在代码编辑器里打开这段脚本](images/u12-office-scripts-02-typescript-basics-03.png)
+4. 把脚本里的 A1:D1 改成 A1:D4，再点“运行”，检查是不是前四行都变粗了；如果只想加粗标题行，把地址改回 A1:D1 ![把脚本里的 A1:D1 改成 A1:D4](images/u12-office-scripts-02-typescript-basics-04.png)
+5. 在编辑器里新建一段脚本，练习用 setValues 一次写多行数据（见第 5 节第二段代码），运行后检查 A2:D4 的值是不是写进去了 ![在编辑器里新建一段脚本](images/u12-office-scripts-02-typescript-basics-05.png)
+6. 在同一张表上练习建表：用 addTable 把 A1:D4 变成表格，再用 getSort 按金额列排序（见第 5 节第四段代码），运行后检查表格与排序结果 ![在同一张表上练习建表](images/u12-office-scripts-02-typescript-basics-06.png)
+7. 把本篇练过的脚本各保存一个有意义的名字，例如“写表头”“建表并排序”，方便以后在“查看脚本”里找到 ![把本篇练过的脚本各保存一个有意义的名字](images/u12-office-scripts-02-typescript-basics-07.png)
 
 ## 4. 图文示例
 
@@ -83,13 +83,13 @@ Office Scripts API 用两个命名空间（Microsoft 官方文档“Fundamentals
 
 - 任务：把 A1:D1 加粗。
 - 录制得到的代码：取活动工作表 → 取 A1:D1 → getFormat().getFont().setBold(true)。
-- 手写的代码：和录制得到的代码完全一样。录制器生成的就是手写代码，读懂录制代码就是学会手写的第一步（待补图）。
+- 手写的代码：和录制得到的代码完全一样。录制器生成的就是手写代码，读懂录制代码就是学会手写的第一步 ![- 手写的代码](images/u12-office-scripts-02-typescript-basics-08.png)
 
 示例三：表格排序前后的对照（文字版）。
 
 - 排序前（A1:D4，含标题行）：王芳 13000、李明 14000、陈静 3000（按录入顺序）。
 - 按金额降序排序后：李明 14000、王芳 13000、陈静 3000。
-- 排序用的是表格的 getSort().apply([{ key: 3, ascending: false }])，其中 key: 3 表示第 4 列（从 0 开始数），ascending: false 表示降序（待补图）。
+- 排序用的是表格的 getSort().apply([{ key: 3, ascending: false }])，其中 key: 3 表示第 4 列（从 0 开始数），ascending: false 表示降序 ![- 排序用的是表格的 getSort()](images/u12-office-scripts-02-typescript-basics-09.png)
 
 ## 5. 公式和代码
 
