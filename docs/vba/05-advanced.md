@@ -409,10 +409,10 @@ End Sub
 
 ## 10. 可下载示例文件
 
-- [VBA-UserForm-Demo.bas](templates/VBA-UserForm-Demo.bas)（报销录入窗体 frmEntry 的窗体代码与显示窗体的标准模块过程；窗体代码需粘贴进窗体代码窗口，另见第 4.1 节）
-- [VBA-EmployeeClass.bas](templates/VBA-EmployeeClass.bas)（员工类 clsEmployee 的类模块代码；导入时在 VBE 中存为类模块，另见第 4.2 节）
-- [VBA-AddIn-Tools.bas](templates/VBA-AddIn-Tools.bas)（加载宏工具库 modAddIn：Auto_Open 与跨工作簿可用的工具过程，另见第 4.3 节）
-- [VBA-ErrorHandler.bas](templates/VBA-ErrorHandler.bas)（集中错误处理模块 modErrorHandler：LogError、HandleError 与业务过程固定写法，另见第 4.4 节）
+- [VBA-UserForm-Demo.bas](../../templates/VBA-UserForm-Demo.bas)（报销录入窗体 frmEntry 的窗体代码与显示窗体的标准模块过程；窗体代码需粘贴进窗体代码窗口，另见第 4.1 节）
+- [VBA-EmployeeClass.bas](../../templates/VBA-EmployeeClass.bas)（员工类 clsEmployee 的类模块代码；导入时在 VBE 中存为类模块，另见第 4.2 节）
+- [VBA-AddIn-Tools.bas](../../templates/VBA-AddIn-Tools.bas)（加载宏工具库 modAddIn：Auto_Open 与跨工作簿可用的工具过程，另见第 4.3 节）
+- [VBA-ErrorHandler.bas](../../templates/VBA-ErrorHandler.bas)（集中错误处理模块 modErrorHandler：LogError、HandleError 与业务过程固定写法，另见第 4.4 节）
 - 04 篇的 8 个实例另见 [04-examples.md](04-examples.md)的"可下载示例文件"一节（8 个 .bas 文件）。
 
 > **说明**：.bas 文件是纯文本 VBA 模块，可用 VBE「文件 → 导入文件」导入，或用记事本打开复制；类模块文件内容需粘贴进类模块（.cls），不可直接作为标准模块导入。所有代码均未在 Excel 内执行验证，导入后请先在副本工作簿上试跑。
