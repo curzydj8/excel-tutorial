@@ -2,6 +2,13 @@
 
 本章按类别系统列出 VBA 常用关键字的语法、示例和注意事项。建议收藏作为速查手册。
 
+- **所属栏目**：C11 VBA 自动化 ／ C11-L2-3 关键字大全
+- **适用版本**：Excel 2010 / 2013 / 2016 / 2019 / 2021 / 365（Windows 桌面版）
+- **难度**：入门（速查体）
+- **预计阅读时长**：30 分钟
+- **更新日期**：2026-11-10
+
+> **验证说明**：本篇 VBA 语法经 Microsoft 官方文档核对，数值经 Python 独立验算；**所有 VBA 代码均未在 Excel 内执行验证**（无 Excel 环境）。本篇为**速查体**：按设计模板第 7.1 节取舍规则，可免操作步骤与实际工作场景两项；语法入门见本目录 [01-basics.md](01-basics.md)（VBA 基础）。
 
 ## 学习目标
 
@@ -476,7 +483,7 @@ If Not done Then MsgBox "还没完成"
 ```vb
 Dim done As Boolean
 done = True
-If done = False Then   ' 也可以写 If Not done Then
+If done = False Then MsgBox "还没完成"   ' 也可以写 If Not done Then
 ```
 
 ### Empty / Null / Nothing 的区别
@@ -569,11 +576,32 @@ End Sub
 
 ---
 
+## 常见错误
+
+| 错误现象 | 原因 | 解决方案 |
+|---|---|---|
+| `On Error Resume Next` 之后出错也不知道 | Resume Next 会吞掉所有错误，且事后没检查 `Err.Number` | 只在单个可预期操作上用，用完立即检查 `Err.Number`，再用 `On Error GoTo 0` 恢复 |
+| `For Each ws In Worksheets` 里把循环变量声明成 `Long` 报错 | `For Each` 的循环变量必须是 Variant 或对象类型 | 声明成 `Dim ws As Worksheet`（对象）或 Variant |
+| `ReDim Preserve` 改第一维报错 | `Preserve` 只能改变最后一维的大小 | 只改最后一维；要改第一维时新建数组再循环复制 |
+| `ParamArray` 写了两个，或没放在最后 | `ParamArray` 只能有一个，必须是最后一个参数且为 Variant 数组 | 检查参数列表：`Function SumAll(ParamArray nums() As Variant)` |
+| `Optional` 参数没给默认值就报错 | `Optional` 参数必须有默认值，且必须放在参数列表最后 | 写成 `Optional copies As Long = 1`；必填参数放前面 |
+| `ByRef` 过程改了传入的变量，调用处的值也被改了 | VBA 默认是 `ByRef`（传址），与大多数语言相反 | 不希望被改的参数显式写 `ByVal` |
+| `Exit Sub` 写在了 `Function` 里报错 | 退出函数要用 `Exit Function`，`Exit Sub` 只能退出 Sub | 按过程类型用对：Sub 用 `Exit Sub`，Function 用 `Exit Function`，循环用 `Exit For` / `Exit Do` |
+| 用 `End` 结束程序后变量全丢了 | `End` 会立即终止一切，不触发任何清理代码 | 正常结束用 `Exit Sub`；`End` 几乎用不到 |
+
+## 相关教程
+
+- 同栏目相关：[01-basics.md](01-basics.md)（VBA 基础：本章关键字的入门讲解与完整示例）、[02-objects.md](02-objects.md)（VBA 对象模型：Set、With、Me 的对象语境）、[04-examples.md](04-examples.md)（VBA 实战实例：关键字在真实代码里的组合用法）
+- 同栏目相关：[05-advanced.md](05-advanced.md)（VBA 进阶：Err 对象、集中错误处理与日志）
+
 ## 练习题
 
 1. `For i = 1 To 10: S = S + i: Next i` 执行完 S 是多少？
 2. `On Error Resume Next` 与 `On Error GoTo 0` 各是什么意思？
 3. Exit For 与 Exit Sub 有什么区别？
+4. 用本章的 `SumAll` 函数算 `SumAll(5, 5, 5, 5, 5)`，结果是多少？`SumAll(10, 20, 30, 40)` 呢？
+5. `n = 5`，依次调用 `ByValDemo n`（内部 `x = x + 10`）与 `ByRefDemo n`（内部 `x = x + 10`），两次调用后 n 各是多少？最终 n 是多少？
+6. 用本章的 `CircleArea` 函数（`3.14159 * r * r`）算半径 2 的圆面积，结果是多少（保留 5 位小数）？
 
 ## 参考答案
 
@@ -585,5 +613,11 @@ End Sub
 2. 前者出错时继续执行下一行（用于可预期的错误）；后者取消错误处理、恢复默认报错。
 
 3. Exit For 只跳出当前 For 循环；Exit Sub 直接退出整个过程。
+
+4. `SumAll(5, 5, 5, 5, 5)` 结果是 25（5 个 5 相加）；`SumAll(10, 20, 30, 40)` 结果是 100（10+20+30+40）。
+
+5. `ByValDemo n` 后 n 还是 5（传值：过程里改的是副本）；`ByRefDemo n` 后 n 变成 15（传址：过程直接改原变量，5+10=15）。最终 n 是 15。
+
+6. 12.56636。验算：3.14159×2×2 = 3.14159×4 = 12.56636。
 
 </details>
