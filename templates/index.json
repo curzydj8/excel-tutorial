@@ -1,374 +1,410 @@
 [
- {
-  "cat": "办公",
-  "name": "会议纪要模板",
-  "file": "办公-会议纪要模板.xlsx",
-  "desc": "记录会议决议与跟进"
- },
- {
-  "cat": "办公",
-  "name": "工作计划模板",
-  "file": "办公-工作计划模板.xlsx",
-  "desc": "甘特式任务跟踪"
- },
- {
-  "cat": "办公",
-  "name": "用印申请模板",
-  "file": "办公-用印申请模板.xlsx",
-  "desc": "印章使用审批"
- },
- {
-  "cat": "财务",
-  "name": "费用报销模板",
-  "file": "财务-费用报销模板.xlsx",
-  "desc": "带自动合计的报销单"
- },
- {
-  "cat": "财务",
-  "name": "工资条模板",
-  "file": "财务-工资表模板.xlsx",
-  "desc": "自动计算应发工资"
- },
- {
-  "cat": "财务",
-  "name": "应收账款模板",
-  "file": "财务-应收账款模板.xlsx",
-  "desc": "自动算未收与逾期"
- },
- {
-  "cat": "人事",
-  "name": "员工花名册模板",
-  "file": "人事-员工花名册模板.xlsx",
-  "desc": "员工基础信息"
- },
- {
-  "cat": "人事",
-  "name": "考勤统计模板",
-  "file": "人事-考勤表模板.xlsx",
-  "desc": "自动统计迟到缺勤"
- },
- {
-  "cat": "人事",
-  "name": "招聘进度模板",
-  "file": "人事-招聘进度模板.xlsx",
-  "desc": "招聘漏斗跟踪"
- },
- {
-  "cat": "仓库",
-  "name": "出入库流水模板",
-  "file": "仓库-出入库流水模板.xlsx",
-  "desc": "库存流水记录"
- },
- {
-  "cat": "仓库",
-  "name": "库存盘点模板",
-  "file": "仓库-库存盘点模板.xlsx",
-  "desc": "自动算盘点差异"
- },
- {
-  "cat": "国际物流",
-  "name": "海运跟踪模板",
-  "file": "物流-海运跟踪模板.xlsx",
-  "desc": "船期跟踪"
- },
- {
-  "cat": "国际物流",
-  "name": "报关单模板",
-  "file": "物流-报关单模板.xlsx",
-  "desc": "自动算总价"
- },
- {
-  "cat": "图表",
-  "name": "甘特图模板",
-  "file": "图表-甘特图模板.xlsx",
-  "desc": "项目排期，附图表制作步骤"
- },
- {
-  "cat": "图表",
-  "name": "漏斗图模板",
-  "file": "图表-漏斗图模板.xlsx",
-  "desc": "销售转化分析，附制作步骤"
- },
- {
-  "cat": "图表",
-  "name": "销售仪表盘模板",
-  "file": "图表-销售仪表盘模板.xlsx",
-  "desc": "KPI+组合图，附制作步骤"
- },
- {
-  "cat": "图表",
-  "name": "KPI看板模板",
-  "file": "图表-KPI看板模板.xlsx",
-  "desc": "指标跟踪，附制作步骤"
- },
- {
-  "cat": "数据",
-  "name": "销售数据1000行",
-  "file": "数据-销售数据1000行.xlsx",
-  "desc": "订单/区域/品类齐全，配 6 个练习任务"
- },
- {
-  "cat": "数据",
-  "name": "人事考勤样本",
-  "file": "数据-人事考勤样本.xlsx",
-  "desc": "25 人 9 月考勤，迟到/请假公式+部门汇总"
- },
- {
-  "cat": "数据",
-  "name": "函数练习题",
-  "file": "数据-函数练习题.xlsx",
-  "desc": "12 道 VLOOKUP/SUMIFS/XLOOKUP 实战，附参考答案"
- },
- {
-  "cat": "数据",
-  "name": "透视表练习数据",
-  "file": "数据-透视表练习数据.xlsx",
-  "desc": "500 行明细，配 6 个透视表任务+避坑"
- },
- {
-  "cat": "图表",
-  "name": "柱形图与条形图示例",
-  "file": "图表-示例-柱形图与条形图.xlsx",
-  "desc": "簇状/堆积/百分比堆积柱形图与条形图示例数据"
- },
- {
-  "cat": "图表",
-  "name": "折线图与面积图示例",
-  "file": "图表-示例-折线图与面积图.xlsx",
-  "desc": "折线图/面积图/趋势线示例数据"
- },
- {
-  "cat": "图表",
-  "name": "饼图与圆环图示例",
-  "file": "图表-示例-饼图与圆环图.xlsx",
-  "desc": "饼图/圆环图/复合饼图示例数据"
- },
- {
-  "cat": "图表",
-  "name": "散点图与气泡图示例",
-  "file": "图表-示例-散点图与气泡图.xlsx",
-  "desc": "散点图/气泡图/回归分析示例数据"
- },
- {
-  "cat": "图表",
-  "name": "组合图示例",
-  "file": "图表-示例-组合图.xlsx",
-  "desc": "柱线组合/双轴/帕累托图示例数据"
- },
- {
-  "cat": "图表",
-  "name": "新图表类型示例",
-  "file": "图表-示例-新图表类型.xlsx",
-  "desc": "瀑布/漏斗/直方/箱形/旭日/树状/雷达/甘特/地图示例数据"
- },
- {
-  "cat": "图表",
-  "name": "图表格式化示例",
-  "file": "图表-示例-图表格式化.xlsx",
-  "desc": "图表元素/配色与样式/动态图表示例数据"
- },
- {
-  "cat": "数据",
-  "name": "Power Query 配套示例",
-  "file": "PowerQuery-示例-销售明细.xlsx",
-  "desc": "销售明细/订单/客户档案/月度交叉表，M 语言与合并查询示例数据"
- },
- {
-  "cat": "数据",
-  "name": "销售2026-01（文件夹合并示例）",
-  "file": "销售2026-01.csv",
-  "desc": "1 月销售 4 行，从文件夹合并示例"
- },
- {
-  "cat": "数据",
-  "name": "销售2026-02（文件夹合并示例）",
-  "file": "销售2026-02.csv",
-  "desc": "2 月销售 4 行，从文件夹合并示例"
- },
- {
-  "cat": "数据",
-  "name": "销售2026-03（文件夹合并示例）",
-  "file": "销售2026-03.csv",
-  "desc": "3 月销售 4 行，从文件夹合并示例"
- },
- {
-  "cat": "数据",
-  "name": "Power Pivot 与 DAX 配套示例",
-  "file": "示例-Power-Pivot-数据模型与DAX.xlsx",
-  "desc": "订单/产品/客户/日期/库存表，数据模型与 DAX 度量值示例数据"
- },
- {
-  "cat": "代码",
-  "name": "VBA 批量重命名工作表",
-  "file": "VBA-BatchRename.bas",
-  "desc": "按部门_序号批量重命名工作表，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 合并多个工作簿",
-  "file": "VBA-MergeWorkbooks.bas",
-  "desc": "把多个工作簿的数据合并到一张总表，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 自动生成报表",
-  "file": "VBA-ReportGenerator.bas",
-  "desc": "按模板自动生成月度报表，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 查找替换增强",
-  "file": "VBA-BatchReplace.bas",
-  "desc": "多词批量查找替换，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 数据去重",
-  "file": "VBA-RemoveDuplicates.bas",
-  "desc": "按关键列删除重复行，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 批量插入图片",
-  "file": "VBA-BatchInsertPictures.bas",
-  "desc": "按单元格批量插入并适配图片，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 用 Outlook 发邮件",
-  "file": "VBA-SendMailViaOutlook.bas",
-  "desc": "自动生成并发送报表邮件，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 自定义函数",
-  "file": "VBA-CustomFunctions.bas",
-  "desc": "RMB 大写、按生日算年龄等自定义函数，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 用户窗体示例",
-  "file": "VBA-UserForm-Demo.bas",
-  "desc": "数据录入用户窗体，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 类模块示例",
-  "file": "VBA-EmployeeClass.bas",
-  "desc": "员工类模块：属性校验与自定义错误，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 加载宏工具集",
-  "file": "VBA-AddIn-Tools.bas",
-  "desc": "打包成 .xlam 加载宏的工具函数集，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "VBA 错误处理模板",
-  "file": "VBA-ErrorHandler.bas",
-  "desc": "集中错误处理与日志记录模板，VBA 示例代码"
- },
- {
-  "cat": "代码",
-  "name": "Office Scripts 日报自动汇总",
-  "file": "OfficeScripts-DailySummary.ts",
-  "desc": "汇总多日销售明细并写合计，Office Scripts 示例脚本"
- },
- {
-  "cat": "代码",
-  "name": "Office Scripts 数据清洗",
-  "file": "OfficeScripts-DataCleaning.ts",
-  "desc": "去空行、去重、规范金额列，Office Scripts 示例脚本"
- },
- {
-  "cat": "代码",
-  "name": "Office Scripts 格式标准化",
-  "file": "OfficeScripts-FormatStandardization.ts",
-  "desc": "统一表头样式与金额格式并排序，Office Scripts 示例脚本"
- },
- {
-  "cat": "代码",
-  "name": "Python openpyxl 报表脚本",
-  "file": "Python-openpyxl-report.py",
-  "desc": "用 openpyxl 批量生成带公式与样式的报表（本机实测通过）"
- },
- {
-  "cat": "代码",
-  "name": "Python pandas 分析脚本",
-  "file": "Python-pandas-analysis.py",
-  "desc": "用 pandas 清洗并汇总销售数据（本机实测通过）"
- },
- {
-  "cat": "代码",
-  "name": "Python xlwings 批量脚本",
-  "file": "Python-xlwings-batch.py",
-  "desc": "用 xlwings 批量合并分表（Excel 驱动部分未在 Excel 内执行验证）"
- },
- {
-  "cat": "代码",
-  "name": "Python in Excel 演示脚本",
-  "file": "Python-in-excel-demo.py",
-  "desc": "=PY() 示例的本地 pandas 等价运算脚本（本机实测通过）"
- },
- {
-  "cat": "数据",
-  "name": "Python openpyxl 报表示例",
-  "file": "Python-openpyxl-report.xlsx",
-  "desc": "明细 12 行 + 按产品汇总，金额列与合计行为公式"
- },
- {
-  "cat": "数据",
-  "name": "Python pandas 分析示例",
-  "file": "Python-pandas-analysis.xlsx",
-  "desc": "原始数据/清洗后明细/按产品/按地区/按月汇总，共 5 张表"
- },
- {
-  "cat": "数据",
-  "name": "Python xlwings 分表示例",
-  "file": "Python-xlwings-sample.xlsx",
-  "desc": "华东/华南/华西 3 张分表，xlwings 批量合并示例数据"
- },
- {
-  "cat": "数据",
-  "name": "Python in Excel 演示示例",
-  "file": "Python-in-excel-demo.xlsx",
-  "desc": "明细/按产品汇总/描述统计，=PY() 演示示例数据"
- },
- {
-  "cat": "数据",
-  "name": "销售数据分析示例",
-  "file": "示例-销售数据分析.xlsx",
-  "desc": "12 行订单明细 + 按产品/地区/月汇总（阶段 8 实战项目）"
- },
- {
-  "cat": "财务",
-  "name": "财务报表示例",
-  "file": "示例-财务报表.xlsx",
-  "desc": "利润表 + 资产负债表 + 现金流量表，三表勾稽（阶段 8 实战项目）"
- },
- {
-  "cat": "人事",
-  "name": "人力资源管理示例",
-  "file": "示例-人力资源管理.xlsx",
-  "desc": "花名册 + 考勤汇总 + 工资条（阶段 8 实战项目）"
- },
- {
-  "cat": "办公",
-  "name": "项目管理示例",
-  "file": "示例-项目管理.xlsx",
-  "desc": "任务清单 + 甘特图数据 + 进度跟踪（阶段 8 实战项目）"
- },
- {
-  "cat": "数据",
-  "name": "市场营销分析示例",
-  "file": "示例-市场营销分析.xlsx",
-  "desc": "营销漏斗 + 渠道对比 + 活动复盘（阶段 8 实战项目）"
- },
- {
-  "cat": "仓库",
-  "name": "仓库与物流示例",
-  "file": "示例-仓库与物流.xlsx",
-  "desc": "库存表 + 周转分析 + 出入库流水（阶段 8 实战项目）"
- }
+  {
+    "cat": "办公",
+    "name": "会议纪要模板",
+    "file": "办公-会议纪要模板.xlsx",
+    "desc": "记录会议决议与跟进"
+  },
+  {
+    "cat": "办公",
+    "name": "工作计划模板",
+    "file": "办公-工作计划模板.xlsx",
+    "desc": "甘特式任务跟踪"
+  },
+  {
+    "cat": "办公",
+    "name": "用印申请模板",
+    "file": "办公-用印申请模板.xlsx",
+    "desc": "印章使用审批"
+  },
+  {
+    "cat": "财务",
+    "name": "费用报销模板",
+    "file": "财务-费用报销模板.xlsx",
+    "desc": "带自动合计的报销单"
+  },
+  {
+    "cat": "财务",
+    "name": "工资条模板",
+    "file": "财务-工资表模板.xlsx",
+    "desc": "自动计算应发工资"
+  },
+  {
+    "cat": "财务",
+    "name": "应收账款模板",
+    "file": "财务-应收账款模板.xlsx",
+    "desc": "自动算未收与逾期"
+  },
+  {
+    "cat": "人事",
+    "name": "员工花名册模板",
+    "file": "人事-员工花名册模板.xlsx",
+    "desc": "员工基础信息"
+  },
+  {
+    "cat": "人事",
+    "name": "考勤统计模板",
+    "file": "人事-考勤表模板.xlsx",
+    "desc": "自动统计迟到缺勤"
+  },
+  {
+    "cat": "人事",
+    "name": "招聘进度模板",
+    "file": "人事-招聘进度模板.xlsx",
+    "desc": "招聘漏斗跟踪"
+  },
+  {
+    "cat": "仓库",
+    "name": "出入库流水模板",
+    "file": "仓库-出入库流水模板.xlsx",
+    "desc": "库存流水记录"
+  },
+  {
+    "cat": "仓库",
+    "name": "库存盘点模板",
+    "file": "仓库-库存盘点模板.xlsx",
+    "desc": "自动算盘点差异"
+  },
+  {
+    "cat": "国际物流",
+    "name": "海运跟踪模板",
+    "file": "物流-海运跟踪模板.xlsx",
+    "desc": "船期跟踪"
+  },
+  {
+    "cat": "国际物流",
+    "name": "报关单模板",
+    "file": "物流-报关单模板.xlsx",
+    "desc": "自动算总价"
+  },
+  {
+    "cat": "图表",
+    "name": "甘特图模板",
+    "file": "图表-甘特图模板.xlsx",
+    "desc": "项目排期，附图表制作步骤"
+  },
+  {
+    "cat": "图表",
+    "name": "漏斗图模板",
+    "file": "图表-漏斗图模板.xlsx",
+    "desc": "销售转化分析，附制作步骤"
+  },
+  {
+    "cat": "图表",
+    "name": "销售仪表盘模板",
+    "file": "图表-销售仪表盘模板.xlsx",
+    "desc": "KPI+组合图，附制作步骤"
+  },
+  {
+    "cat": "图表",
+    "name": "KPI看板模板",
+    "file": "图表-KPI看板模板.xlsx",
+    "desc": "指标跟踪，附制作步骤"
+  },
+  {
+    "cat": "数据",
+    "name": "销售数据1000行",
+    "file": "数据-销售数据1000行.xlsx",
+    "desc": "订单/区域/品类齐全，配 6 个练习任务"
+  },
+  {
+    "cat": "数据",
+    "name": "人事考勤样本",
+    "file": "数据-人事考勤样本.xlsx",
+    "desc": "25 人 9 月考勤，迟到/请假公式+部门汇总"
+  },
+  {
+    "cat": "数据",
+    "name": "函数练习题",
+    "file": "数据-函数练习题.xlsx",
+    "desc": "12 道 VLOOKUP/SUMIFS/XLOOKUP 实战，附参考答案"
+  },
+  {
+    "cat": "数据",
+    "name": "透视表练习数据",
+    "file": "数据-透视表练习数据.xlsx",
+    "desc": "500 行明细，配 6 个透视表任务+避坑"
+  },
+  {
+    "cat": "图表",
+    "name": "柱形图与条形图示例",
+    "file": "图表-示例-柱形图与条形图.xlsx",
+    "desc": "簇状/堆积/百分比堆积柱形图与条形图示例数据"
+  },
+  {
+    "cat": "图表",
+    "name": "折线图与面积图示例",
+    "file": "图表-示例-折线图与面积图.xlsx",
+    "desc": "折线图/面积图/趋势线示例数据"
+  },
+  {
+    "cat": "图表",
+    "name": "饼图与圆环图示例",
+    "file": "图表-示例-饼图与圆环图.xlsx",
+    "desc": "饼图/圆环图/复合饼图示例数据"
+  },
+  {
+    "cat": "图表",
+    "name": "散点图与气泡图示例",
+    "file": "图表-示例-散点图与气泡图.xlsx",
+    "desc": "散点图/气泡图/回归分析示例数据"
+  },
+  {
+    "cat": "图表",
+    "name": "组合图示例",
+    "file": "图表-示例-组合图.xlsx",
+    "desc": "柱线组合/双轴/帕累托图示例数据"
+  },
+  {
+    "cat": "图表",
+    "name": "新图表类型示例",
+    "file": "图表-示例-新图表类型.xlsx",
+    "desc": "瀑布/漏斗/直方/箱形/旭日/树状/雷达/甘特/地图示例数据"
+  },
+  {
+    "cat": "图表",
+    "name": "图表格式化示例",
+    "file": "图表-示例-图表格式化.xlsx",
+    "desc": "图表元素/配色与样式/动态图表示例数据"
+  },
+  {
+    "cat": "数据",
+    "name": "Power Query 配套示例",
+    "file": "PowerQuery-示例-销售明细.xlsx",
+    "desc": "销售明细/订单/客户档案/月度交叉表，M 语言与合并查询示例数据"
+  },
+  {
+    "cat": "数据",
+    "name": "销售2026-01（文件夹合并示例）",
+    "file": "销售2026-01.csv",
+    "desc": "1 月销售 4 行，从文件夹合并示例"
+  },
+  {
+    "cat": "数据",
+    "name": "销售2026-02（文件夹合并示例）",
+    "file": "销售2026-02.csv",
+    "desc": "2 月销售 4 行，从文件夹合并示例"
+  },
+  {
+    "cat": "数据",
+    "name": "销售2026-03（文件夹合并示例）",
+    "file": "销售2026-03.csv",
+    "desc": "3 月销售 4 行，从文件夹合并示例"
+  },
+  {
+    "cat": "数据",
+    "name": "Power Pivot 与 DAX 配套示例",
+    "file": "示例-Power-Pivot-数据模型与DAX.xlsx",
+    "desc": "订单/产品/客户/日期/库存表，数据模型与 DAX 度量值示例数据"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 批量重命名工作表",
+    "file": "VBA-BatchRename.bas",
+    "desc": "按部门_序号批量重命名工作表，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 合并多个工作簿",
+    "file": "VBA-MergeWorkbooks.bas",
+    "desc": "把多个工作簿的数据合并到一张总表，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 自动生成报表",
+    "file": "VBA-ReportGenerator.bas",
+    "desc": "按模板自动生成月度报表，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 查找替换增强",
+    "file": "VBA-BatchReplace.bas",
+    "desc": "多词批量查找替换，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 数据去重",
+    "file": "VBA-RemoveDuplicates.bas",
+    "desc": "按关键列删除重复行，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 批量插入图片",
+    "file": "VBA-BatchInsertPictures.bas",
+    "desc": "按单元格批量插入并适配图片，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 用 Outlook 发邮件",
+    "file": "VBA-SendMailViaOutlook.bas",
+    "desc": "自动生成并发送报表邮件，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 自定义函数",
+    "file": "VBA-CustomFunctions.bas",
+    "desc": "RMB 大写、按生日算年龄等自定义函数，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 用户窗体示例",
+    "file": "VBA-UserForm-Demo.bas",
+    "desc": "数据录入用户窗体，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 类模块示例",
+    "file": "VBA-EmployeeClass.bas",
+    "desc": "员工类模块：属性校验与自定义错误，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 加载宏工具集",
+    "file": "VBA-AddIn-Tools.bas",
+    "desc": "打包成 .xlam 加载宏的工具函数集，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "VBA 错误处理模板",
+    "file": "VBA-ErrorHandler.bas",
+    "desc": "集中错误处理与日志记录模板，VBA 示例代码"
+  },
+  {
+    "cat": "代码",
+    "name": "Office Scripts 日报自动汇总",
+    "file": "OfficeScripts-DailySummary.ts",
+    "desc": "汇总多日销售明细并写合计，Office Scripts 示例脚本"
+  },
+  {
+    "cat": "代码",
+    "name": "Office Scripts 数据清洗",
+    "file": "OfficeScripts-DataCleaning.ts",
+    "desc": "去空行、去重、规范金额列，Office Scripts 示例脚本"
+  },
+  {
+    "cat": "代码",
+    "name": "Office Scripts 格式标准化",
+    "file": "OfficeScripts-FormatStandardization.ts",
+    "desc": "统一表头样式与金额格式并排序，Office Scripts 示例脚本"
+  },
+  {
+    "cat": "代码",
+    "name": "Python openpyxl 报表脚本",
+    "file": "Python-openpyxl-report.py",
+    "desc": "用 openpyxl 批量生成带公式与样式的报表（本机实测通过）"
+  },
+  {
+    "cat": "代码",
+    "name": "Python pandas 分析脚本",
+    "file": "Python-pandas-analysis.py",
+    "desc": "用 pandas 清洗并汇总销售数据（本机实测通过）"
+  },
+  {
+    "cat": "代码",
+    "name": "Python xlwings 批量脚本",
+    "file": "Python-xlwings-batch.py",
+    "desc": "用 xlwings 批量合并分表（Excel 驱动部分未在 Excel 内执行验证）"
+  },
+  {
+    "cat": "代码",
+    "name": "Python in Excel 演示脚本",
+    "file": "Python-in-excel-demo.py",
+    "desc": "=PY() 示例的本地 pandas 等价运算脚本（本机实测通过）"
+  },
+  {
+    "cat": "数据",
+    "name": "Python openpyxl 报表示例",
+    "file": "Python-openpyxl-report.xlsx",
+    "desc": "明细 12 行 + 按产品汇总，金额列与合计行为公式"
+  },
+  {
+    "cat": "数据",
+    "name": "Python pandas 分析示例",
+    "file": "Python-pandas-analysis.xlsx",
+    "desc": "原始数据/清洗后明细/按产品/按地区/按月汇总，共 5 张表"
+  },
+  {
+    "cat": "数据",
+    "name": "Python xlwings 分表示例",
+    "file": "Python-xlwings-sample.xlsx",
+    "desc": "华东/华南/华西 3 张分表，xlwings 批量合并示例数据"
+  },
+  {
+    "cat": "数据",
+    "name": "Python in Excel 演示示例",
+    "file": "Python-in-excel-demo.xlsx",
+    "desc": "明细/按产品汇总/描述统计，=PY() 演示示例数据"
+  },
+  {
+    "cat": "数据",
+    "name": "销售数据分析示例",
+    "file": "示例-销售数据分析.xlsx",
+    "desc": "12 行订单明细 + 按产品/地区/月汇总（阶段 8 实战项目）"
+  },
+  {
+    "cat": "财务",
+    "name": "财务报表示例",
+    "file": "示例-财务报表.xlsx",
+    "desc": "利润表 + 资产负债表 + 现金流量表，三表勾稽（阶段 8 实战项目）"
+  },
+  {
+    "cat": "人事",
+    "name": "人力资源管理示例",
+    "file": "示例-人力资源管理.xlsx",
+    "desc": "花名册 + 考勤汇总 + 工资条（阶段 8 实战项目）"
+  },
+  {
+    "cat": "办公",
+    "name": "项目管理示例",
+    "file": "示例-项目管理.xlsx",
+    "desc": "任务清单 + 甘特图数据 + 进度跟踪（阶段 8 实战项目）"
+  },
+  {
+    "cat": "数据",
+    "name": "市场营销分析示例",
+    "file": "示例-市场营销分析.xlsx",
+    "desc": "营销漏斗 + 渠道对比 + 活动复盘（阶段 8 实战项目）"
+  },
+  {
+    "cat": "仓库",
+    "name": "仓库与物流示例",
+    "file": "示例-仓库与物流.xlsx",
+    "desc": "库存表 + 周转分析 + 出入库流水（阶段 8 实战项目）"
+  },
+  {
+    "cat": "销售",
+    "name": "客户管理模板",
+    "file": "销售-客户管理模板.xlsx",
+    "desc": "12 家客户档案与订单汇总"
+  },
+  {
+    "cat": "销售",
+    "name": "报价单模板",
+    "file": "销售-报价单模板.xlsx",
+    "desc": "含税报价与折扣计算"
+  },
+  {
+    "cat": "财务",
+    "name": "预算管理模板",
+    "file": "财务-预算管理模板.xlsx",
+    "desc": "年度预算与执行率跟踪"
+  },
+  {
+    "cat": "财务",
+    "name": "现金流量表模板",
+    "file": "财务-现金流量表模板.xlsx",
+    "desc": "三表勾稽，差额为零"
+  },
+  {
+    "cat": "人事",
+    "name": "绩效考核模板",
+    "file": "人事-绩效考核模板.xlsx",
+    "desc": "10 人评分与奖金计算"
+  },
+  {
+    "cat": "项目管理",
+    "name": "任务跟踪模板",
+    "file": "项目-任务跟踪模板.xlsx",
+    "desc": "甘特进度与加权完成率"
+  }
 ]
